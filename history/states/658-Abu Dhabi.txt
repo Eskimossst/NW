@@ -1,0 +1,33 @@
+
+state={
+	id=658
+	name="STATE_658"
+	manpower = 150100
+	
+	state_category = rural
+
+
+	local_supplies=0.0
+	history={
+		add_core_of = UAE
+		owner = ENG
+		victory_points = {
+			7960 1 
+		}
+		buildings = {
+			infrastructure = 1
+			7960 = {
+				naval_base = 3
+			}
+		}
+		1941.11.1 = {
+			owner = UAE
+			add_core_of = UAE
+		}
+
+	}
+
+	provinces={
+		2048 7960 10904 13695 13707 13712 13700
+	}
+}

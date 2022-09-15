@@ -1,0 +1,1873 @@
+ideas = {
+
+	country = {
+
+		SPR_catalon_nationalism = {
+			allowed = {
+				OR = {
+					BAS = { exists = no }
+					has_full_control_of_state = 165
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SPR_catalon_nationalism
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		SPR_basks_nationalism = {
+			allowed = {
+				OR = {
+					BAS = { exists = no }
+					has_full_control_of_state = 791
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SPR_basks_nationalism
+			modifier = {
+				stability_factor = -0.02
+			}
+		}
+		SPR_social_crisis = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = social_crisis
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		SPR_desire_for_decentralization = {
+			allowed = { always = no }
+			available = {
+				NOT = {
+					num_subjects > 3
+					has_completed_focus = SPR_elections_third_cortes_republic
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SPR_desire_for_decentralization
+			modifier = {
+				stability_factor = -0.03
+			}
+		}
+		SPR_niceto_torres = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = SPR_niceto_torres
+			modifier = {
+				political_power_factor = -0.2
+			}
+		}
+		SPR_secularization_church_lands = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				NOT = { has_government = monarchy }
+			}
+			removal_cost = -1
+			picture = MEX_church_power_1
+			modifier = {
+				drift_defence_factor = 0.07
+			}
+		}
+		SPR_strengthening_marxist_anarchist_friendship = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				OR = {
+					has_government = trozkism
+					has_government = anarchism
+				}
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				drift_defence_factor = 0.1
+			}
+		}
+		SPR_collectivization_business = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = anarchism
+			}
+			removal_cost = -1
+			picture = ind_heavy1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		SPR_working_front_idea_1 = {
+			name = SPR_working_front_idea
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = rabgosudarstvo
+			modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.05
+				anarchism_drift = 0.05
+			}
+			targeted_modifier = {
+				tag = SPA
+				defense_bonus_against = 0.05
+			}
+		}
+		SPR_working_front_idea_2 = {
+			name = SPR_working_front_idea
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = rabgosudarstvo
+			modifier = {
+				democratic_drift = 0.1
+				communism_drift = 0.05
+				anarchism_drift = 0.05
+			}
+			targeted_modifier = {
+				tag = SPA
+				defense_bonus_against = 0.1
+			}
+		}
+		SPR_working_front_idea_3a = {
+			name = SPR_working_front_idea
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = rabgosudarstvo
+			modifier = {
+				democratic_drift = 0.15
+			}
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.15
+			}
+		}
+		SPR_working_front_idea_3b = {
+			name = SPR_working_front_idea
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = rabgosudarstvo
+			modifier = {
+				democratic_drift = 0.1
+				communism_drift = 0.1
+			}
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.15
+			}
+		}
+		SPR_working_front_idea_4 = {
+			name = SPR_popular_front
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = communism
+			}
+			removal_cost = -1
+			picture = SPR_the_popular_front
+			modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.15
+			}
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.15
+			}
+		}
+		SPR_the_cradle_of_partisans = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = chi_army_corruption2
+			modifier = {
+				pocket_penalty = -0.07
+				terrain_penalty_reduction = 0.07
+				equipment_capture_factor = 0.1
+			}
+		}
+		SPR_save_state_emergency = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		SPR_modernization_industrial_enterprises = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_speed_buildings_factor = 0.08
+			}
+		}
+		SPR_stop_secularization = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				NOT = { has_government = monarchy }
+			}
+			removal_cost = -1
+			picture = MEX_church_power_1
+			modifier = {
+				drift_defence_factor = 0.15
+			}
+		}
+		SPR_empowering_president = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		SPR_development_new_social_laws_idea = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.08
+			}
+		}
+		SPR_expanding_workers_rights = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = prc_low_popular_support3
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conversion_cost_civ_to_mil_factor = -0.08
+			}
+		}
+		SPR_expansion_trade_with_neighbors = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				democratic_acceptance = 50
+				opinion_gain_monthly_same_ideology_factor = 0.25
+			}
+		}
+		SPR_coronation_juan_barcelona = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			removal_cost = -1
+			picture = SPR_coronation_juan_barcelona
+			modifier = {
+				democratic_acceptance = 30
+			}
+		}
+		SPR_policy_liberalisation = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			removal_cost = -1
+			picture = democratic_focus
+			modifier = {
+				democratic_drift = 0.45
+			}
+		}
+		SPR_support_in_spanish_phalanga = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			removal_cost = -1
+			picture = SPR_support_in_spanish_phalanga
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		SPR_expand_rights_president = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+		SPR_collapse_secularization = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			removal_cost = -1
+			picture = MEX_church_power_4
+			modifier = {
+				drift_defence_factor = 0.25
+			}
+		}
+		SPR_patriotic_mood = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+		SPR_institute_of_commissars = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_war_departament
+			modifier = {
+				war_support_factor = 0.05
+				max_command_power = 25
+				planning_speed = 0.075
+				army_attack_factor = 0.025
+			}
+		}
+		SPR_revolutionary_committees_idea = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = revolution_focus
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				planning_speed = 0.05
+			}
+		}
+		SPR_united_under_socialism = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MEX_revolutionary_army
+			modifier = {
+				war_support_factor = 0.05
+				max_command_power = 25
+				max_planning = 0.1
+				mobilization_speed = 0.1
+				army_morale_factor = 0.05
+			}
+		}
+		SPR_support_for_peasantry = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				MONTHLY_POPULATION = 0.25
+				global_building_slots_factor = 0.05
+				land_reinforce_rate = 0.065
+				refit_speed = 0.1
+			}
+		}
+		SPR_proletarian_state = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ppl_power
+			modifier = {
+				political_power_gain = 0.2
+				required_garrison_factor = -0.1
+				defensive_war_stability_factor = 0.15
+				refit_ic_cost = -0.1
+			}
+		}
+		SPR_proletarian_state_2 = {
+			name = SPR_proletarian_state
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ppl_power
+			modifier = {
+				political_power_gain = 0.25
+				required_garrison_factor = -0.1
+				defensive_war_stability_factor = 0.15
+				refit_ic_cost = -0.1
+				economy_cost_factor = 0.5
+				aircraft_manufacturer_cost_factor = -0.05
+				industrial_concern_cost_factor = -0.05
+				materiel_manufacturer_cost_factor = -0.05
+				tank_manufacturer_cost_factor = -0.05
+				trade_laws_cost_factor = -0.05
+			}
+		}
+		SPR_formation_of_multi_layered_economy_1 = {
+			name = SPR_formation_of_multi_layered_economy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economic_decline
+			modifier = {
+				political_power_factor = -0.25
+				economy_cost_factor = -0.1
+				industrial_capacity_factory = -0.1
+				min_export = 0.1
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		SPR_formation_of_multi_layered_economy_2a = { #SPR_cooperative_collectivization
+			name = SPR_formation_of_multi_layered_economy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economic_decline
+			modifier = {
+				political_power_factor = -0.2
+				economy_cost_factor = -0.1
+				industrial_capacity_factory = -0.1
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		SPR_formation_of_multi_layered_economy_2ab = {	#SPR_cooperative_collectivization + SPR_electrification_of_village
+			name = SPR_formation_of_multi_layered_economy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economic_decline
+			modifier = {
+				political_power_factor = -0.15
+				economy_cost_factor = -0.1
+				industrial_capacity_factory = -0.05
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		SPR_formation_of_multi_layered_economy_2c = {	#SPR_concept_of_differential_optima
+			name = SPR_formation_of_multi_layered_economy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economic_decline
+			modifier = {
+				political_power_factor = -0.2
+				economy_cost_factor = -0.1
+				industrial_capacity_factory = -0.1
+				min_export = 0.1
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				global_building_slots_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				industrial_concern_cost_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		SPR_formation_of_multi_layered_economy_2ac = {	#SPR_cooperative_collectivization + SPR_concept_of_differential_optima
+			name = SPR_formation_of_multi_layered_economy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economic_decline
+			modifier = {
+				political_power_factor = -0.15
+				economy_cost_factor = -0.1
+				industrial_capacity_factory = -0.1
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				global_building_slots_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				industrial_concern_cost_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		SPR_formation_of_multi_layered_economy_2abc = {
+			name = SPR_formation_of_multi_layered_economy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economic_decline
+			modifier = {
+				political_power_factor = -0.1
+				economy_cost_factor = -0.1
+				industrial_capacity_factory = -0.05
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				global_building_slots_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				industrial_concern_cost_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		SPR_formation_of_multi_layered_economy_3 = {
+			name = SPR_formation_of_multi_layered_economy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economic_decline
+			modifier = {
+				political_power_factor = -0.05
+				economy_cost_factor = -0.1
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				global_building_slots_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				industrial_concern_cost_factor = -0.05
+			}
+		}
+		SPR_formation_of_multi_layered_economy_4 = {
+			name = SPR_formation_of_multi_layered_economy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economic_decline
+			modifier = {
+				political_power_factor = -0.05
+				economy_cost_factor = -0.1
+				industrial_capacity_factory = 0.05
+				production_speed_infrastructure_factor = 0.1
+				production_speed_hospital_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				global_building_slots_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				industrial_concern_cost_factor = -0.05
+			}
+		}
+		SPR_rethinking_socialism = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			on_remove = {
+				set_country_flag = SPR_rethinking_socialism_flag
+			}
+			removal_cost = -1
+			picture = internationalism_focus
+			modifier = {
+				political_power_gain = -0.25
+				stability_weekly = 0.005
+			}
+		}
+		SPR_strengthening_trade_unions = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = government_engineers
+			modifier = {
+				political_power_gain = 0.05
+				economy_cost_factor = -0.05
+				aircraft_manufacturer_cost_factor = -0.05
+				industrial_concern_cost_factor = -0.05
+				materiel_manufacturer_cost_factor = -0.05
+				tank_manufacturer_cost_factor = -0.05
+				trade_laws_cost_factor = -0.05
+			}
+		}
+		SPR_strengthening_trade_unions_2 = {
+			name = SPR_strengthening_trade_unions
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = government_engineers
+			modifier = {
+				political_power_gain = 0.05
+				economy_cost_factor = -0.1
+				aircraft_manufacturer_cost_factor = -0.1
+				industrial_concern_cost_factor = -0.1
+				materiel_manufacturer_cost_factor = -0.1
+				tank_manufacturer_cost_factor = -0.1
+				trade_laws_cost_factor = -0.1
+			}
+		}
+		SPR_developing_viable_strategies_for_political_struggle = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = jap_supremacy_of_will
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+				political_advisor_cost_factor = -0.1
+			}
+		}
+		SPR_developing_viable_strategies_for_political_struggle_2 = {
+			name = SPR_developing_viable_strategies_for_political_struggle
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = jap_supremacy_of_will
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = 0.15
+				political_advisor_cost_factor = -0.1
+			}
+		}
+		SPR_anti_bureaucracy = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = power_vacuum_and_powerlessness
+			modifier = {
+				justify_war_goal_time = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SPR_anti_bureaucracy_2 = {
+			name = SPR_anti_bureaucracy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = power_vacuum_and_powerlessness
+			modifier = {
+				justify_war_goal_time = -0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SPR_labor_militia = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_stackanovite
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.075
+				production_lack_of_resource_penalty_factor = -0.075
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				industry_repair_factor = 0.1
+			}
+		}
+		SPR_labor_militia_2 = {
+			name = SPR_labor_militia
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_stackanovite
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.075
+				production_lack_of_resource_penalty_factor = -0.075
+				production_speed_infrastructure_factor = 0.05
+				production_speed_hospital_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industry_repair_factor = 0.125
+			}
+		}
+		SPR_development_of_revolutionary_culture = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = por_iberian_workers_united
+			modifier = {
+				non_core_manpower = 0.015
+				drift_defence_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		SPR_development_of_revolutionary_culture_2 = {
+			name = SPR_development_of_revolutionary_culture
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = por_iberian_workers_united
+			modifier = {
+				non_core_manpower = 0.025
+				drift_defence_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		SPR_cultural_and_educational_activities = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			on_add = {
+				hidden_effect = {
+					add_research_slot = 1
+				}
+			}
+			on_remove = {
+				hidden_effect = {
+					add_research_slot = -1
+				}
+			}
+			removal_cost = -1
+			picture = commi_news
+			modifier = {
+				research_speed_factor = 0.025
+				master_ideology_drift = 0.05
+				custom_modifier_tooltip = plus_1_research_slot_tt
+			}
+		}
+		SPR_cultural_and_educational_activities_2 = {
+			name = SPR_cultural_and_educational_activities
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			on_add = {
+				hidden_effect = {
+					add_research_slot = 1
+				}
+			}
+			on_remove = {
+				hidden_effect = {
+					add_research_slot = -1
+				}
+			}
+			removal_cost = -1
+			picture = commi_news
+			modifier = {
+				research_speed_factor = 0.05
+				master_ideology_drift = 0.05
+				custom_modifier_tooltip = plus_1_research_slot_tt
+			}
+		}
+		SPR_proletarian_democracy = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = jap_the_unthinkable_option
+			modifier = {
+				party_popularity_stability_factor = 0.1
+				improve_relations_maintain_cost_factor = -0.15
+				new_operative_slot_bonus = 1
+			}
+		}
+		SPR_proletarian_democracy_2 = {
+			name = SPR_proletarian_democracy
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = jap_the_unthinkable_option
+			modifier = {
+				party_popularity_stability_factor = 0.1
+				improve_relations_maintain_cost_factor = -0.15
+				new_operative_slot_bonus = 2
+			}
+		}
+		SPR_accelerated_general_collectivization = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_agrarian_reform
+			modifier = {
+				stability_weekly = 0.01
+				political_power_cost = 0.5
+				MONTHLY_POPULATION = -0.15
+				consumer_goods_factor = 0.15
+				training_time_factor = 0.5
+				special_forces_training_time_factor = -0.5
+				research_speed_factor = -0.1
+			}
+		}
+		SPR_army_debuff_general_collectivization = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_weapons_into_plows
+			modifier = {
+				justify_war_goal_time = 0.75
+				conscription_factor = -0.5
+				training_time_factor = 0.4
+				special_forces_training_time_factor = -0.4
+				consumer_goods_factor = 0.1
+				land_reinforce_rate = -0.1
+				army_org_factor = -0.1
+			}
+		}
+		SPR_forced_labor_service = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				industrial_capacity_factory = 0.075
+				conversion_cost_mil_to_civ_factor = -0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SPR_super_tax_on_the_peasantry = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_for_the_good_of_the_revolution
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				local_resources_factor = 0.1
+				min_export = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SPR_labor_armies = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = rabgosudarstvo
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.075
+				production_lack_of_resource_penalty_factor = -0.075
+				production_speed_infrastructure_factor = 0.1
+				production_speed_hospital_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industry_repair_factor = 0.15
+			}
+		}
+		SPR_peoples_courts = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = social_solidarity
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = 0.05
+				party_popularity_stability_factor = 0.075
+			}
+		}
+		SPR_factionalism_of_party = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+				drift_defence_factor = 0.1
+			}
+		}
+		SPR_road_to_young = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = commi_education
+			modifier = {
+				political_power_factor = 0.05
+				political_advisor_cost_factor = -0.2
+				party_popularity_stability_factor = 0.075
+				new_operative_slot_bonus = 1
+				research_speed_factor = 0.05
+			}
+		}
+		SPR_accelerated_industrialization = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_spirit_of_the_industrial_revolution
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		
+		
+		
+		#nationalist spain
+		SPA_get_rid_party_system_idea = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = generic_deal_with_the_devil
+			modifier = {
+				drift_defence_factor = 0.1
+			}
+		}
+		SPA_loyalty_to_new_leader = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		SPA_new_spanish_mode = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1 
+			}
+		}
+		SPA_celebration_of_traditional_values = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		SPA_conquest_in_name_of_sanhurho = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.4
+			}
+		}
+		SPA_army_as_basis_spain = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				training_time_army_factor = -0.08
+			}
+		}
+		SPA_bless_pope = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			picture = tenth_crusade
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_org_factor = 0.05
+				army_core_attack_factor = 0.08
+				army_core_defence_factor = 0.08
+				conscription = 0.01
+			}
+		}
+		SPA_share_power_with_church_idea = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				army_morale_factor = 0.08
+				army_attack_factor = 0.08
+			}
+		}
+		SPA_honour_of_monarch = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			picture = MEX_politicised_army_2
+			modifier = {
+				army_core_defence_factor = 0.1
+			}
+		}
+		SPA_flag_of_christ = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			picture = MEX_church_power_5
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		SPA_saving_world_from_red_scourge = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			picture = antisoviet_union
+			modifier = {
+				army_core_attack_factor = 0.1
+			}
+		}
+		SPA_prevention_revolution = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			picture = FRA_matignon_agreements
+			modifier = {
+				drift_defence_factor = 0.08
+			}
+		}
+		SPA_facing_the_sun = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			picture = chi_war_of_resistance3
+			modifier = {
+				conscription = 0.02
+				army_org_factor = 0.03
+				training_time_army_factor = -0.05
+				army_core_attack_factor = 0.035
+				army_core_defence_factor = 0.065
+				experience_loss_factor = -0.05
+			}
+		}
+		SPA_otto_von_habsburg = {
+			removal_cost = -1	
+			allowed = { always = no }
+			available = {
+				NOT = {
+					has_government = trozkism
+					has_government = communism
+					has_government = anarchism
+					has_government = technocracy
+				}
+			}
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			picture = SPA_otto_von_habsburg
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		SPA_syndicates_under_government_control = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = generic_central_management
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		SPA_call_to_work_for_victory = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = generic_exploit_mines
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SPA_christian_empire = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = catholic_cross
+			modifier = {
+				army_morale_factor = 0.06
+			}
+		}
+		SPA_getting_rid_dissenting_generals_idea = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = generic_war_departament
+			modifier = {
+				experience_gain_army_factor = 0.12
+				military_leader_cost_factor = -0.15
+			}
+		}
+		SPA_adoption_twenty_six_principles_phalangists_idea = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = ind_light1
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.15
+			}
+		}
+		SPA_national_security_act = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = generic_secret_police
+			modifier = {
+				drift_defence_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		SPA_rejection_capitalism = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = anti_capitalism
+			modifier = {
+				drift_defence_factor = 0.1
+			}
+		}
+		SPA_falangist_revolution = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = MEX_politicised_army_2
+			modifier = {
+				drift_defence_factor = 0.05
+				subversive_activites_upkeep = -0.07
+			}
+		}
+		SPA_superiority_old_shirts = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = generic_intel_bonus
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		SPA_defense_revolution = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				army_org_factor = 0.05
+				army_core_attack_factor = 0.075
+				army_core_defence_factor = 0.075
+			}
+		}
+		SPA_italy_debt = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = ast_classify_aliens
+			modifier = {
+				political_power_gain = -0.1
+			}
+		}
+		SPA_infantry_weapons_molotov_cocktail = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = molotov_cocktail
+			modifier = {
+				army_attack_factor = 0.08
+				army_org_factor = 0.05
+				resistance_target_on_our_occupied_states = 0.03
+				resistance_damage_to_garrison = -0.02
+			}
+		}
+		SPA_passage_domestic_aviation = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = generic_air_bonus
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.07 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.07 instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = -0.07 instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = -0.07 instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.07 instant = yes
+				}
+			}
+		}
+		SPA_passage_domestic_shipbuilding = {
+			removal_cost = -1	
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = generic_navy_bonus
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.07 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.07 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.07 instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.07 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.07 instant = yes
+				}
+			}
+		}
+		
+		
+		#aragon
+		ARA_militia_formations = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		ARA_federation_anarchists_iberia_idea = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				training_time_army_factor = -0.05
+			}
+		}
+		ARA_mujeres_libres = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			rule = {
+				can_generate_female_aces = yes
+			}
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		ARA_collectivization_business = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		ARA_economy_of_gift = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = economy_of_gift_focus
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				consumer_goods_factor = -0.01
+				local_resources_factor = 0.05
+			}
+		}
+		ARA_erasure_class_differences = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_tackle_capitalism
+			modifier = {
+				political_power_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		ARA_syndication = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = self_prom
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ARA_new_revolution = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				conscription = 0.03
+				army_org_factor = 0.05
+				max_planning = 0.07
+				justify_war_goal_time = -0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+		ARA_propaganda_in_spain_idea = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_anarchism_drift_bonus
+			modifier = {
+				anarchism_drift = 0.15
+			}
+		}
+		ARA_war_with_catalonia = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			targeted_modifier = {
+				tag = CAT
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		ARA_war_with_spr = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			targeted_modifier = {
+				tag = SPR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		ARA_struggle_against_restorers_capitalism = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = anarchism
+			}
+			removal_cost = -1
+			picture = molotov_cocktail
+			targeted_modifier = {
+				tag = SPR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		ARA_protection_spanish_revolution = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				army_defence_factor = 0.25
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.05
+			}
+		}
+		
+		
+		##Democrat aragon
+		ARA_formation_militia = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				training_time_army_factor = -0.075
+			}
+		}
+		ARA_creation_centralized_army = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		ARA_support_spanish_republic = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = ARA_support_spanish_republic
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+		ARA_financial_support_from_madrid = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		#catalon
+		CAT_creation_centralized_army = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		CAT_decentralized_planning = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		CAT_central_planning = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		CAT_influence_catalan_marxists_idea = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_trozkism_drift_bonus
+			modifier = {
+				trozkism_drift = 0.15
+			}
+		}
+		CAT_protection_spanish_revolution_anarchism = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			picture = chi_wargaming_division
+			targeted_modifier = {
+				tag = SPR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		
+		#spain minors
+		NAV_reject_market_mess = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_tackle_capitalism
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		NAV_return_business_nobility = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = hol_depillarization
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		NAV_cancel_social_benefits = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_ethics_for_war
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.07
+			}
+		}
+		
+		SPC_collectivization_industry = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_exploit_mines
+			modifier = {
+				production_speed_buildings_factor = 0.13
+			}
+		}
+		SPC_introduction_the_revolutionary_economy = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_spirit_of_the_industrial_revolution
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		SPC_introduction_national_councils_defense = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = socmilitarism
+			modifier = {
+				training_time_army_factor = -0.05
+			}
+		}
+		SEU_reeducate_army = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_army_factor = -0.05
+			}
+		}
+		SEU_put_economy_war_footing = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = man_five_year_plan_industry
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		CAS_activation_youth_organizations = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		CAS_reject_principles_capitalism = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = anti_capitalism
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		CAS_final_acceptance_corporatism = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		ANL_expand_rights_trade_unions = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = self_prom
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ANL_transfer_economy_needs_revolution = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_ethics_for_war
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		ANL_raise_peoples_militia = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = socmilitarism
+			modifier = {
+				training_time_army_factor = -0.05
+			}
+		}
+		ANL_patriotic_appeals = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		VLA_modernization_healthcare_system = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = healthcare_system
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.03
+				MONTHLY_POPULATION = 0.25
+				army_org_factor = 0.08
+			}
+		}
+		VLA_formation_militias = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_army_factor = -0.05
+			}
+		}
+		SPR_spain_civil_war = {
+			allowed = { always = no }
+			available = {
+				NOT = { has_global_flag = scw_over }
+				is_subject = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SPR_spain_civil_war
+			modifier = {
+				ai_focus_aggressive_factor = 1.0
+				ai_get_ally_desire_factor = -1000
+				ai_call_ally_desire_factor = -1000
+				ai_join_ally_desire_factor = -1000
+				annex_cost_factor = -1
+				puppet_cost_factor = 1
+			}
+			rule = {
+				can_join_factions = no
+				can_create_factions = no
+			}
+		}
+		SPR_spain_subject_idea = {
+			allowed = { always = no }
+			available = {
+				is_subject_of = SPR
+			}
+			allowed_civil_war = {
+				is_subject_of = SPR
+			}
+			removal_cost = -1
+			picture = SPR_collectivized_society
+			modifier = {
+				cic_to_overlord_factor = 0.25
+				mic_to_overlord_factor = 0.5
+			}
+		}
+		SPR_spain_subject_idea_2 = {
+			name = SPR_spain_subject_idea
+			allowed = { always = no }
+			available = {
+				is_subject_of = SPR
+			}
+			allowed_civil_war = {
+				is_subject_of = SPR
+			}
+			removal_cost = -1
+			picture = SPR_collectivized_society
+			modifier = {
+				cic_to_overlord_factor = 0.15
+				mic_to_overlord_factor = 0.25
+			}
+		}
+	}
+}

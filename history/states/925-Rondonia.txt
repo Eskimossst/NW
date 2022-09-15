@@ -1,0 +1,23 @@
+state={
+	id=925
+	name="STATE_925"
+	
+	state_category = pastoral
+
+	local_supplies=0.0
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BRA
+
+	}
+
+	provinces={
+		12939 13582 13566 13585
+	}
+	manpower=70000
+	buildings_max_level_factor=1.000
+}

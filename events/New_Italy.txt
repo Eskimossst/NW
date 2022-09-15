@@ -1,0 +1,390 @@
+﻿###########################
+# Italian Events
+###########################
+
+add_namespace = new_italy
+
+################ Канчатак грамадзянскай вайны ##########################
+
+country_event = {
+	id = new_italy.5
+	title = new_italy.5.t
+	desc = new_italy.5.d
+	picture = GFX_report_event_partisans_ethiopia
+	immediate = {log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event new_italy.5"}
+	
+	trigger = {
+		tag = RSI
+		RSI = { NOT = { has_war_with = ITA } }
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		name = new_italy.5.a
+		ai_chance = {
+			factor = 100
+		}
+		delete_unit_template_and_units = { division_template = "Squadra Internazionale" }
+		delete_unit_template_and_units = { division_template = "Distaccamento Volontario" }
+		delete_unit_template_and_units = { division_template = "Distaccamento Partigiano" }
+		every_state = {
+			limit = { is_core_of = RSI }
+			remove_core_of = ITA
+		}
+	}
+}
+
+################ Перамога дэмакратыі ##########################
+
+country_event = { #BLOCKED
+	id = new_italy.6
+	title = new_italy.6.t
+	desc = new_italy.6.d
+	picture = GFX_report_event_partisans_ethiopia
+	immediate = {log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event new_italy.6"}
+	
+	trigger = {
+		always = no
+		tag = RSI
+		RSI = { NOT = { has_war_with = ITA } has_government = neutrality }
+		OR = {
+			democratic > 0.50
+			AND = {
+				democratic > 0.45
+				communism < 0.45
+			}
+			AND = {
+				democratic > 0.40
+				communism < 0.40
+			}
+			AND = {
+				democratic > 0.35
+				communism < 0.35
+			}
+			AND = {
+				democratic > 0.30
+				communism < 0.30
+			}
+			AND = {
+				democratic > 0.25
+				communism < 0.25
+			}
+			AND = {
+				democratic > 0.20
+				communism < 0.20
+			}
+			AND = {
+				democratic > 0.15
+				communism < 0.15
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 7 }
+	
+	option = {
+		name = new_italy.6.a
+		complete_national_focus = RSI_national_comitet
+		complete_national_focus = RSI_national_comitet_democratic
+	}
+}
+
+################ Перамога камунізму ##########################
+
+country_event = { #BLOCKED
+	id = new_italy.7
+	title = new_italy.7.t
+	desc = new_italy.7.d
+	picture = GFX_report_event_partisans_ethiopia
+	immediate = {log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event new_italy.7"}
+	
+	trigger = {
+		always = no
+		tag = RSI
+		RSI = { NOT = { has_war_with = ITA } has_government = neutrality }
+		OR = {
+			communism > 0.50
+			AND = {
+				communism > 0.45
+				democratic < 0.45
+			}
+			AND = {
+				communism > 0.40
+				democratic < 0.40
+			}
+			AND = {
+				communism > 0.35
+				democratic < 0.35
+			}
+			AND = {
+				communism > 0.30
+				democratic < 0.30
+			}
+			AND = {
+				communism > 0.25
+				democratic < 0.25
+			}
+			AND = {
+				communism > 0.20
+				democratic < 0.20
+			}
+			AND = {
+				communism > 0.15
+				democratic < 0.15
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 7 }
+	
+	option = {
+		name = new_italy.7.a
+		complete_national_focus = RSI_national_comitet
+		complete_national_focus = RSI_national_comitet_communist
+	}
+}
+
+################Сіцылійскае паўстанне###################
+
+country_event = {
+	id = new_italy.12
+	title = new_italy.12.t
+	desc = new_italy.12.d
+	picture = GFX_report_event_soldiers
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event new_italy.12" }
+	fire_only_once = yes
+
+	trigger = {
+		has_government = communism
+		controls_state = 115
+	}
+	
+	option = {
+		name = new_italy.12.a
+		custom_effect_tooltip = macedonian_rise
+		hidden_effect = {
+			SIC = {
+				transfer_state = 115
+				load_oob = "Sicilian_rise"
+				add_manpower = 50000
+				declare_war_on = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+################Анархисты###################
+
+#Возвращение членов УСИ в Италию
+country_event = {
+	id = new_italy.13
+	title = new_italy.13.t
+	desc = new_italy.13.desc
+	picture = GFX_report_event_soldiers
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event new_italy.13" }
+	fire_only_once = yes
+
+	trigger = {
+		tag = RSI
+		OR = {
+			OR = {
+				FRA = { has_government = anarchism }
+				FRC = { has_government = anarchism }
+			}
+			OR = {
+				SPR = { has_government = anarchism }
+				ARA = { has_government = anarchism }
+			}
+		}
+	}
+	mean_time_to_happen = { days = 5 }
+	
+	option = {
+		name = new_italy.13.a
+		ai_chance = {
+			factor = 75
+		}
+		if = {
+			limit = {
+				OR = {
+					FRA = { has_government = anarchism }
+					FRC = { has_government = anarchism }
+				}
+				NOT = {
+					SPR = { has_government = anarchism }
+					ARA = { has_government = anarchism }
+				}
+			}
+			add_popularity = { ideology = anarchism popularity = 0.075 }
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					FRA = { has_government = anarchism }
+					FRC = { has_government = anarchism }
+				}
+				OR = {
+					SPR = { has_government = anarchism }
+					ARA = { has_government = anarchism }
+				}
+			}
+			add_popularity = { ideology = anarchism popularity = 0.075 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					FRA = { has_government = anarchism }
+					FRC = { has_government = anarchism }
+				}
+				OR = {
+					SPR = { has_government = anarchism }
+					ARA = { has_government = anarchism }
+				}
+			}
+			add_popularity = { ideology = anarchism popularity = 0.15 }
+		}
+		add_manpower = 50000
+	}
+	
+	option = {
+		name = new_italy.13.b
+		ai_chance = {
+			factor = 25
+		}
+		add_popularity = { ideology = anarchism popularity = 0.02 }
+	}
+}
+
+#Анархические объединения
+country_event = {
+	id = new_italy.14
+	title = new_italy.14.t
+	desc = new_italy.14.desc
+	picture = GFX_report_event_soldiers
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event new_italy.14" }
+	is_triggered_only = yes
+
+	option = {
+		name = new_italy.14.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			FRC = {
+				has_government = anarchism
+				is_faction_leader = yes
+			}
+		}
+		FRC = { country_event = { id = generic.2 } }
+	}
+	
+	option = {
+		name = new_italy.14.b
+		ai_chance = {
+			factor = 25
+		}
+		trigger = {
+			SPR = {
+				has_government = anarchism
+				is_faction_leader = yes
+			}
+		}
+		SPR = { country_event = { id = generic.2 } }
+	}
+	
+	option = {
+		name = new_italy.14.b
+		ai_chance = {
+			factor = 25
+		}
+		trigger = {
+			ARA = {
+				has_government = anarchism
+				is_faction_leader = yes
+			}
+		}
+		ARA = { country_event = { id = generic.2 } }
+	}
+	
+	option = {
+		name = new_italy.14.d
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			event_target:NW_hhnbrg_scope = {
+				has_government = anarchism
+				is_faction_leader = yes
+			}
+		}
+		event_target:NW_hhnbrg_scope = { country_event = { id = generic.2 } }
+	}
+	
+	option = {
+		name = new_italy.14.e
+		ai_chance = {
+			factor = 1
+		}
+		
+	}
+}
+
+country_event = {
+	id = new_italy.15
+	title = new_italy.15.t
+	desc = new_italy.15.d
+	picture = GFX_report_event_partisans_ethiopia
+	immediate = {log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event new_italy.15"}
+	hidden = yes
+	
+	trigger = {
+		has_idea = RSI_mafiozi_idea
+		OR = {
+			NOT = { country_exists = RSI }
+			has_country_flag = mafiozi_win_flag
+		}
+	}
+	
+	fire_only_once = no
+	
+	mean_time_to_happen = { days = 21 }
+	
+	option = {
+		name = new_italy.15.a
+		remove_ideas = RSI_mafiozi_idea
+	}
+}
+
+#TEST
+country_event = {
+	id = new_italy.999
+	title = new_italy.999.t
+	desc = new_italy.999.d
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_italy.999.a #okay
+		RSI = {
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 157
+		}
+		every_state = {
+			limit = { is_core_of = ITA}
+			add_core_of = RSI
+			set_state_flag = italian_partisans_flag
+		}
+	}
+}

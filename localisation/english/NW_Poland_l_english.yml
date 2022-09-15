@@ -1,0 +1,89 @@
+﻿l_english:
+  
+   #vanilla fix
+  POL_union_with_romania:0 "Union with Romania"
+  POL_hohenzollern_desc:0 "The Germans foresaw the Hohenzollerns coming to power in the new Kingdom of Poland, and our close diplomatic ties with Romania make the Romanian royal family ideal candidates for the throne of Poland."
+  POL_hohenzollern:0 "Hohenzollerns" 
+  POL_hohenzollern_desc:0 "Back during the Great War, the son of the German Kaiser was offered the Polish throne, but the sad outcome of the war for the Central Powers led to the collapse of such ideas. Today a German monarch on the throne would help us establish good ties with Germany."
+  POL_restore_baltic_duchy:0 "Restore the Baltic Duchy"  
+  POL_restore_baltic_duchy_desc:0 "At the end of World War I, the German aristocracy in the Baltics almost succeeded in realizing the project of the Baltic Duchy, a state bound by personal union with Prussia, located on the territory of Latvia and Estonia. Only defeat in the war disrupted this state project, but we can try to restore it." 
+  POL_slavic_king:0 "Slavic King"  
+  POL_slavic_king_desc:0 "A Bulgarian prince on our throne will strengthen Slavic solidarity and lay the future for the global pan-slavic project"
+  POL_beck_ribbentrop:0 "Beck-Ribbentrop Pact"
+  POL_adopt_german_constitution:0 "Adapt the German Constitution"
+  POL_adopt_german_constitution_desc:0 "Many advanced states around the world have taken the German constitution as the basis for their main law, why don't we rewrite it too, given Hohenzollern's ascension to the throne."
+  POL_federal_structure_of_kingdom:0 "The Federal Structure of the Kingdom"
+  POL_federal_structure_of_kingdom_desc:0 "One of the main problems of our state is the existence of national minorities in its territory we can solve by introducing a federal system of state government."
+  POL_demand_LIT_august:0 "Demand Lithuania"
+  POL_demand_LIT_august_desc:0 "The Lithuanian government is divided, weak, and characterized by poor economic and military management. The Polish state is incomplete without its subjects, and perhaps the Lithuanians would agree to unification if simply asked."
+  POL_seek_an_alliance_with_kaiser:0 "Kindred Monarchical Union"
+  POL_seek_an_alliance_with_kaiser_desc:0 "With Augustus on the Polish throne, we can establish the strongest alliance with the German Empire, as two kin monarchs cannot abandon each other in case of military threat."
+  POL_return_throne:0 "Return the German throne"
+  POL_return_throne_desc:0 "By becoming King of Poland, Augustus has a chance to right a historical wrong - to bring the monarchical state system back to Germany, and with it his dynasty to power."
+  POL_speech_of_king:0 "The King's Speech"
+  POL_speech_of_king_desc:0 "Our new king will make a speech to the nation, stating his goals and objectives. This will strengthen his political position."
+  POL_german_advisors:0 "Contacts with the German Military"
+  POL_german_advisors_desc:0 "Germany had an extraordinarily large army after the Great War with a corresponding number of officers. Many of them had no place in the new Germany, so we can offer to help them with the development of our army."
+  POL_combine_polish_german_science_achievements:0 "Combine the Achievements of Polish and German Science"
+  POL_combine_polish_german_science_achievements_desc:0 "Polish scientists have made great strides in many scientific fields, but helping them organize cooperation with their German counterparts will allow more breakthroughs in research."
+  POL_mutual_economic_penetration:0 "Mutual Economic Integration"
+  POL_mutual_economic_penetration_desc:0 "Poland should be a great place for wealthy German industrialists to invest, deepening ties between the two states."
+  
+  elect_august_tt:0 "Elect King Augustus through an event"
+  elect_kirill_tt:0 "Elect King Kirill through an event"
+  
+  # ideas
+  POL_ignacy_moscicki:0 "Ignacy Mościcki"
+  POL_antoni_roman:0 "Antoni Roman"
+  POL_felicjan_skladkowski:0 "Felicjan Skladkowski"
+  POL_waclaw_stachiewicz:0 "Waclaw Stachiewicz"
+  POL_jerzy_pniewski:0 "Jerzy Pniewski"
+  POL_antoni_halka_ledochowski:0 "Antoni Halka-Ledochowski"
+  POL_wladislaw_anders:0 "Wladyslaw Anders"
+  POL_stanislaw_sosabowski:0 "Stanislaw Sosabowski"
+  POL_roman_rudkowski:0 "Roman Rudkovski"
+  POL_wladyslaw_sikorski:0 "Wladyslaw Sikorski"
+  POL_adopt_german_constitution_1:0 "Adapt the German Constitution"
+  POL_adopt_german_constitution_2:0 "Adapt the German Constitution"
+  POL_german_advisors_idea:0 "German military advisors"
+  POL_relations_with_german_scientists:0 "Scientific relations with German scientists"
+  POL_german_investments:0 "German investments"
+  # party name
+  POL_SN_long:0 "Labour Party"
+  POL_SN:0 "Labour Party"
+  
+  # events
+  poland.war.1.t:0 "Ignacy Mościcki's Resignation"
+  poland.war.1.d:0 "After a complete catastrophe on the front, the fall of Warsaw and the surrender of our country, the president of Poland - Ignacy Mostsicki resigned and handed over his power to the government in exile, headed by Vladislav Sikorski. This step, in fact, signifies the fall of the Sanation regime established in 1926 by Jozef Pilsudski in the May Revolution."
+  poland.war.1.a:0 "It was predictable"
+  
+  poland.flavor.1.t:0 "Ignacy Jan Paderewski has died"
+  poland.flavor.1.d:0 ""
+  poland.flavor.1.cw:0 ""
+  poland.flavor.1.ex:0 ""
+  poland.flavor.1.a:0 "Spoczywaj w pokoju"
+  
+  poland.flavor.2.t:0 "[?independence_day@POL]th anniversary of Poland's independence"
+  poland.flavor.2.d:0 "In 1918, after 123 years of division, the Polish people found their freedom. But the clouds around us are thickening, and even after so much time, our people are in danger - the Soviet Union and Germany surround us and we must be ready to fight. Will we be worthy of those who won our independence with their blood?"
+  poland.flavor.2.other:0 "In 1918, after 123 years of division, the Polish people gained their freedom. But the clouds around are thickening, and even after so long, our people are still threatened by external and internal enemies... ...and we must be ready to fight. Will we be worthy of those who won our independence with their blood?"
+  poland.flavor.2.dcap:0 "In 1918, after 123 years of partition, the Polish people gained their freedom. But the clouds around us swallowed up our Fatherland and our people found themselves in captivity. We must fight on the sea, in the air and on the beaches, our landing party must liberate Gdansk, our Tychotemnye must liberate Warsaw and hoist the flag over the Belvedere, and the Polish people must become worthy of the past generation, who won with their blood and then our independence"
+  poland.flavor.2.a:0 "Jeszcze Polska nie zginela!"
+  
+  poland.flavor.3.t:0 "Coronation of Karl Albrecht of Austria"
+  poland.flavor.3.d:0 "Our suzerain insisted, as he wished about 20 years ago, on the coronation of Karl Albrecht of Austria to the Polish throne. But no matter how foreign it seemed to the Polish people, his brother Leon Karol of Lorraine House fought for Poland with the title of captain, and both daughters married some Polish aristocrats"
+  poland.flavor.3.dson:0 "Our suzerain insisted, as he wished about 20 years ago, on the coronation of Karl Albrecht of Austria to the Polish throne. In addition, his brother, the Polish Army captain, who fought for Poland in the Soviet-Polish war, will be promoted."
+  poland.flavor.3.a:0 "His power is limited only to bayonets"
+  
+  poland.flavor.4.t:0 "Балтийская реставрация"
+  poland.flavor.4.desc:0 "В конце Первой Мировой войны немецкой аристократии практически удалось воплотить в жизнь проект Балтийского Герцогства - государства связанного личной унией с Пруссией, располагающегося на территории Латвии и Эстонии. Теперь мы снова стоим на пороге аналогичного шага и не должны остановиться в затеянном."
+  poland.flavor.4.a:0 "Это во благо эстонцев и латышей"
+  
+  # decisions
+  POL_baltic_restoration:0 "Балтийская реставрация"
+  POL_baltic_restorationdesc:0 "В конце Первой Мировой войны немецкой аристократии практически удалось воплотить в жизнь проект Балтийского Герцогства - государства связанного личной унией с Пруссией, располагающегося на территории Латвии и Эстонии. Теперь мы снова стоим на пороге аналогичного шага и не должны остановиться в затеянном."
+  form_country_baltic_duchy_required_states_tt:0 "Вы должны контролировать территории §Латвии§! и §Эстонии§!."
+  
+  POL_crown_habsburg_prince:0 "Crowning of Prince of Habsburg by King of Poland"
+  POL_crown_habsburg_prince_desc:0 "By installing our representative in the puppet Poland, as we tried to do about 20 years ago, we will strengthen our influence and control over the puppet"
+ 
+  POL_del_habs_prince:0 "Take the Habsburgs off the throne"

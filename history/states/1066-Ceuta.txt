@@ -1,0 +1,42 @@
+
+state={
+	id=1066
+	name="STATE_1066"
+	manpower = 80345
+	
+	
+	state_category = enclave
+	
+
+	local_supplies=0.0
+	history={
+		owner = SPR
+		add_core_of = SPR
+		victory_points = {
+			9945 1
+		}
+		victory_points = {
+			13906 1
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			13906 = {
+				naval_base = 3
+			}
+		}
+		1939.1.1 = {
+			owner = SPA
+			add_core_of = SPA
+			remove_core_of = SPR
+		}
+		1941.11.1 = {
+			owner = MOR
+			remove_core_of = SPA
+		}
+	}
+
+	provinces={
+		9945 13906
+	}
+}

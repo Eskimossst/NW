@@ -1,0 +1,115 @@
+ALB_crisis_down = {
+	if = {
+		limit = { has_idea = ALB_Severe_consequences_of_the_economic_crisis }
+		swap_ideas = {
+			remove_idea = ALB_Severe_consequences_of_the_economic_crisis
+			add_idea = ALB_Hard_consequences_of_the_economic_crisis
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_Hard_consequences_of_the_economic_crisis }
+		swap_ideas = {
+			remove_idea = ALB_Hard_consequences_of_the_economic_crisis
+			add_idea = ALB_Medium_consequences_of_the_economic_crisis
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_Medium_consequences_of_the_economic_crisis }
+		swap_ideas = {
+			remove_idea = ALB_Medium_consequences_of_the_economic_crisis
+			add_idea = ALB_Light_consequences_of_the_economic_crisis
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_Light_consequences_of_the_economic_crisis }
+		remove_ideas = ALB_Light_consequences_of_the_economic_crisis
+	}
+}
+
+ALB_cetas_indepedment = {
+	if = {
+		limit = { has_idea = ALB_subordinates_of_cetas }
+		swap_ideas = {
+			remove_idea = ALB_subordinates_of_cetas
+			add_idea = ALB_dependent_cetas
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_dependent_cetas }
+		swap_ideas = {
+			remove_idea = ALB_dependent_cetas
+			add_idea = ALB_semiautonomous_cetas
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_semiautonomous_cetas }
+		remove_ideas = ALB_semiautonomous_cetas
+		add_ideas = ALB_independent_cetas
+	}
+}
+
+ALB_cetas_depedment = {
+	if = {
+		limit = { has_idea = ALB_independent_cetas }
+		swap_ideas = {
+			remove_idea = ALB_independent_cetas
+			add_idea = ALB_semiautonomous_cetas
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_semiautonomous_cetas }
+		swap_ideas = {
+			remove_idea = ALB_semiautonomous_cetas
+			add_idea = ALB_dependent_cetas
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_dependent_cetas }
+		remove_ideas = ALB_dependent_cetas
+		add_ideas = ALB_subordinates_of_cetas
+	}
+}
+
+ALB_inteleg_up = {
+	if = {
+		limit = { has_idea = ALB_deprived_of_the_influence_of_the_intelligentsia }
+		swap_ideas = {
+			remove_idea = ALB_deprived_of_the_influence_of_the_intelligentsia
+			add_idea = ALB_overwhelmed_intelligentsia
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_overwhelmed_intelligentsia }
+		swap_ideas = {
+			remove_idea = ALB_overwhelmed_intelligentsia
+			add_idea = ALB_privileged_intelligentsia
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_privileged_intelligentsia }
+		remove_ideas = ALB_privileged_intelligentsia
+		add_ideas = ALB_dominance_of_the_intelligentsia
+	}
+}
+
+ALB_inteleg_down = {
+	if = {
+		limit = { has_idea = ALB_dominance_of_the_intelligentsia }
+		swap_ideas = {
+			remove_idea = ALB_dominance_of_the_intelligentsia
+			add_idea = ALB_privileged_intelligentsia
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_privileged_intelligentsia }
+		swap_ideas = {
+			remove_idea = ALB_privileged_intelligentsia
+			add_idea = ALB_overwhelmed_intelligentsia
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALB_overwhelmed_intelligentsia }
+		remove_ideas = ALB_overwhelmed_intelligentsia
+		add_ideas = ALB_deprived_of_the_influence_of_the_intelligentsia
+	}
+}

@@ -1,0 +1,382 @@
+	
+	
+	entity = {
+		clone = "FRA_infantry_rider_entity"
+		name = "FRC_infantry_rider_entity"
+        pdxmesh = "FRA_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "FRA_infantry_mg_rider_entity"
+		name = "FRC_infantry_mg_rider_entity"
+        pdxmesh = "FRA_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_entity"
+		name = "FRC_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_rifle_combined_entity"
+		name = "FRC_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_2_entity"
+		name = "FRC_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_mg_combined_entity"
+		name = "FRC_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	
+	entity = {
+		clone = "FRA_infantry_rider_entity"
+		name = "FRR_infantry_rider_entity"
+        pdxmesh = "FRA_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "FRA_infantry_mg_rider_entity"
+		name = "FRR_infantry_mg_rider_entity"
+        pdxmesh = "FRA_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_entity"
+		name = "FRR_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_rifle_combined_entity"
+		name = "FRR_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_2_entity"
+		name = "FRR_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_mg_combined_entity"
+		name = "FRR_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}	
+	
+	entity = {
+		clone = "FRA_infantry_rider_entity"
+		name = "FRF_infantry_rider_entity"
+        pdxmesh = "FRA_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "FRA_infantry_mg_rider_entity"
+		name = "FRF_infantry_mg_rider_entity"
+        pdxmesh = "FRA_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_entity"
+		name = "FRF_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_rifle_combined_entity"
+		name = "FRF_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_2_entity"
+		name = "FRF_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "FRA_cavalry_mg_combined_entity"
+		name = "FRF_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}		
+	
+	entity = {
+		clone = "RAJ_infantry_rider_entity"
+		name = "LKA_infantry_rider_entity"
+        pdxmesh = "RAJ_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "RAJ_infantry_mg_rider_entity"
+		name = "LKA_infantry_mg_rider_entity"
+        pdxmesh = "RAJ_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "RAJ_cavalry_entity"
+		name = "LKA_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "RAJ_cavalry_rifle_combined_entity"
+		name = "LKA_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "RAJ_cavalry_2_entity"
+		name = "LKA_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "RAJ_cavalry_mg_combined_entity"
+		name = "LKA_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "ENG_infantry_rider_entity"
+		name = "BPL_infantry_rider_entity"
+        pdxmesh = "ENG_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "ENG_infantry_mg_rider_entity"
+		name = "BPL_infantry_mg_rider_entity"
+        pdxmesh = "ENG_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "commonwealth_gfx_cavalry_entity"
+		name = "BPL_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_rifle_combined_entity"
+		name = "BPL_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_2_entity"
+		name = "BPL_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_mg_combined_entity"
+		name = "BPL_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}	
+	
+	entity = {
+		clone = "ENG_infantry_rider_entity"
+		name = "NFL_infantry_rider_entity"
+        pdxmesh = "ENG_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "ENG_infantry_mg_rider_entity"
+		name = "NFL_infantry_mg_rider_entity"
+        pdxmesh = "ENG_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "commonwealth_gfx_cavalry_entity"
+		name = "NFL_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_rifle_combined_entity"
+		name = "NFL_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_2_entity"
+		name = "NFL_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_mg_combined_entity"
+		name = "NFL_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "ENG_infantry_rider_entity"
+		name = "BMD_infantry_rider_entity"
+        pdxmesh = "ENG_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "ENG_infantry_mg_rider_entity"
+		name = "BMD_infantry_mg_rider_entity"
+        pdxmesh = "ENG_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "commonwealth_gfx_cavalry_entity"
+		name = "BMD_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_rifle_combined_entity"
+		name = "BMD_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_2_entity"
+		name = "BMD_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_mg_combined_entity"
+		name = "BMD_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}	
+	
+	entity = {
+		clone = "ENG_infantry_rider_entity"
+		name = "ZIM_infantry_rider_entity"
+        pdxmesh = "ENG_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "ENG_infantry_mg_rider_entity"
+		name = "ZIM_infantry_mg_rider_entity"
+        pdxmesh = "ENG_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "commonwealth_gfx_cavalry_entity"
+		name = "ZIM_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_rifle_combined_entity"
+		name = "ZIM_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_2_entity"
+		name = "ZIM_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_mg_combined_entity"
+		name = "ZIM_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}	
+
+    entity = {
+		clone = "ENG_infantry_rider_entity"
+		name = "NMB_infantry_rider_entity"
+        pdxmesh = "ENG_infantry_rifle_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "ENG_infantry_mg_rider_entity"
+		name = "NMB_infantry_mg_rider_entity"
+        pdxmesh = "ENG_infantry_mg_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "commonwealth_gfx_cavalry_entity"
+		name = "NMB_cavalry_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_rifle_combined_entity"
+		name = "NMB_cavalry_rifle_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_2_entity"
+		name = "NMB_cavalry_2_entity"
+        pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		scale = 1.0
+	}
+	
+	entity = {
+		clone = "ENG_cavalry_mg_combined_entity"
+		name = "NMB_cavalry_mg_combined_entity"
+        pdxmesh = "infantry_cavalry_horse_mesh"
+		scale = 0.65
+	}		
+
+	

@@ -1,0 +1,293 @@
+spawn_tur_civil_war_cakmak = {
+
+	division_template = {
+		name = "Süvari Tümeni Legion"					
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			artillery_brigade = { x = 2 y = 1 }
+			artillery_brigade = { x = 2 y = 2 }
+		}
+		support = {
+			recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			artillery = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+		}
+	}
+
+	division_template = {
+		name = "Mountaineers Dag Tugayi"
+		regiments = {
+			mountaineers = { x = 0 y = 0 }
+			mountaineers = { x = 0 y = 1 }
+			mountaineers = { x = 0 y = 2 }
+			mountaineers = { x = 1 y = 0 }
+			mountaineers = { x = 1 y = 1 }
+			mountaineers = { x = 1 y = 2 }
+		} 
+		support = {
+			recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			artillery = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+		}
+	}
+
+	division_template = {
+		name = "Mobile Süvari Tümeni"
+		regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 1 y = 0 }
+			cavalry = { x = 1 y = 1 }
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			light_armor = { x = 3 y = 0 }
+		}
+
+		support = {
+			recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			artillery = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+		}
+	}
+	
+	random_owned_state = {
+		create_unit = {
+			division = "name = \"1. Süvari Tümeni Legion\" division_template = \"Süvari Tümeni Legion\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"2. Süvari Tümeni Legion\" division_template = \"Süvari Tümeni Legion\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"3. Süvari Tümeni Legion\" division_template = \"Süvari Tümeni Legion\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"4. Süvari Tümeni Legion\" division_template = \"Süvari Tümeni Legion\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"5. Süvari Tümeni Legion\" division_template = \"Süvari Tümeni Legion\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"6. Süvari Tümeni Legion\" division_template = \"Süvari Tümeni Legion\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"7. Süvari Tümeni Legion\" division_template = \"Süvari Tümeni Legion\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"1. Mountaineers Dag Tugayi\" division_template = \"Mountaineers Dag Tugayi\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"2. Mountaineers Dag Tugayi\" division_template = \"Mountaineers Dag Tugayi\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"3. Mountaineers Dag Tugayi\" division_template = \"Mountaineers Dag Tugayi\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"1. Mobile Süvari Tümeni\" division_template = \"Mobile Süvari Tümeni\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+		create_unit = {
+			division = "name = \"2. Mobile Süvari Tümeni\" division_template = \"Mobile Süvari Tümeni\" start_experience_factor = 0.5" 
+			owner = PREV
+		}
+	}
+	log = "[GetDateText]: [Root.GetName] [Root.GetTag]: spawn_tur_civil_war_cakmak"
+}
+
+swap_arrows_kemalism_idea = {
+	if = {
+		limit = {
+			NOT = {
+				has_idea = TUR_one_arrows_kemalism
+				has_idea = TUR_two_arrows_kemalism
+				has_idea = TUR_three_arrows_kemalism
+				has_idea = TUR_four_arrows_kemalism
+				has_idea = TUR_five_arrows_kemalism
+				has_idea = TUR_six_arrows_kemalism
+			}
+		}
+		add_ideas = TUR_one_arrows_kemalism
+	}
+	else_if = {
+		limit = { has_idea = TUR_one_arrows_kemalism }
+		swap_ideas = {
+			remove_idea = TUR_one_arrows_kemalism
+			add_idea = TUR_two_arrows_kemalism
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_two_arrows_kemalism }
+		swap_ideas = {
+			remove_idea = TUR_two_arrows_kemalism
+			add_idea = TUR_three_arrows_kemalism
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_three_arrows_kemalism }
+		swap_ideas = {
+			remove_idea = TUR_three_arrows_kemalism
+			add_idea = TUR_four_arrows_kemalism
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_four_arrows_kemalism }
+		swap_ideas = {
+			remove_idea = TUR_four_arrows_kemalism
+			add_idea = TUR_five_arrows_kemalism
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_five_arrows_kemalism }
+		swap_ideas = {
+			remove_idea = TUR_five_arrows_kemalism
+			add_idea = TUR_six_arrows_kemalism
+		}
+	}
+}
+
+check_kurdish_threat_level_var = {
+	if = {
+		limit = { check_variable = { kurdish_threat_level_var = 0 } }
+		country_event = { id = NWkurd.4 }
+	}
+	if = {
+		limit = { check_variable = { kurdish_threat_level_var = 10 } }
+		country_event = { id = NWkurd.5 }
+	}
+}
+
+
+# Worsen Ataturk's Health
+NW_TUR_worsen_ataturks_health_effect = {
+	custom_effect_tooltip = TUR_worsen_ataturks_health_effect_tt
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = { has_variable = TUR_ataturk_sickness_factor_var }
+				has_country_leader_with_trait = reformator
+			}
+			set_variable = { var = TUR_ataturk_sickness_factor_var value = 1 }
+			swap_ruler_traits = { remove = reformator add = reformator_1 }
+		}
+		if = {
+			limit = {
+				check_variable = { var = TUR_ataturk_sickness_factor_var value = 1 compare = equals }
+				has_country_leader_with_trait = reformator_1
+			}
+			add_to_variable = { var = TUR_ataturk_sickness_factor_var value = 1 }
+			swap_ruler_traits = { remove = reformator_1 add = reformator_2 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = TUR_ataturk_sickness_factor_var value = 2 compare = equals }
+				has_country_leader_with_trait = reformator_2
+			}
+			swap_ruler_traits = { remove = reformator_2 add = reformator_3 }
+			add_to_variable = { var = TUR_ataturk_sickness_factor_var value = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = TUR_ataturk_sickness_factor_var value = 3 compare = equals }
+				has_country_leader_with_trait = reformator_3
+			}
+			swap_ruler_traits = { remove = reformator_3 add = reformator_4 }
+			add_to_variable = { var = TUR_ataturk_sickness_factor_var value = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = TUR_ataturk_sickness_factor_var value = 4 compare = equals }
+			}
+			add_country_leader_trait = infirm
+			add_to_variable = { var = TUR_ataturk_treatment_cost_var value = 250 }
+			if = {
+				limit = {
+					has_unit_leader = 59
+				}
+				remove_unit_leader = 59
+			}
+		}
+	}
+}
+
+check_balance_of_power_system = {
+	set_temp_variable = { influence_opposition_party_var = influence_opposition_var }
+	add_to_temp_variable = { influence_opposition_party_var = influence_party_var }
+	
+	set_temp_variable = { influence_party_army_var = influence_party_var }
+	add_to_temp_variable = { influence_party_army_var = influence_army_var }
+	
+	set_temp_variable = { influence_opposition_army_var = influence_opposition_var }
+	add_to_temp_variable = { influence_opposition_army_var = influence_army_var }
+	
+	if = {
+		limit = { check_variable = { influence_army_var > influence_opposition_party_var } }
+		set_country_flag = block_balance_of_power_system_flag
+		set_variable = { influence_party_var = 0 }
+		set_variable = { influence_opposition_var = 0 }
+		country_event = { id = NWturkey.85 hours = 1 }
+	}
+	if = {
+		limit = { check_variable = { influence_opposition_var > influence_party_army_var } }
+		set_country_flag = block_balance_of_power_system_flag
+		set_variable = { influence_party_var = 0 }
+		set_variable = { influence_army_var = 0 }
+		country_event = { id = NWturkey.86 hours = 1 }
+	}
+	if = {
+		limit = { check_variable = { influence_party_var > influence_opposition_army_var } }
+		set_country_flag = block_balance_of_power_system_flag
+		set_variable = { influence_army_var = 0 }
+		set_variable = { influence_opposition_var = 0 }
+		country_event = { id = NWturkey.87 hours = 1 }
+	}
+	
+	## оппозиция
+	set_temp_variable = { var_tur_bp_pp_opposition = influence_opposition_var }
+	multiply_temp_variable = { var_tur_bp_pp_opposition = -0.025 }
+	multiply_temp_variable = { var_tur_bp_pp_opposition = 0.1 }
+	set_variable = { var_tur_bp_buildings = influence_opposition_var }
+	multiply_variable = { var_tur_bp_buildings = 0.001 }
+	set_temp_variable = { var_tur_bp_stability_opposition = influence_opposition_var }
+	multiply_temp_variable = { var_tur_bp_stability_opposition = -0.0001 }
+	log = "[GetDateText]: var_tur_bp_pp_opposition: [?var_tur_bp_pp_opposition]"
+	## партия
+	set_temp_variable = { var_tur_bp_pp_party = influence_party_var }
+	multiply_temp_variable = { var_tur_bp_pp_party = 0.005 }
+	set_temp_variable = { var_tur_bp_stability_party = influence_party_var }
+	multiply_temp_variable = { var_tur_bp_stability_party = 0.0002 }
+	log = "[GetDateText]: var_tur_bp_pp_party: [?var_tur_bp_pp_party]"
+	## армия
+	set_temp_variable = { var_tur_bp_pp_army = influence_army_var }
+	multiply_temp_variable = { var_tur_bp_pp_army = -0.025 }
+	multiply_temp_variable = { var_tur_bp_pp_army = 0.1 }
+	set_variable = { var_tur_bp_command_power = influence_army_var }
+	multiply_variable = { var_tur_bp_command_power = 0.01 }
+	set_variable = { var_tur_bp_war_support = influence_army_var }
+	multiply_variable = { var_tur_bp_war_support = 0.002 }
+	log = "[GetDateText]: var_tur_bp_pp_army: [?var_tur_bp_pp_army]"
+	## сумма
+	set_variable = { var_tur_bp_stability = var_tur_bp_stability_opposition }
+	add_to_variable = { var_tur_bp_stability = var_tur_bp_stability_party }
+	set_variable = { var_tur_bp_pp = var_tur_bp_pp_party }
+	add_to_variable = { var_tur_bp_pp = var_tur_bp_pp_opposition }
+	add_to_variable = { var_tur_bp_pp = var_tur_bp_pp_army }
+	force_update_dynamic_modifier = yes
+}

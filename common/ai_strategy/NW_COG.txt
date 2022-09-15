@@ -1,0 +1,72 @@
+# befriend
+# alliance
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# alliance
+# contain
+# area_priority
+
+crazy_kimbangu_COG = {
+	reversed = yes
+	allowed = {
+		tag = COG
+	}
+	enable_reverse = {
+		COG = {
+			has_country_leader = { character = COG_simon_kimbangu ruling_only = yes }
+			has_completed_focus = COG_empire_of_black_christ
+			num_divisions > 0
+		}
+	}
+	enable = {
+		is_neighbor_of = COG
+		NOT = {
+			is_in_faction_with = COG
+			is_subject_of = COG
+		}
+	}
+	target_array = COG.neighbors
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = "COG" value = 500 }
+	ai_strategy = { type = conquer id = "COG" value = 500 }
+	ai_strategy = { type = prepare_for_war id = "COG" value = 500 }
+	ai_strategy = { type = declare_war id = "COG" value = 500 }
+}
+
+COG_dont_fash_ally = {
+	allowed = {
+		original_tag = COG
+	}
+	enable = {
+		has_country_leader = { character = COG_simon_kimbangu ruling_only = yes }
+	}
+	abort = {
+		OR = {
+			is_in_faction_with = GER
+			is_in_faction_with = ITA
+			is_in_faction_with = JAP
+			is_in_faction_with = ENG
+			is_in_faction_with = FRA
+			is_in_faction_with = FRF
+			is_in_faction_with = TUR
+			is_in_faction_with = PER
+		}
+	}
+	ai_strategy = { type = alliance id = "GER" value = -200 }
+	ai_strategy = { type = alliance id = "ITA" value = -200 }
+	ai_strategy = { type = alliance id = "JAP" value = -200 }
+	ai_strategy = { type = alliance id = "ENG" value = -200 }
+	ai_strategy = { type = alliance id = "FRA" value = -200 }
+	ai_strategy = { type = alliance id = "FRF" value = -200 }
+	ai_strategy = { type = alliance id = "TUR" value = -200 }
+	ai_strategy = { type = alliance id = "PER" value = -200 }
+}

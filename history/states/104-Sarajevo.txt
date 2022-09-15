@@ -1,0 +1,46 @@
+
+state={
+	id=104
+	name="STATE_104"
+	manpower = 1107400
+	
+	
+	state_category = town
+	
+	resources={
+		aluminium=4
+	}
+
+	local_supplies=0.0
+	history={
+		owner = YUG
+		victory_points = {
+			11899 5 
+		}
+		victory_points = {
+			6799 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+		1940.1.1 = {
+			owner = CRO
+			controller = CRO
+			add_core_of = CRO
+			remove_core_of = YUG
+		}
+		1941.11.1 = {
+			owner = BOS
+			controller = BOS
+			add_claim_by = SER
+		}
+	}
+
+	provinces={
+		982 6799 11572 11741 11899 
+	}
+}

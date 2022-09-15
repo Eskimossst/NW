@@ -1,0 +1,255 @@
+# befriend
+# alliance
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# alliance
+# contain
+# area_priority
+
+
+ETH_no_secure_home_land_in_ITA_war = {
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		has_war_with = ITA
+		NOT = { has_global_flag = italo_ethiopian_war_over }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+}
+
+COG_help_ETH_win_war = {
+	allowed = {
+		original_tag = COG
+	}
+	enable = {
+		ETH = {
+			has_war_with = ITA
+			has_completed_focus = ETH_volunteers_from_congo
+		}
+		is_subject = no
+		NOT = { has_global_flag = italo_ethiopian_war_over }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ETH"
+		value = 75
+	}
+}
+
+ETH_antagonize_DUCE = {
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		country_exists = ITA
+		ITA = { has_government = fascism }
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = ITA }
+			ITA = { NOT = { has_government = fascism } }
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ITA" 
+		value = -200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ITA" 
+		value = 500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ITA" 
+		value = -1000
+	}
+	ai_strategy = {
+		type = contain
+		id = "ITA" 
+		value = 500
+	}
+}
+
+ETH_antagonize_fash_GER = {
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		country_exists = GER
+		GER = {
+			has_government = fascism
+			is_faction_leader = yes
+		}
+		ITA = {
+			has_government = fascism
+			is_in_faction_with = GER
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = befriend
+		id = "GER" 
+		value = -200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER" 
+		value = -1000
+	}
+}
+
+ETH_hate_ally_leader_with_DUCE = {
+	reversed = yes
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		NOT = { tag = JAP }
+		ITA = {
+			has_government = fascism
+		}
+		is_in_faction_with = ITA
+		is_faction_leader = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "ETH" 
+		value = -1000
+	}
+}
+
+ETH_hate_fascism = {
+	reversed = yes
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		NOT = { tag = JAP }
+		has_government = fascism
+		ETH = { NOT = { has_government = fascism } }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "ETH"
+		value = -200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ETH" 
+		value = -600
+	}
+}
+
+ETH_hate_enemy_japan = {
+	reversed = yes
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		NOT = { tag = JAP }
+		OR = {
+			has_war_with = JAP
+			has_wargoal_against = JAP
+			is_justifying_wargoal_against = JAP
+			JAP = { has_wargoal_against = ROOT }
+			JAP = { is_justifying_wargoal_against = ROOT }
+		}
+		ETH = {
+			has_completed_focus = ETH_greatness_of_solomon
+			NOT = { has_war_with = JAP }
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "ETH"
+		value = -200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ETH" 
+		value = -600
+	}
+}
+
+ETH_personal_scores_with_italians = {
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		has_global_flag = ETH_destruction_of_palace
+		country_exists = ITA
+		ITA = { has_government = fascism }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "ITA" 
+		value = -1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ITA"
+		value = -1000
+	}
+	ai_strategy = {
+		type = contain
+		id = "ITA" 
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ITA" 
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ITA" 
+		value = 1000
+	}
+}
+
+ETH_help_JAM_win = {
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		JAM = { has_war_with = ENG }
+		ETH = { has_idea = ETH_support_of_jamaicans }
+	}
+	abort = {
+		NOT = { JAM = { has_war_with = ENG } }
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "JAM"
+		value = 75
+	}
+}
+
+

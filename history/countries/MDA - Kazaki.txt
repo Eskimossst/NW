@@ -1,0 +1,136 @@
+﻿capital = 234
+
+set_research_slots = 3
+
+set_convoys = 20
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	early_bomber = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+	}
+}
+
+set_popularities = {
+	democratic = 10
+	neutrality = 20
+	communism = 25
+	fascism = 30
+	monarchy = 15
+}
+
+set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+}
+
+recruit_character = MDA_pyotr_krasnov
+recruit_character = MDA_anton_denikin
+recruit_character = MDA_andrey_shkuro
+recruit_character = MDA_fyodor_abramov
+recruit_character = MDA_sergey_pavlov
+recruit_character = MDA_mikhail_grabbe
+
+1941.1.1 = {
+
+	declare_war_on = {
+		target = ADY
+		type = civil_war
+	}
+	add_civil_war_target = ADY
+	
+	declare_war_on = {
+		target = ABH
+		type = civil_war
+	}
+	add_civil_war_target = ABH
+	
+	declare_war_on = {
+		target = OAL
+		type = civil_war
+	}
+	add_civil_war_target = OAL
+	
+	declare_war_on = {
+		target = KCH
+		type = civil_war
+	}
+	add_civil_war_target = KCH
+	
+	declare_war_on = {
+		target = KBA
+		type = civil_war
+	}
+	add_civil_war_target = KBA
+	
+	declare_war_on = {
+		target = ING
+		type = civil_war
+	}
+	add_civil_war_target = ING
+	
+	declare_war_on = {
+		target = ICH
+		type = civil_war
+	}
+	add_civil_war_target = ICH
+	
+	declare_war_on = {
+		target = GEO
+		type = civil_war
+	}
+	add_civil_war_target = GEO
+	
+	declare_war_on = {
+		target = DAG
+		type = civil_war
+	}
+	add_civil_war_target = DAG
+	
+}
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

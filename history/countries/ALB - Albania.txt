@@ -1,0 +1,172 @@
+﻿capital = 44
+
+oob = "ALB_1936"
+
+set_war_support = 0.2
+set_stability = 0.3
+starting_train_buffer = 3.0
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+	}
+}
+
+set_popularities = {
+	monarchy = 60
+	communism = 5
+	democratic = 15
+	fascism = 20
+}
+	
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = ALB_king_zog
+recruit_character = ALB_ethem_toto
+recruit_character = ALB_fan_stilian_noli
+recruit_character = ALB_galeazzo_ciano
+recruit_character = ALB_andrea_zisi
+recruit_character = ALB_koci_xoxe
+recruit_character = ALB_shefqet_verlaci
+recruit_character = ALB_sadik_premtja
+recruit_character = ALB_midhat_frasheri
+recruit_character = ALB_enver_hoxha
+recruit_character = ALB_ploutis_servas
+recruit_character = ALB_llazar_fundo
+recruit_character = ALB_prek_cali
+recruit_character = ALB_xhemal_aranitasi
+recruit_character = ALB_prenk_pervizi
+recruit_character = ALB_fiqri_dine
+recruit_character = ALB_gustav_von_myrdacz
+recruit_character = ALB_jocelyn_percy
+recruit_character = ALB_abaz_kupi
+recruit_character = ALB_ismet_toto
+recruit_character = ALB_sanije_zogu
+recruit_character = ALB_ruhije_zogu
+recruit_character = ALB_myzejen_zogu
+recruit_character = ALB_maxhide_zogu
+recruit_character = ALB_sofet_butka
+recruit_character = ALB_fuat_dibra
+recruit_character = ALB_fuat_dibra_2
+recruit_character = ALB_bahri_omari
+recruit_character = ALB_ali_kelcyra
+recruit_character = ALB_baba_ali_tomori
+recruit_character = ALB_baba_mustafa_xhani
+recruit_character = ALB_qemal_komani
+recruit_character = ALB_xhelal_mitrovica
+recruit_character = ALB_hajre_fetahu
+recruit_character = ALB_selim_moishiou
+recruit_character = ALB_alexander_mori
+recruit_character = ALB_kristo_cajupi
+recruit_character = ALB_halil_nergutti
+recruit_character = ALB_spiro_moisiu
+recruit_character = ALB_eqrem_libohova
+recruit_character = ALB_zuhdi_shabani
+recruit_character = ALB_aziz_sulejmani
+recruit_character = ALB_rexhep_mitrovica
+recruit_character = ALB_hasan_begolli
+recruit_character = ALB_ismael_ghaxa
+recruit_character = ALB_mehmet_shehu
+recruit_character = ALB_beqir_balluku
+recruit_character = ALB_ndok_gjeloshi
+recruit_character = ALB_gjon_markagjoni
+recruit_character = ALB_muharrem_bajraktari
+recruit_character = ALB_aziz_cami
+recruit_character = ALB_nako_spiru
+recruit_character = ALB_lef_nosi
+recruit_character = ALB_qemal_stafa
+recruit_character = ALB_xhafer_deva
+
+activate_advisor = ALB_ethem_toto
+
+add_ideas = {
+	ALB_Agrarian_country
+	ALB_Severe_consequences_of_the_economic_crisis
+	ALB_Failure_of_general_education
+	ALB_Ineffective_land_reform
+	ALB_Dependence_on_Italy
+	ALB_Second_Tirana_Pact
+	ALB_Religious_diversity
+	ALB_Debts_to_Italy
+	#laws
+	closed_economy
+	limited_conscription
+}
+
+
+###механики
+set_country_flag = ALB_king_authority_3 ###Средний
+
+ITA = {
+	diplomatic_relation = {
+		country = ROOT
+		relation = military_access
+		active = yes
+	}
+	diplomatic_relation = {
+		country = ROOT
+		relation = docking_rights
+		active = yes
+	}
+	give_guarantee = ROOT
+	add_opinion_modifier = { target = ROOT modifier = ALB_Dependence_on_Italy }
+}
+
+set_convoys = 20
+
+
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	remove_ideas = {
+		ALB_Agrarian_country
+		ALB_Severe_consequences_of_the_economic_crisis
+		ALB_Failure_of_general_education
+		ALB_Ineffective_land_reform
+		ALB_Dependence_on_Italy
+		ALB_Second_Tirana_Pact
+		ALB_Religious_diversity
+		ALB_Debts_to_Italy
+		ALB_ethem_toto
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_popularities = {
+		democratic = 89
+		communism = 1
+		neutrality = 5
+		fascism = 5
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

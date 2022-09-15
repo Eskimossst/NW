@@ -1,0 +1,30 @@
+
+state={
+	id=878
+	name="STATE_878"
+	manpower = 50000
+	resources={
+		rubber = 8
+	}
+	
+	state_category = pastoral
+
+	local_supplies=0.0
+	history={
+		owner = BOL
+		buildings = {
+			infrastructure = 1
+		
+		}
+		add_core_of = BOL
+		
+		victory_points = {
+			12917 1 
+		}
+		
+	}
+
+	provinces={
+		5188 12917
+	}
+}

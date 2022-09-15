@@ -1,0 +1,148 @@
+﻿capital = 294
+
+oob = "OMA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	camelry = 1
+	
+	mini_cavalry = 1
+	mini_infantry = 1
+}
+
+add_ideas = {
+	OMA_saeed_bin_taimur
+	OMA_sebsky_agreement
+	IOM_underdeveloped_semi_feudal_state
+	OMA_import_restriction_policy
+	
+	#laws
+	colonial_legions
+	severe_migration_control
+	irregular_army
+}
+
+set_convoys = 20
+set_war_support = 1
+set_stability = 0.4
+set_research_slots = 1
+
+country_lock_all_division_template = yes
+set_variable = { peoples_militia_var = 1 }
+
+add_opinion_modifier = { target = ENG modifier = OMA_anglo_muscat_treaty_of_friendship }
+ENG = { add_opinion_modifier = { target = ROOT modifier = OMA_anglo_muscat_treaty_of_friendship } }
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "OMA_1939"
+	set_technology = {
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_popularities = {
+	monarchy = 96
+	neutrality = 4
+}
+
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = OMA_shihab_bin_faisal
+recruit_character = OMA_shaikh_harami
+recruit_character = OMA_tariq_bin_taimur_al_said
+recruit_character = OMA_taimur_bin_feisal
+recruit_character = OMA_ahmed_bin_ibrahim
+recruit_character = OMA_hajj_moosa
+recruit_character = OMA_fahr_bin_taimur
+recruit_character = OMA_ali_bin_salem
+recruit_character = OMA_said_bin_muslim_al_jabri
+
+recruit_character = OMA_musa_al_saif
+recruit_character = OMA_fayur_kassis
+recruit_character = OMA_abdul_rahal
+recruit_character = OMA_abdallah_ibn_timur
+recruit_character = OMA_nasser_bazzi
+recruit_character = OMA_jassim_bin_hani
+recruit_character = OMA_zahir_ibn_timur
+recruit_character = OMA_said_ibn_timur
+recruit_character = OMA_suleiman_al_ryami
+recruit_character = OMA_ghassan_aly
+recruit_character = OMA_fawzi_ibn_timur
+recruit_character = OMA_geoffrey_claydon
+recruit_character = OMA_hafs_mohammed
+
+
+
+1939.1.1 = {
+	
+	set_popularities = {
+		monarchy = 100
+	}
+	
+	set_politics = {
+		ruling_party = monarchy
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	remove_ideas = {
+		OMA_saeed_bin_taimur
+		OMA_sebsky_agreement
+		IOM_underdeveloped_semi_feudal_state
+		OMA_import_restriction_policy
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

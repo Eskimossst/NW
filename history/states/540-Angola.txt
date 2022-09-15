@@ -1,0 +1,35 @@
+
+state={
+	id=540
+	name="STATE_540"
+	manpower = 2225000
+	
+	state_category = rural
+	resources={
+		rubber=8
+	}
+	local_supplies=0.0
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 1
+			8248 ={
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8248 3
+		}
+		victory_points = {
+			8219 1
+		}
+		add_core_of = ANG
+		1941.11.1 = {
+			owner = ANG
+		}
+	}
+
+	provinces={
+		5158 7548 8219 8248 12981 13884 13885 13887 13889 14510
+	}
+}

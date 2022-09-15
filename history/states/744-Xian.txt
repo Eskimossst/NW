@@ -1,0 +1,32 @@
+state={
+	id=744
+	name="STATE_744"
+	provinces={
+		1976 2006 4167 4256 4295 5007 5092 7301 7406 7418 10257 10733 12156 12713 13465
+	}
+
+	local_supplies=0.0
+	history={
+		owner = NEA
+		add_core_of = NEA
+		add_core_of = PRC
+		add_core_of = CHI
+		victory_points = {
+			1976 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		1939.1.1 = {
+			owner = CHI
+			remove_core_of = NEA
+		}
+
+	}
+	manpower=4000406
+	buildings_max_level_factor=1.000
+	state_category = large_city
+}

@@ -1,0 +1,1484 @@
+BUL_block_radiostation_desicions = {
+
+	BUL_block_radiostation = {
+
+		icon = generic_industry
+
+		available = {
+			has_idea = BUL_radiostation_idea
+		}
+
+		visible = {
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			drift_defence_factor = 0.25
+			communism_drift = -0.07
+		}
+
+		days_remove = 90
+		days_re_enable = 180
+
+		cost = 75
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_block_radiostation"
+		}
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision BUL_block_radiostation"
+			set_country_flag = BUL_block_radiostation2_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 2
+				has_stability < 0.6
+			}
+		}
+	}
+	
+	BUL_block_radiostation2 = {
+
+		icon = generic_industry
+
+		available = {
+			has_idea = BUL_radiostation_idea
+		}
+
+		visible = {
+			has_country_flag = BUL_block_radiostation2_flag
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_block_radiostation2"
+			remove_ideas = BUL_radiostation_idea
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 2
+				has_stability < 0.6
+			}
+			modifier = {
+				add = 2
+				communism > 0.2
+			}
+			modifier = {
+				add = 5
+				communism > 0.4
+			}
+		}
+	}
+}
+
+
+BUL_block_fatherland_front_desicions = {
+
+	BUL_block_fatherland_front = {
+
+		icon = generic_industry
+
+		available = {
+			has_idea = BUL_fatherland_front_idea
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 125
+		
+		days_remove = 90
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision BUL_block_fatherland_front"
+			remove_ideas = BUL_fatherland_front_idea
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 10
+				has_stability < 0.6
+			}
+			modifier = {
+				add = 2
+				communism > 0.2
+			}
+			modifier = {
+				add = 5
+				communism > 0.4
+			}
+		}
+	}
+}
+
+BUL_mining_desicions = {
+	develop_sofia_steel_deposits = { #48
+		
+		icon = steel
+
+		highlight_states = { highlight_state_targets = { state = 48 } }
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 48
+			controls_state = 48
+		}
+
+		visible = {
+			owns_state = 48
+			controls_state = 48
+			48 = {
+				NOT = {
+					has_state_flag = sofia_steel_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision develop_sofia_steel_deposits"
+			
+			48 = { set_state_flag = sofia_steel_developed } 
+			48 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+	
+	develop_sofia_oil_deposits = { #48
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+
+		highlight_states = { highlight_state_targets = { state = 48 } }
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 48
+			controls_state = 48
+		}
+
+		visible = {
+			owns_state = 48
+			controls_state = 48
+			48 = {
+				NOT = {
+					has_state_flag = sofia_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision develop_sofia_oil_deposits"
+			
+			48 = { set_state_flag = sofia_oil_developed } 
+			48 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+			}
+		}
+	}
+}
+BUL_macedonian_separates_desicions = {
+
+	BUL_macedonian_separates1 = {
+
+		icon = generic_industry
+
+		available = {
+			has_equipment = { infantry_equipment > 299 }
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_macedonian_separates1"
+			
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -300 producer = BUL }
+			set_country_flag = BUL_macedonian_separates_support1
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+	
+	BUL_macedonian_separates2 = {
+
+		icon = generic_industry
+
+		available = {
+			has_equipment = { infantry_equipment > 299 }
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_macedonian_separates2"
+			
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -300 producer = BUL }
+			set_country_flag = BUL_macedonian_separates_support2
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+	
+	BUL_macedonian_separates3 = {
+
+		icon = generic_industry
+
+		available = {
+			has_equipment = { infantry_equipment > 299 }
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_macedonian_separates3"
+			
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -300 producer = BUL }
+			set_country_flag = BUL_macedonian_separates_support3
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+	
+	BUL_macedonian_separates4 = {
+
+		icon = generic_industry
+
+		available = {
+			has_equipment = { infantry_equipment > 299 }
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_macedonian_separates4"
+			
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -300 producer = BUL }
+			set_country_flag = BUL_macedonian_separates_support4
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+}
+
+BUL_macedonian_separates_peace_desicions = {
+
+	BUL_macedonian_separates_peace = {
+
+		icon = generic_industry
+
+		available = {
+			has_war_with = MAC
+			surrender_progress > 0.1
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_macedonian_separates_peace"
+			
+			MAC = {
+				country_event = {
+					id = macedonia.2 hours = 6
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				surrender_progress > 0.25
+			}
+		}
+	}
+}
+
+BUL_HUN_war_desicions = {
+
+	BUL_HUN_war = {
+
+		icon = generic_industry
+
+		available = {
+			has_war_with = BUL
+			has_war_with = HUN
+			surrender_progress > 0.25
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_HUN_war"
+			
+			BUL = {
+				country_event = {
+					id = bulgaria.32 hours = 6
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				surrender_progress > 0.40
+			}
+		}
+	}
+}
+
+BUL_buy_tanks_desicions = {
+
+	BUL_buy_vickers_6_ton_Mark_E = {
+
+		icon = generic_propaganda
+
+		visible = {
+			NOT = { has_war_with = ENG }
+			ENG = {
+				has_capitulated = no
+				has_tech = basic_light_tank
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 20
+
+		available = {
+            NOT = { has_war_with = ENG }
+			ENG = {
+				has_capitulated = no
+				has_tech = basic_light_tank
+			}
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 8 producer = ENG }
+		}
+	}
+	
+	BUL_buy_skoda_LT_vz35_1 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			OR = {
+				AND = {
+					country_exists = CZE
+					NOT = { has_war_with = CZE }
+					CZE = {
+						has_capitulated = no
+						has_tech = improved_light_tank
+					}
+				}
+				AND = {
+					NOT = {
+						country_exists = CZE
+						has_war_with = GER
+					}
+					GER = {
+						has_capitulated = no
+						has_tech = improved_light_tank
+					}
+				}
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		available = {
+			if = {
+				limit = { country_exists = CZE }
+				OR = {
+					AND = {
+						country_exists = CZE
+						NOT = { has_war_with = CZE }
+						CZE = {
+							has_capitulated = no
+							has_tech = improved_light_tank
+						}
+					}
+					AND = {
+						NOT = {
+							country_exists = CZE
+							has_war_with = GER
+						}
+						GER = {
+							controls_state = 9
+							has_capitulated = no
+							has_tech = improved_light_tank
+						}
+					}
+				}
+			}
+			else = {
+				NOT = { has_war_with = GER }
+				GER = {
+					controls_state = 9
+					has_capitulated = no
+					has_tech = improved_light_tank
+				}
+			}
+        }
+		
+		complete_effect = {
+			if = {
+				limit = { country_exists = CZE }
+				add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 26 producer = CZE }
+			}
+			else = { add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 26 producer = GER } }
+		}
+	}
+	
+	BUL_buy_skoda_LT_vz35_2 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			OR = {
+				AND = {
+					country_exists = CZE
+					NOT = { has_war_with = CZE }
+					CZE = {
+						has_capitulated = no
+						has_tech = improved_light_tank
+					}
+				}
+				AND = {
+					NOT = {
+						country_exists = CZE
+						has_war_with = GER
+					}
+					GER = {
+						has_capitulated = no
+						has_tech = improved_light_tank
+					}
+				}
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 30
+
+		available = {
+			if = {
+				limit = { country_exists = CZE }
+				OR = {
+					AND = {
+						country_exists = CZE
+						NOT = { has_war_with = CZE }
+						CZE = {
+							has_capitulated = no
+							has_tech = improved_light_tank
+						}
+					}
+					AND = {
+						NOT = {
+							country_exists = CZE
+							has_war_with = GER
+						}
+						GER = {
+							controls_state = 9
+							has_capitulated = no
+							has_tech = improved_light_tank
+						}
+					}
+				}
+			}
+			else = {
+				NOT = { has_war_with = GER }
+				GER = {
+					controls_state = 9
+					has_capitulated = no
+					has_tech = improved_light_tank
+				}
+			}
+        }
+		
+		complete_effect = {
+			if = {
+				limit = { country_exists = CZE }
+				add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 10 producer = CZE }
+			}
+			else = { add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 10 producer = GER } }
+		}
+	}
+	
+	BUL_buy_skoda_LT_vz35_3 = {
+
+		icon = generic_propaganda
+		
+		visible = {
+			NOT = { has_war_with = AFG }
+			AFG = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 30
+
+		available = {
+			NOT = { has_war_with = AFG }
+			AFG = {
+				has_capitulated = no
+				has_tech = improved_light_tank
+			}
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 10 producer = AFG }
+		}
+	}
+	
+	BUL_buy_Renault_R_35 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			GER = { has_capitulated = no }
+			OR = {
+				event_target:NW_france_scope = { has_capitulated = yes }
+				NOT = { country_exists = event_target:NW_france_scope }
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 120
+
+		available = {
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			OR = {
+				event_target:NW_france_scope = {
+					has_capitulated = yes
+					has_tech = basic_light_tank
+				}
+				NOT = { country_exists = event_target:NW_france_scope }
+			}
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 40 producer = FRA }
+		}
+	}
+	
+	BUL_buy_Renault_R_35_2 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			OR = {
+				event_target:NW_france_scope = { has_capitulated = yes }
+				NOT = { country_exists = event_target:NW_france_scope }
+		   }
+		}
+		
+		fire_only_once = yes
+
+		cost = 30
+
+		available = {
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			OR = {
+				event_target:NW_france_scope = {
+					has_capitulated = yes
+					has_tech = basic_light_tank
+				}
+				NOT = { country_exists = event_target:NW_france_scope }
+			}
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 10 producer = FRA }
+		}
+	}
+	
+	BUL_buy_StuG_40_Ausf_G5 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		available = {
+			NOT = { has_war_with = GER }
+			GER = {
+				has_capitulated = no
+				has_tech = basic_medium_td
+			}
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = medium_tank_destroyer_equipment_1 amount = 27 producer = GER }
+		}
+	}
+	
+	BUL_buy_PzIVG = {
+
+		icon = generic_propaganda
+
+		visible = {
+			NOT = { has_war_with = GER }
+		    GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 150
+
+		available = {
+			NOT = { has_war_with = GER }
+			GER = {
+				has_capitulated = no
+				has_tech = improved_medium_tank
+			}
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 46 producer = GER }
+		}
+	}
+	
+	BUL_buy_Hotchkiss_H_39 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			NOT = { has_war_with = GER }
+		    GER = { has_capitulated = no }
+			OR = {
+				event_target:NW_france_scope = {
+					has_capitulated = yes
+				}
+				NOT = { country_exists = event_target:NW_france_scope }
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 60
+
+		available = {
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		    OR = {
+				event_target:NW_france_scope = {
+					has_capitulated = yes
+					has_tech = improved_light_tank
+				}
+				NOT = { country_exists = event_target:NW_france_scope }
+			}
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 19 producer = FRA }
+		}
+	}
+	
+	BUL_buy_Somua_S_35 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			NOT = { has_war_with = GER }
+		    GER = { has_capitulated = no }
+			OR = {
+				event_target:NW_france_scope = { has_capitulated = yes }
+				NOT = { country_exists = event_target:NW_france_scope }
+		   }
+		}
+		
+		fire_only_once = yes
+
+		cost = 21
+
+		available = {
+           NOT = { has_war_with = GER }
+		   GER = { has_capitulated = no }
+		    OR = {
+				event_target:NW_france_scope = {
+					has_capitulated = yes
+					has_tech = basic_medium_tank
+				}
+				NOT = { country_exists = event_target:NW_france_scope }
+		   }
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = medium_tank_chassis_1 amount = 7 producer = FRA }
+		}
+	}
+	
+	BUL_buy_Pz4 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			NOT = { has_war_with = GER }
+		    GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 160
+
+		available = {
+			NOT = { has_war_with = GER }
+			GER = {
+				has_capitulated = no
+				has_tech = improved_medium_tank
+			}
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 51 producer = GER }
+		}
+	}
+}
+BUL_buy_aircraft_desicions = {
+
+	BUL_gift_aircraft_Germany = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+			GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 0
+
+		available = {
+			country_exists = GER
+            NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			GER = { has_opinion = { target = ROOT value > 24 } }
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 24 producer = GER }
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 12 producer = GER }
+		}
+	}
+	
+	BUL_buy_aircraft_P24B = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = POL
+            NOT = { has_war_with = POL }
+			POL = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 14
+
+		available = {
+            NOT = { has_war_with = POL }
+			country_exists = POL
+            NOT = { has_war_with = POL }
+			POL = { has_capitulated = no }
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 14 producer = POL }
+		}
+	}
+	
+	BUL_buy_aircraft_P43 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = POL
+            NOT = { has_war_with = POL }
+			POL = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 21
+
+		available = {
+			country_exists = POL
+            NOT = { has_war_with = POL }
+			POL = { has_capitulated = no }
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 14 producer = POL }
+		}
+	}
+	
+	BUL_buy_aircraft_P43_2 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = POL
+            NOT = { has_war_with = POL }
+			POL = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 21
+
+		available = {
+			country_exists = POL
+            NOT = { has_war_with = POL }
+			POL = { has_capitulated = no }
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 14 producer = POL }
+		}
+	}
+	
+	BUL_buy_aircraft_PZL37 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = POL
+            NOT = { has_war_with = POL }
+			POL = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 30
+
+		available = {
+            country_exists = POL
+            NOT = { has_war_with = POL }
+			POL = { has_capitulated = no }
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 15 producer = POL }
+		}
+	}
+	
+	BUL_buy_Avia534 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			NOT = {  country_exists = CZE }
+		}
+		
+		fire_only_once = yes
+
+		cost = 39
+
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			NOT = {  country_exists = CZE }
+		}
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 26 producer = CZE }
+		}
+	}
+		
+	BUL_buy_Avia71 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			NOT = {  country_exists = CZE }
+		}
+		
+		fire_only_once = yes
+
+		cost = 64
+
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			NOT = {  country_exists = CZE }
+		}
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 32 producer = CZE }
+		}
+	}
+	
+	BUL_buy_mb200 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = event_target:NW_france_scope
+			NOT = { has_war_with = event_target:NW_france_scope }
+			event_target:NW_france_scope = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 18
+
+		available = {
+			country_exists = event_target:NW_france_scope
+			NOT = { has_war_with = event_target:NW_france_scope }
+			event_target:NW_france_scope = { has_capitulated = no }
+		}
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 12 producer = FRA }
+		}
+	}
+		
+	BUL_buy_Avia_135 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			NOT = {  country_exists = CZE }
+		}
+		
+		fire_only_once = yes
+
+		cost = 30
+
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+			NOT = {  country_exists = CZE }
+		}
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 12 producer = CZE }
+		}
+	}
+		
+	BUL_buy_Messer_bf109 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 15
+
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 10 producer = GER }
+		}
+	}
+		
+	BUL_buy_Messer_bf109_2 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 24
+
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 16 producer = GER }
+		}
+	}
+	
+	BUL_buy_Messer_bf109_3 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 19
+
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 13 producer = GER }
+		}
+	}
+	
+	BUL_buy_Do17 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 30
+
+		available = {
+			country_exists = GER
+			NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_2 amount = 12 producer = GER }
+		}
+	}
+	
+	BUL_buy_Ar_196 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			country_exists = GER
+            NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+		}
+		
+		fire_only_once = yes
+
+		cost = 20
+
+		available = {
+            country_exists = GER
+            NOT = { has_war_with = GER }
+			GER = { has_capitulated = no }
+        }
+		
+		complete_effect = {
+			add_equipment_to_stockpile = { type = nav_bomber_equipment_2 amount = 12 producer = GER }
+		}
+	}
+	
+	BUL_buy_D520 = {
+
+		icon = generic_propaganda
+
+		visible = {
+			NOT = { has_war_with = GER }
+		    GER = { has_capitulated = no }
+			OR = {
+				event_target:NW_france_scope = { has_capitulated = yes }
+				NOT = { country_exists = event_target:NW_france_scope }
+		   }
+		}
+		
+		fire_only_once = yes
+
+		cost = 192
+
+		available = {
+           NOT = { has_war_with = GER }
+		   GER = { has_capitulated = no }
+		    OR = {
+				event_target:NW_france_scope = { has_capitulated = yes }
+				NOT = { country_exists = event_target:NW_france_scope }
+		   }
+        }
+	
+		complete_effect = {
+			add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 96 producer = FRA }
+		}
+	}
+}
+
+political_actions = {
+
+	BUL_negotiate_with_romania = {
+
+		icon = hol_attract_foreign_investors
+		
+		allowed = { original_tag = BUL }
+		
+		available = {
+			GRE = { is_guaranteed_by = ROM }
+		}
+		
+		visible = {
+			GRE = { is_guaranteed_by = ROM }
+			has_completed_focus = BUL_territory_thrakia
+		}
+		
+		cost = 75
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decision BUL_negotiate_with_romania"
+			ROM = {
+				diplomatic_relation = {
+					country = GRE
+					relation = guarantee
+					active = no
+				}
+			}
+			set_country_flag = BUL_negotiate_with_romania
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+	}
+}
+
+
+
+BUL_the_fatherland_front_dec_cat = { 
+	BUL_ff_impending_coup_mission = {
+
+		priority = 10
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_country_flag = BUL_ff_destroyed_flag
+		}
+
+		days_mission_timeout = 500
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = BUL_fatherland_front_formed_flag
+			NOT = { has_completed_focus = BUL_the_fatherland_front }
+		}
+
+		visible = {
+			hidden_trigger = {
+				has_country_flag = BUL_fatherland_front_formed_flag
+				NOT = { has_country_flag = BUL_ff_civil_war_flag }
+			}
+			NOT = { has_country_flag = BUL_ff_destroyed_flag }
+		}
+
+		cancel_if_not_visible = yes
+
+		days_remove = 7
+
+		is_good = no
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			set_country_flag = BUL_ff_coup_planned_flag
+		}
+	}
+
+	BUL_ff_root_out_sympathizers = {
+
+		priority = 1
+
+		icon = generic_military
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 200
+				BUL_is_historical_ai = yes
+				date < 1942.12.12
+				has_political_power > 100
+			}
+			modifier = {
+				factor = 0.5
+				BUL_is_historical_ai = yes
+			}
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_country_flag = BUL_fatherland_front_formed_flag
+			NOT = { has_country_flag = BUL_ff_destroyed_flag }
+			NOT = { has_country_flag = BUL_ff_civil_war_flag }
+		}
+
+		cost = 35
+		days_remove = 30
+		days_re_enable = 15
+
+		modifier = {
+			communism_drift = -0.1
+			political_power_gain = -0.5
+		}
+		
+		complete_effect = {
+			add_stability = -0.05			
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = BUL_fatherland_front_negative
+				}
+				swap_ideas = {
+					remove_idea = BUL_fatherland_front_negative
+					add_idea = BUL_fatherland_front_negative_02
+				}
+			}
+
+			set_country_flag = BUL_ff_sympathizers_rooted_out_flag
+
+			if = {
+				limit = { 
+					NOT = { has_country_flag = BUL_ff_coup_planned_flag }
+				}
+				#Add the resulting amount of days
+				add_days_mission_timeout = {
+					mission = BUL_ff_impending_coup_mission
+					days = BUL_ff_missions_base_days_to_add
+				}
+			}
+			else = {
+				BUL_ff_preventive_action_taken = yes
+			}
+			custom_effect_tooltip = BUL_ff_root_out_sympathizers_cooldown_tt
+		}
+	}
+
+	BUL_ff_massive_arrests = {
+
+		priority = 2
+
+		icon = generic_arrest
+
+		ai_will_do = {
+			base = 4
+			modifier = {
+				factor = 0.25
+				BUL_is_historical_ai = yes
+			}
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = BUL_fatherland_front_formed_flag
+			has_country_flag = BUL_ff_sympathizers_rooted_out_flag
+			NOT = { has_country_flag = BUL_ff_destroyed_flag }
+			NOT = { has_country_flag = BUL_ff_civil_war_flag }
+		}
+
+		cost = 75
+		days_remove = 30
+		days_re_enable = 30
+
+		modifier = {
+			communism_drift = -0.15
+			political_power_gain = -1
+		}
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = BUL_fatherland_front_negative_02
+				}
+				swap_ideas = {
+					remove_idea = BUL_fatherland_front_negative_02
+					add_idea = BUL_fatherland_front_negative_03
+				}
+			}
+
+			if = {
+				limit = { 
+					NOT = { has_country_flag = BUL_ff_coup_planned_flag }
+				}
+				#Add the resulting amount of days
+				add_days_mission_timeout = {
+					mission = BUL_ff_impending_coup_mission
+					days = BUL_ff_missions_base_days_to_add
+				}
+			}
+			else = {
+				BUL_ff_preventive_action_taken = yes
+			}
+			custom_effect_tooltip = BUL_ff_massive_arrests_cooldown_tt			
+		}
+	}
+
+	BUL_ff_deal_the_final_blow = {
+
+		icon = oppression
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0.1
+				BUL_is_historical_ai = yes
+			}
+		}
+
+		available = {
+			communism < 0.01
+		}
+
+		visible = {
+			has_active_mission = BUL_ff_impending_coup_mission
+			has_country_flag = BUL_ff_sympathizers_rooted_out_flag
+			has_country_flag = BUL_fatherland_front_formed_flag
+			NOT = { has_country_flag = BUL_ff_destroyed_flag }
+			NOT = { has_country_flag = BUL_ff_civil_war_flag }
+		}
+
+		cost = 75
+		days_remove = 15
+
+		fire_only_once = yes
+	
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			set_country_flag = BUL_ff_destroyed_flag
+			custom_effect_tooltip = BUL_ff_deal_the_final_blow_tt
+		}
+	}
+}

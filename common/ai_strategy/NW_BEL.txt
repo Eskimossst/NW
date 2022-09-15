@@ -1,0 +1,36 @@
+# befriend
+# alliance
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# alliance
+# contain
+# area_priority
+
+BEL_dont_ally_historical = {
+	allowed = {
+		original_tag = BEL
+		is_historical_focus_on = yes
+	}
+	enable = {
+		NOT = { has_war_with = GER }
+	}
+	abort = {
+		OR = {
+			has_war_with = GER
+			is_in_faction_with = ENG		#got here somehow, might as well stay
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = -200
+	}	
+}

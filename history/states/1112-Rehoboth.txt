@@ -1,0 +1,25 @@
+
+state={
+	id=1112
+	name="STATE_1112"
+	manpower = 30000
+	
+	state_category = wasteland
+
+	local_supplies=0.0
+	history={
+		owner = NMB
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			 14309 1
+		}
+		add_core_of = NMB
+		add_core_of = REH
+	}
+
+	provinces={
+		14309
+	}
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=902
+	name="STATE_902" #Cooch Bihar
+	manpower = 1662107
+	
+	state_category = pastoral
+
+	local_supplies=0.0
+	history={
+		owner = RAJ		
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RAJ
+	}
+
+	provinces={
+		12338 14472
+	}
+}

@@ -1,0 +1,46 @@
+ideas = {
+	
+	industrial_concern = {
+	
+		designer = yes
+	
+		Ecopetrol = {
+		
+			picture = Ecopetrol
+			
+			allowed = {
+				original_tag = COL
+			}
+			
+			research_bonus = {
+				synth_resources = 0.10
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

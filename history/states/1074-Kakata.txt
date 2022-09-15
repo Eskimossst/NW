@@ -1,0 +1,23 @@
+state={
+	id=1074
+	name="STATE_1074"
+	manpower = 58000
+	
+	state_category = pastoral
+	resources={
+		rubber=3
+	}
+
+	local_supplies=0.0
+	history= {
+		owner = LIB
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = LIB
+	}
+	
+	provinces={
+		13961 13962
+	}
+}

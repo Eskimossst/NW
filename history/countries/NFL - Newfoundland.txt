@@ -1,0 +1,234 @@
+﻿capital = 331
+
+oob = "NFL_1936"
+set_stability = 0.4
+set_war_support = 0.6
+set_convoys = 20
+
+add_ideas = {
+	NFL_dominion_colony
+	NFL_ruined_economy
+	NFL_religious_system_of_education
+	NFL_Dependence_on_the_fishing_industry
+}
+
+
+recruit_character = NFL_david_murray_anderson
+recruit_character = NFL_john_hope_simpson
+recruit_character = NFL_humphrey_t_walwyn
+recruit_character = NFL_gordon_macdonald
+recruit_character = NFL_joey_smallwood
+recruit_character = NFL_edward_patrick_roche
+recruit_character = NFL_james_forbesrobertson
+recruit_character = NFL_Philip_E_Earnshaw
+recruit_character = NFL_F_Gordon_Bradley
+recruit_character = NFL_Gordon_Francis_Higgins
+recruit_character = NFL_Charles_Hollett
+recruit_character = NFL_Frederick_C_Alderdice
+recruit_character = NFL_Robert_Brown_Job
+recruit_character = NFL_Geoff_Stirling
+recruit_character = NFL_Armine_Nutting_Gosling
+recruit_character = NFL_Albert_Boyle_Butt
+recruit_character = NFL_Thomas_Lodge
+recruit_character = NFL_Albert_Walsh
+recruit_character = NFL_Royal_Cooper
+recruit_character = NFL_Harry_A_Winter
+recruit_character = NFL_Jack_Higgins
+recruit_character = NFL_Joshua_Stevens
+recruit_character = NFL_Albert_John
+recruit_character = NFL_Asher_Day
+recruit_character = NFL_Steven_Malone
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	basic_train = 1
+	
+	tech_sniper_squad = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_country_flag = monroe_doctrine
+
+set_cosmetic_tag = NFL_ENG # British NFL
+set_variable = {
+    var = confederation_with_canada_var
+    value = 3
+}
+set_variable = {
+    var = responsible_government_var
+    value = 6
+}
+set_variable = {
+    var = union_with_us_var
+    value = 1
+}
+1939.1.1 = {
+	add_political_power = 1198
+	
+	complete_national_focus = NFL_Operation_island_railway
+	complete_national_focus = NFL_concern_corner_brook
+	complete_national_focus = NFL_Grand_Falls_pulp_and_paper_concern
+	complete_national_focus = NFL_Extension_transport_hub
+	complete_national_focus = NFL_Port_aux_Basque_infrastructure
+	complete_national_focus = NFL_Andersen_Resignation
+	complete_national_focus = NFL_Council_for_fishery_of_Newfoundland
+	complete_national_focus = NFL_Stimulate_production_frozen_cod
+	complete_national_focus = NFL_program_of_preferential_shipbuilding
+	complete_national_focus = NFL_labour_council
+	complete_national_focus = NFL_Open_an_agricultural_school
+	complete_national_focus = NFL_Colonial_development_Fund
+	complete_national_focus = NFL_Cottage_hospital_system
+	complete_national_focus = NFL_Bishop_Feild_College
+	complete_national_focus = NFL_Newfoundland_Rangers
+	complete_national_focus = NFL_state_broadcasting_company
+	complete_national_focus = NFL_CYQX
+	complete_national_focus = NFL_Transatlantic_flight
+	complete_national_focus = NFL_First_day_experience
+	complete_national_focus = NFL_expand_iron_mines_Wabana
+	complete_national_focus = NFL_Defense_plan
+
+	add_country_leader_role = {
+		character = NFL_humphrey_t_walwyn
+		promote_leader = yes
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "1965.1.1"
+			traits = {
+			}
+		}
+	}
+	
+#	add_ideas = {
+#		
+#	}
+	
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		interwar_artillery = 1
+		interwar_antiair = 1
+		tech_recon = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+		}
+	}
+}
+
+
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1932.6.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	anarchism = 0
+	communism = 0
+	trozkism = 0
+	democratic = 60
+	neutrality = 40
+	fascism = 0
+	monarchy = 0
+}
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=1132
+	name="STATE_1132" # South Chahar
+	manpower = 120034
+	
+	state_category = pastoral
+    
+	
+	local_supplies=0.0
+	history={
+		owner = HCP
+		add_core_of = HCP
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = MEN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			14379 1
+		}
+		1939.1.1 = {
+		    owner = MEN
+			controller = MEN
+			remove_core_of = HCP
+		}
+		1941.11.1 = {
+			remove_core_of = MEN
+			owner = PRC
+		}
+	}
+
+	provinces={
+		952 1137 1590 6904 9776 14379 
+	}
+}

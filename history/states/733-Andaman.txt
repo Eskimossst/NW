@@ -1,0 +1,26 @@
+state={
+	id=733
+	name="STATE_733"
+	manpower=29500
+	state_category = small_island
+	
+	local_supplies=0.0
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			12251 = {
+				naval_base = 2
+
+			}
+		}
+		1941.11.1 = {
+			owner = LKA
+			add_core_of = LKA
+			add_claim_by = RAJ
+		}
+	}
+	provinces={
+		10321 12251 
+	}
+}

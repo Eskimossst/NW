@@ -1,0 +1,33 @@
+state={
+	id=1004
+	name="STATE_1004" # Zambia
+	
+	state_category = rural
+
+	resources={
+		steel = 8
+	}
+
+	local_supplies=0.0
+	history={
+		owner = ENG
+		add_core_of = ZAM
+		victory_points = {
+			5199 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		1941.11.1 = {
+			owner = ZIM
+			add_core_of = ZIM
+		}
+	}
+
+	provinces={
+		5199 7872
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+}

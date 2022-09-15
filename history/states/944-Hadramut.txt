@@ -1,0 +1,35 @@
+
+state={
+	id=944
+	name="STATE_944"
+	manpower = 91841
+
+	state_category = rural
+
+	history={
+		owner = QUA
+		add_core_of = QUA
+		add_core_of = FSA
+		victory_points = {
+			13618 2 
+		}
+		buildings = {
+			infrastructure = 2
+			13618 = {
+				naval_base = 2
+			}			
+		}
+		1939.1.1 = {
+			owner = ENG
+		}
+		1941.11.1 = {
+			owner = YEM
+			add_core_of = YEM
+			remove_core_of = QUA
+		}
+	}
+
+	provinces={
+		12821 13616 13617 13618 13622 13623 13626 13629 13631
+	}
+}

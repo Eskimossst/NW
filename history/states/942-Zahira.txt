@@ -1,0 +1,32 @@
+
+state={
+	id=942
+	name="STATE_942"
+	manpower = 56411
+	
+	state_category = pastoral
+
+	local_supplies=0.0
+	history={
+		owner = IOM
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13678 2
+		}
+		victory_points = {
+			13682 1
+		}		
+		add_core_of = IOM
+		add_core_of = OMA
+		1941.11.1 = {
+			owner = UAE
+			add_core_of = UAE
+		}
+	}
+
+	provinces={
+		2018 5049 13659 13665 13666 13676 13678 13682
+	}
+}

@@ -1,0 +1,835 @@
+ideas = {
+	
+	country = {
+		
+		KRD_experience_struggle_for_independence = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = chi_army_corruption2
+			modifier = {
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				foreign_subversive_activites = -0.1
+			}
+		}
+		
+		KRD_create_class_of_entrepreneurs_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = big_col_app
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		KRD_train_your_own_engineers_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = prod_drive
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		
+		KRD_establish_modern_military_production_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = ind_light1
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.15
+			}
+		}
+		
+		KRD_spread_of_kurdish_nationalism_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance
+			modifier = {
+				war_support_factor = 0.1
+				conscription = 0.02
+			}
+		}
+		
+		KRD_science_of_women = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = hol_depillarization
+			modifier = {
+				conscription_factor = 0.1
+				stability_factor = -0.15
+			}
+		}
+		
+		KRD_establish_peoples_defense_forces_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = YUG_federal_defense_council
+			modifier = {
+				training_time_army_factor = -0.07
+				army_defence_factor = 0.055
+				army_org_regain = 0.03
+				dig_in_speed_factor = 0.115
+				conscription = 0.005
+				mobilization_speed = 0.075
+			}
+		}
+		
+		KRD_invite_soviet_specialists_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = idea_stackanovite
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05 
+			}
+		}
+		
+		KRD_promote_service_in_regular_army_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = {
+				conscription = 0.02
+				war_support_factor = 0.1
+			}
+		}
+		
+		KRD_establish_detachments_of_blueshirts_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = SPA_la_division_azul
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
+		KRD_create_youth_organization_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
+		KRD_introduce_kurdish_nationalism_in_tribal_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				training_time_army_factor = -0.075
+				war_support_factor = 0.1
+			}
+		}
+		
+		KRD_prepare_defend_yourselves_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = ast_naval_auxiliary_patrol
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+		
+		KRD_invest_in_defense_industry_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = ind_heavy1
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		
+		KRD_introduction_neighboring_countries = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_spy_coup
+			modifier = {
+				operative_slot = 2
+				intel_network_gain_factor = 0.055
+			}
+		}
+		
+		KRD_rebellion_in_dersim = {
+			allowed = {
+				always = no
+			}
+			available = {
+				NOT = {
+					has_country_flag = kurd_revolt_flag
+					has_country_flag = kurd_revolt_over_flag
+				}
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_weekly = -0.005
+			}
+		}
+		
+		KRD_liberation_war = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = kurdish_liberation_war
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		KRD_tribal_army = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = disarmed
+			modifier = {
+				army_org_factor = -0.25
+			}
+		}
+		
+		KRD_local_uprising = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = army_in_fire
+			modifier = {
+				custom_modifier_tooltip = KRD_local_uprising_tt
+				hidden_modifier = {
+					army_attack_factor = -0.5
+					army_defence_factor = -0.5
+					army_core_attack_factor = 0.5
+					army_core_defence_factor = 0.5
+				}
+			}
+			rule = {
+				can_not_declare_war = yes
+				can_create_factions = no
+				can_join_factions = no
+				can_send_volunteers = no
+				can_occupy_non_war = no
+			}
+		}
+		
+		KRD_development_of_kurdish_identity = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		KRD_call_tribal_sheikhs_to_your_side_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				training_time_army_factor = -0.07
+			}
+		}
+		
+		KRD_concessions_kurdish_sheikhs = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = corruption
+			modifier = {
+				political_power_factor = -0.75
+			}
+		}
+		
+		KRD_expel_albanians_and_assyrians_idea = {
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = purge_time
+			modifier = {
+				MONTHLY_POPULATION = -0.1
+			}
+		}
+		
+		KRD_ethnically_unified_kurdistan = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				any_owned_state = {
+					NOT = { is_core_of = ROOT }
+				}
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = primacy_of_nation
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		KRD_urgent_construction_fortifications = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_wall_line
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_bunker_factor = 0.5
+				production_speed_coastal_bunker_factor = 0.5
+			}
+		}
+		
+		KRD_bet_on_market_economy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = big_col_app
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		KRD_bet_on_mixed_economy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		KRD_introduction_radicalization = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = nationalism_focus
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		
+		KRD_establish_kingdom_of_kurdistan_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_power_monarch
+			modifier = {
+				drift_defence_factor = 0.10
+				intelligence_agency_defense = 0.25
+			}
+		}
+		
+		KRD_attract_ulema_to_your_side_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = religion_move
+			modifier = {
+				army_org_factor = 0.075
+			}
+		}
+		
+		KRD_indirect_rule_for_tribes_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = contract_slavery
+			modifier = {
+				resistance_growth = -0.1
+				political_power_factor = 0.05
+				training_time_army_factor = -0.1
+			}
+		}
+		
+		KRD_defend_independence_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			targeted_modifier = { tag = TUR attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = PER attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = IRQ attack_bonus_against = 0.05 }
+		}
+		
+		KRD_proclaim_kurdish_republic_of_ararat_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = democratic_focus
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+		
+		KRD_attractiveness_mount_ararat_for_tourists = {
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war = no
+				controls_state = 352
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = private_money
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		KRD_establish_own_banking_system_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = peoples_bank_2
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		KRD_create_incentives_for_entrepreneurs_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = big_col_app2
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		KRD_discontent_of_tribes = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				democratic_drift = -0.05
+			}
+		}
+		
+		KRD_expand_trade_with_west_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_trade
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				opinion_gain_monthly_factor = 0.15
+			}
+		}
+		
+		KRD_implementation_principles_of_liberalism = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_democratic_side
+			modifier = {
+				political_power_factor = 0.05
+				compliance_growth = 0.10
+			}
+		}
+		
+		KRD_introduction_of_soviet_practice = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = internationalism_focus
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		
+		KRD_discontent_among_tribes = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = students_move2
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		
+		KRD_introduce_new_economic_policy = {
+			allowed = {
+				always = no
+			}
+			available = {
+				NOT = { has_country_flag = introduce_new_economic_policy_complete_flag }
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = big_col_app
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.1
+				industry_repair_factor = 0.3
+				industry_free_repair_factor = 0.3
+			}
+		}
+		
+		KRD_first_five_year_plan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = industrial_plan
+			modifier = {
+				stability_factor = -0.25
+				production_speed_buildings_factor = 0.35
+				industrial_capacity_factory = -0.1
+				industry_repair_factor = 0.25
+			}
+		}
+		
+		KRD_carry_out_collectivization_among_peasantry_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = primacy_of_nation
+			modifier = {
+				stability_weekly = -0.001
+				industrial_capacity_factory = 0.15
+			}
+		}
+		
+		KRD_cult_of_leader_personality_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = home_of_revolution
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		KRD_socialist_propaganda = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = commi_news
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.075
+			}
+		}
+		
+		KRD_propaganda_among_workers_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = idea_stackanovite
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+			}
+		}
+		
+		KRD_screening_soviet_propaganda_films_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = support_cinema
+			modifier = {
+				stability_factor = 0.1
+				mobilization_speed = 0.1
+				surrender_limit = 0.1
+			}
+		}
+		
+		KRD_enlist_support_of_muslim_sheikhs_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = raj_marginalized_muslim_community_happy
+			modifier = {
+				stability_factor = 0.1
+				non_core_manpower = 0.05
+				compliance_growth = 0.1
+			}
+		}
+		
+		KRD_give_unruly_territories_for_tribal_plunder_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = SPR_torchbearers_of_tomorrow
+			modifier = {
+				war_support_factor = 0.2
+				compliance_growth = -0.15
+				resistance_growth = -0.15
+				required_garrison_factor = -0.2
+				resistance_garrison_penetration_chance = -0.1
+				local_factories = 0.15
+			}
+		}
+		
+		KRD_revenge_for_oppression = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_purge
+			modifier = {
+				compliance_growth = -0.05
+				resistance_growth = -0.2
+			}
+		}
+		
+		KRD_tolerance_of_kurdish_people = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = economy_of_gift_focus
+			modifier = {
+				compliance_growth = 0.1
+				resistance_growth = -0.1
+			}
+		}
+		
+		KRD_form_federal_republic_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = unified_legal_code
+			modifier = {
+				compliance_growth = 0.125
+				resistance_growth = -0.125
+				non_core_manpower = 0.05
+			}
+		}
+		
+		KRD_anticolonialism = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				resistance_growth = -0.25
+				non_core_manpower = 0.02
+			}
+		}
+	}
+}

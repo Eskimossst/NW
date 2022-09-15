@@ -1,0 +1,38 @@
+# befriend
+# alliance
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# alliance
+# contain
+# area_priority
+
+
+SOV_antagonize_communism_DEN = {
+	allowed = {
+		original_tag = SOV
+	}
+	reversed = yes
+	enable = {
+		OR = {
+			has_completed_focus = DEN_destroy_left_opposition
+			has_idea = DEN_left_opposition_idea
+		}
+		SOV = { has_government = communism }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = { type = send_volunteers_desire id = "SOV" value = -200 }
+	ai_strategy = { type = befriend id = "SOV" value = -200 }
+	ai_strategy = { type = support id = "SOV" value = -200 }
+	ai_strategy = { type = alliance id = "SOV" value = -200 }
+	ai_strategy = { type = diplo_action_desire id = "SOV" target = join_faction value = -1000 }
+	ai_strategy = { type = diplo_action_acceptance id = "SOV" target = offer_join_faction value = -1000 }
+}

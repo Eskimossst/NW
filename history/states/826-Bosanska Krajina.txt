@@ -1,0 +1,45 @@
+
+state={
+	id=826
+	name="STATE_826"
+	manpower = 500000
+	
+	
+	state_category = rural
+	
+	resources={
+		aluminium=1
+	}
+
+	local_supplies=0.0
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			6983 1
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+		1940.1.1 = {
+			owner = CRO
+			controller = CRO
+			add_core_of = CRO
+			remove_core_of = YUG
+		}
+		1941.11.1 = {
+			owner = CRO
+			controller = CRO
+			BOS = {
+				set_province_controller = 9922
+				set_province_controller = 6983
+			} 
+		}
+	}
+
+	provinces={
+		3985 6614 6983 9586 9922 9588 
+	}
+}

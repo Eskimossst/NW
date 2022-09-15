@@ -1,0 +1,30 @@
+state={
+	id=98
+	name="STATE_98"
+	manpower = 1398300
+	
+	state_category = rural
+	local_supplies=0.0
+	history={
+		owner = POL
+		
+		victory_points = {
+			3230 2 # Plock
+		}
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = POL
+		1941.11.1 = {
+			owner = PRS
+			controller = PRS
+			add_core_of = PRS
+			remove_core_of = GER
+		}
+	}
+
+	provinces={
+		3230 6259 6321 6567 9290 9316 13598 14681
+	}
+}

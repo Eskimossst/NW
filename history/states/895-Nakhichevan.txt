@@ -1,0 +1,34 @@
+state={
+	id=895
+	name="STATE_895"
+
+	local_supplies=0.0
+	history={
+		owner = SOV
+		victory_points = {
+			6997 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SOV
+		add_core_of = AZR
+		add_claim_by = ARM
+		1940.1.1 = {
+			owner = ARM
+			add_core_of = ARM
+		}
+		1941.11.1 = {
+			owner = AZR
+		}
+
+	}
+
+	provinces={
+		6997
+	}
+	manpower=110000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

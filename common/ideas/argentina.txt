@@ -1,0 +1,173 @@
+ideas = {
+	
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		Arsenal_Esteban_de_Luca = {
+		
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				original_tag = ARG
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+
+		}
+		
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		Astarsa = {
+		
+			picture = Astarsa
+			
+			allowed = {
+				original_tag = ARG
+			}
+			
+			modifier = {
+			industrial_capacity_dockyard = 0.1
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { naval_manufacturer }
+			
+		}
+			
+	}
+
+	industrial_concern = {
+	
+		YPF = {
+		
+			picture = YPF
+			
+			allowed = {
+				original_tag = ARG
+			}
+			
+			research_bonus = {
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Loma_Negra = {
+		
+			picture = Loma_Negra
+			
+			allowed = {
+				original_tag = ARG
+			}
+			
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+		Noblex = {
+		
+			picture = generic_electronics_concern_1
+			
+			allowed = {
+				original_tag = ARG
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+		
+	}
+	
+	materiel_manufacturer = {
+
+		designer = yes
+		
+		Fabricaciones_Militares = {
+
+			picture = Fabricaciones_Militares
+			
+			allowed = {
+				original_tag = ARG
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		DGME = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			
+			allowed = {
+				original_tag = ARG
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		Hispano_Argentina = {
+			
+			picture = generic_motorized_equipment_manufacturer_2
+
+			
+			allowed = {
+				original_tag = ARG
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.075
+				infantry_weapons = 0.075
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+}

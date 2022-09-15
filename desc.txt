@@ -1,0 +1,214 @@
+World War II is full of guile and heroism, great feats and terrible catastrophes.
+
+But what if it had been different?
+
+New Ways of Hearts iron hearts IV is ready to answer possible!
+
+This is a large-scale project that aims to improve the original game, making the gameplay more intense and interesting. New Ways adds new mechanics to the game and works through a lot of countries, adding a lot of new focuses, events and decisions — and most of them are based on the real story transmitted to the game in all its details.
+
+With the New Ways mod, you can see what the history of the XX century could have been... Or create it. Help the French anarchists unite the world into a single commune, allow General Sanjurjo to revive the Spanish Empire, create pan-turkists from Istanbul to Yakutsk, or finally unite the whole world in the World Soviet Republic — the choice is yours.
+
+
+[b]New Focus trees:[/b]
+— Generic + anarchist generic
+— France: regular, left, cagular, collaborationist and Free
+— Italy
+— Afghanistan (0.3)
+— Andorra (mini branch)
+— Aragon
+— Belgium (regular + collaborationist)
+— Bermuda (0.3)
+— Bulgaria
+— Dominicanas
+— Catalonia
+— Congo
+— Greece + Cretan revolt + Hellas
+— Egypt (0.3)
+— Ethiopia (0.3)
+— Habsburg Empire
+— Hohenberg People's Empire (0.3)
+— Hatay (mini branch)
+— Iraq (0.3)
+— British Palestine (0.3)
+— Liberia (0.3)
+— Liechtenstein (mini branch)
+— Ceylon (0.3)
+— Luxembourg
+— Rebels Of Macedonia (mini branch)
+— Maldives (mini branch) (0.3)
+— Monaco (mini branch)
+— Newfoundland (0.3)
+— Iran + Pro-British + Pro-Soviet (0.3)
+— South Azerbaijan (mini branch) (0.3)
+— Mehabad (mini branch) (0.3)
+— Nazi Iran (0.3)
+— Kashkai (0.3)
+— Arabistan (0.4)
+— Portugal
+— San Marino (mini branch)
+— Spain + 7 Spanish minors
+— Tangier (mini branch)
+— Turkey
+— Yemen (0.3)
+— Armenia + Azerbaijan + Georgia from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1453376736]Transcaucasia: A Caucasia Expansion[/url]
+— Tibet (0.4)
+— Nepal (0.4)
+— Bhutan (0.4)
+— Sikkim (0.4)
+— Rework of Turkey (0.5)
+— Kurdistan  0.5)
+— Albania (0.5)
+— Denmark (0.5)
+— Germany (0.5.1)
+
+
+[b]Gameplay:[/b]
+— In addition to the focuses, we also added a bunch of new mechanics that you can learn directly in the mod.
+— Reworked/added/adapted new portraits for most countries.
+— New game models for a new type of troops.
+— Many changes to the map and borders of regions in accordance with historical references.
+— A new, third scenario in which you can have fun with our new generic focus tree for minor countries.
+— New icons for national spirits, focuses, and other things.
+— New ideologies, as well as sub-ideologies and their political branches for some countries.
+— Added also Ministers and new traits for leaders, portraits for them and bonuses.
+
+And a lot of other things that you can meet in the process of playing our mod!
+
+
+Our other mods have been integrated into [b]New Ways[/b]:
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2020566688]More Spies[/url]
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2020509048]Nuclear bomb kill army[/url]
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1980451660]Dynamic News Headlines[/url]
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2465065890]Removing Generals[/url]
+[i]There is no need to install them together with New Ways![/i]
+
+Submods:
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2463339862]New Ways camera submod[/url]
+
+
+[b]Credits:[/b]
+— start track "Khepri - Rusted Desert"
+— [b]redbaron[/b]
+— used portraits from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1278152133]Jozef's Vanilla-Style Imperial German General Portraits[/url]
+— used army oob from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=788664629]Historical Japanese OOB with Manchukuo[/url]
+— with the author's permission, the mod is integrated [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2017272267]Realistic & Immersive Intelligence Agency Emblems - Uncensored Edition[/url]
+— with the author's permission, the mod is integrated [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1797400498]Latin America Iberia Icons[/url]
+— with the author's permission, the mod is integrated [url=https://steamcommunity.com/sharedfiles/filedetails/?id=947459516]Lamp's Eqpt Icons[/url]
+— with the author's permission, the mod is integrated [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1346517890]Trade Embargo Mod[/url]
+— with the author's permission, the mod is integrated [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2048998725]Recall Volunteers[/url]
+— thanks to [b]ExpertAI[/b] for valuable experience when working with AI templates and settings
+
+[b]Discord[/b] — https://discord.gg/cjCfXHN
+[b]Reddit[/b] — https://www.reddit.com/r/NewWaysMod/
+[b]VK[/b] — https://vk.com/hoi4nw
+[b]GitHub[/b] — https://github.com/NWDevTeam/NW_public_git
+
+
+======================
+
+
+Вторая мировая война полна коварства и героизма, великих подвигов и страшных катастроф.
+
+Но что, если бы всё произошло иначе?..
+
+Мод New Ways для Hearts of Iron IV готов ответить на этот вопрос максимально подробно!
+
+Это крупномасштабный проект, ставящий своей целью улучшить оригинальную игру, сделав игровой процесс более насыщенным и интересным. New Ways добавляет в игру новые механики и прорабатывает множество стран, добавляя много новых фокусов, событий и решений — и большая часть из них основывается на реальной истории, переданной в игру во всех подробностях.
+
+С модом New Ways вы сможете увидеть, какой могла быть история XX века... Или сотворить её самостоятельно. Помочь французским анархистам объединить мир в единую коммуну, позволить генералу Санхурхо возродить Испанскую империю, создать турецким пантюркистам государство от Стамбула до Якутска или, наконец, объединить весь мир в Советскую республику Земшария — выбор за вами.
+
+[b]Новые фокусные деревья для:[/b]
+— Генерик + Анархический генерик
+— Франции: обычная, левая, кагуляровская, коллаборационистская и Свободная
+— Италия
+— Афганистан (0.3)
+— Андорра (миниветка)
+— Арагон
+— Бельгия (обычная + коллаборационистская)
+— Бермуды (0.3)
+— Болгария
+— Доминиканы
+— Каталония
+— Конго
+— Греция + Критское восстание + Эллада
+— Египет (0.3)
+— Эфиопия (0.3)
+— Империя Габсбургов
+— Народная Империя Гогенбергов (0.3)
+— Хатай (миниветка)
+— Ирак (0.3)
+— Британская Палестина (0.3)
+— Либерия (0.3)
+— Лихтенштейн (миниветка)
+— Цейлон (0.3)
+— Люксембург
+— Восставшая Македония (миниветка)
+— Мальдивы (миниветка) (0.3)
+— Монако (миниветка)
+— Ньюфаундленд (0.3)
+— Иран + пробританский + просоветский (0.3)
+— Южный Азербайджан (миниветка) (0.3)
+— Мехабад (миниветка) (0.3)
+— Нацистский Иран (0.3)
+— Кашкай (0.3)
+— Арабистан (0.4)
+— Португалия
+— Сан-Марино (миниветка)
+— Испания + 7 Испанских миноров
+— Танжер (миниветка)
+— Турция
+— Йемен (0.3)
+— Армения + Азербайджан + Грузия из [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1453376736]Transcaucasia: A Caucasia Expansion[/url]
+— Тибет (0.4)
+— Непал (0.4)
+— Бутан (0.4)
+— Сикким (0.4)
+— Реворк Турции (0.5)
+— Курдистан (0.5)
+— Албания (0.5)
+— Дания (0.5)
+— Германия (0.5.1)
+
+
+
+Геймплей:
+— Помимо фокусов, мы также добавили кучу новых механик, с которыми вы можете ознакомиться непосредственно в моде.
+— Переделанные/добавленные/адаптированные новые портреты для большинства стран.
+— Новые игровые модели для нового вида войск.
+— Множество изменений карты и границ регионов в соответствии с историческими справками.
+— Новый, третий сценарий, в котором вы можете развлечься с нашим новым generic древом фокусов для миноров.
+— Новые иконки для национальных духов, фокусов и прочего.
+— Новые идеологии, а также субидеологии и их политические ветки для некоторых стран.
+— Добавлены также министры и новые трейты для лидеров, портреты для них и бонусы.
+
+И множество другого, что вы можете встретить в процессе игры в наш мод!
+
+
+В [b]New Ways[/b] были интегрированы другие наши моды:
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2020566688]More Spies[/url]
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2020509048]Nuclear bomb kill army[/url]
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1980451660]Dynamic News Headlines[/url]
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2465065890]Removing Generals[/url]
+[i]Устанавливать их совместно с New Ways нет нужды![/i]
+
+Сабмоды:
+— [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2463339862]New Ways camera submod[/url]
+
+
+[b]Авторские права:[/b]
+— трек в меню "Khepri - Rusted Desert"
+— благодарность [b]redbaron[/b]
+— использованы портреты из [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1278152133]Jozef's Vanilla-Style Imperial German General Portraits[/url]
+— использованы армейские шаблоны из [url=https://steamcommunity.com/sharedfiles/filedetails/?id=788664629]Historical Japanese OOB with Manchukuo[/url]
+— с разрешения автора интегрирован мод [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2017272267]Realistic & Immersive Intelligence Agency Emblems - Uncensored Edition[/url]
+— с разрешения автора интегрирован мод [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1797400498]Latin America Iberia Icons[/url]
+— с разрешения автора интегрирован мод [url=https://steamcommunity.com/sharedfiles/filedetails/?id=947459516]Lamp's Eqpt Icons[/url]
+— с разрешения автора интегрирован мод [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1346517890]Trade Embargo Mod[/url]
+— с разрешения автора интегрирован мод [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2048998725]Recall Volunteers[/url]
+— благодарность [b]ExpertAI[/b] за ценный опыт при работе с шаблонами и настройками ИИ
+
+
+[b]Discord[/b] — https://discord.gg/cjCfXHN
+[b]Reddit[/b] — https://www.reddit.com/r/NewWaysMod/
+[b]VK[/b] — https://vk.com/hoi4nw
+[b]GitHub[/b] — https://github.com/NWDevTeam/NW_public_git

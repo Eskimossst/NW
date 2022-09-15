@@ -1,0 +1,107 @@
+﻿capital = 609
+
+oob = "EHB_1936"
+ 
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+}
+
+1939.1.1 = {
+	if = {
+		limit = { date < 1941.12.4 }
+		add_to_war = {
+			targeted_alliance = JAP
+			enemy = CHI
+			hostility_reason = puppet
+		}
+		
+		add_political_power = 1198
+		
+		#generic focuses
+		complete_national_focus = army_effort
+		complete_national_focus = equipment_effort
+		complete_national_focus = motorization_effort
+		complete_national_focus = aviation_effort
+		complete_national_focus = naval_effort
+		complete_national_focus = flexible_navy
+		complete_national_focus = industrial_effort
+		complete_national_focus = construction_effort
+		complete_national_focus = production_effort
+	}
+	
+	oob = "MEN_1939"
+	set_technology = {
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_popularities = {
+	fascism = 0
+	neutrality = 100
+	communism = 0
+}
+
+add_ideas = {
+	partial_economic_mobilisation
+	CHI_backward_industry2
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = EHB_yin_jukeng
+recruit_character = EHB_cheng_wu
+recruit_character = EHB_deng_peng
+recruit_character = EHB_tan_wu
+recruit_character = EHB_liao_lü
+recruit_character = EHB_xie_ting
+recruit_character = EHB_zhu_ye
+recruit_character = EHB_cheng_ma
+
+
+1939.1.1 = {
+	set_popularities = {
+		fascism = 100
+	}
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1938.3.27"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	create_country_leader = {
+		name = "Wang Kemin"
+		desc = "POLITICS_WANG_KEMIN_DESC"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+		expire = "1965.1.1"
+		ideology = nationalism_ideology
+		traits = { 
+		}
+	}
+}

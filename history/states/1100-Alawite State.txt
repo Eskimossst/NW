@@ -1,0 +1,39 @@
+
+state={
+	id=1100
+	name="STATE_1100"
+	manpower = 300000
+	
+	state_category = pastoral
+	
+	local_supplies=0.0
+	history={
+		owner = ALW
+		add_core_of = ALW
+		victory_points = {
+			1088 1 
+		}
+		buildings = {
+			infrastructure = 2
+			1088 = {
+				naval_base = 1
+			}			
+		}
+		1937.1.1 = {
+			owner = SYR
+			add_core_of = SYR
+		}
+		1941.11.1 = {
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+			}
+		}
+
+	}
+
+	
+	provinces={
+		1088 10087
+	}
+}

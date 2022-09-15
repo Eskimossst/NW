@@ -1,0 +1,291 @@
+ideas = {
+
+	country = {
+		
+		DOM_cult_Truhilio = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = dom_cult_truhilio
+			
+			research_bonus = {
+			}
+			modifier = {
+				fascism_drift = 0.1
+				conscription = 0.01
+			}
+		}
+	
+		DOM_national_gvardia_focus = {
+
+			picture = generic_reserve_divisions
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				resistance_damage_to_garrison = -0.2
+			}
+		}
+		
+		DOM_license_production = {
+
+			picture = generic_license_production
+
+			allowed = {
+				has_dlc = "Death or Dishonor"
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			modifier = {
+				license_air_purchase_cost = -0.5
+			}
+		}
+		
+		DOM_statue_truhilio_focus = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+	
+		DOM_agressive_focus = {
+
+			picture = generic_reserve_divisions
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				justify_war_goal_time = -0.20
+				war_support_factor = 0.1
+			}
+		}
+		
+		DOM_era_truhilio_focus = {
+
+			picture = generic_reserve_divisions
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			communism_drift = -0.02
+			democratic_drift = -0.02
+			drift_defence_factor = 0.5
+			}
+		}
+		
+		DOM_national_park_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		
+		DOM_delo_farm_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		
+		DOM_american_tamozna = {
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				country_exists = USA
+				NOT = { has_war_with = USA }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.25
+			}
+		}
+		
+		DOM_investition_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		DOM_anticommunism_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = anti_soviet_pact
+			
+			modifier = {
+				communism_drift = -0.05
+			}
+		}
+		
+		DOM_sugar_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.10
+			}
+		}
+		
+		DOM_liberty_info_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+			democratic_drift = 0.03
+			drift_defence_factor = 0.25
+			}
+		}
+		
+		DOM_fight_for_vlast = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+			political_power_gain = -0.20
+			consumer_goods_factor = 0.05
+			neutrality_drift = 0.05
+			communism_drift = 0.05
+			democratic_drift = 0.05
+			}
+		}
+		
+		DOM_terra_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			political_power_gain = 0.15
+			}
+		}
+	}
+}

@@ -1,0 +1,551 @@
+	
+    entity = {
+	    clone = "FRA_infantry_entity"
+	    name = "FRC_infantry_entity"
+	    pdxmesh = "FRA_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_2_entity"
+	    name = "FRC_infantry_2_entity"
+	    pdxmesh = "FRA_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_left_entity"
+	    name = "FRC_infantry_weapon_mg_left_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_right_entity"
+	    name = "FRC_infantry_weapon_mg_right_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_long_idle_entity"
+	    name = "FRC_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_right_entity"
+	    name = "FRC_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_left_entity"
+	    name = "FRC_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_long_idle_entity"
+	    name = "FRC_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = FRC_infantry_2_entity
+	name = FRC_infantry_3_entity
+}
+
+
+    entity = {
+	    clone = "FRA_infantry_entity"
+	    name = "FRR_infantry_entity"
+	    pdxmesh = "FRA_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_2_entity"
+	    name = "FRR_infantry_2_entity"
+	    pdxmesh = "FRA_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_left_entity"
+	    name = "FRR_infantry_weapon_mg_left_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_right_entity"
+	    name = "FRR_infantry_weapon_mg_right_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_long_idle_entity"
+	    name = "FRR_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_right_entity"
+	    name = "FRR_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_left_entity"
+	    name = "FRR_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_long_idle_entity"
+	    name = "FRR_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = FRR_infantry_2_entity
+	name = FRR_infantry_3_entity
+}
+
+
+    entity = {
+	    clone = "FRA_infantry_entity"
+	    name = "FRF_infantry_entity"
+	    pdxmesh = "FRA_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_2_entity"
+	    name = "FRF_infantry_2_entity"
+	    pdxmesh = "FRA_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_left_entity"
+	    name = "FRF_infantry_weapon_mg_left_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_right_entity"
+	    name = "FRF_infantry_weapon_mg_right_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_mg_long_idle_entity"
+	    name = "FRF_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "FRA_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_right_entity"
+	    name = "FRF_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_left_entity"
+	    name = "FRF_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "FRA_infantry_weapon_rifle_long_idle_entity"
+	    name = "FRF_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "FRA_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = FRF_infantry_2_entity
+	name = FRF_infantry_3_entity
+}
+
+    entity = {
+	    clone = "commonwealth_gfx_infantry_entity"
+	    name = "BPL_infantry_entity"
+	    pdxmesh = "ENG_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "commonwealth_gfx_infantry_2_entity"
+	    name = "BPL_infantry_2_entity"
+	    pdxmesh = "ENG_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_left_entity"
+	    name = "BPL_infantry_weapon_mg_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_right_entity"
+	    name = "BPL_infantry_weapon_mg_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_long_idle_entity"
+	    name = "BPL_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_right_entity"
+	    name = "BPL_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_left_entity"
+	    name = "BPL_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_long_idle_entity"
+	    name = "BPL_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = BPL_infantry_2_entity
+	name = BPL_infantry_3_entity
+}
+
+    entity = {
+        clone = "RAJ_infantry_entity"
+	    name = "LKA_infantry_entity"
+	    pdxmesh = "RAJ_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "RAJ_infantry_2_entity"
+	    name = "LKA_infantry_2_entity"
+	    pdxmesh = "RAJ_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "RAJ_infantry_weapon_mg_left_entity"
+	    name = "LKA_infantry_weapon_mg_left_entity"
+	    pdxmesh = "RAJ_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "RAJ_infantry_weapon_mg_right_entity"
+	    name = "LKA_infantry_weapon_mg_right_entity"
+	    pdxmesh = "RAJ_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "RAJ_infantry_weapon_mg_long_idle_entity"
+	    name = "LKA_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "RAJ_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "RAJ_infantry_weapon_rifle_right_entity"
+	    name = "LKA_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "RAJ_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "RAJ_infantry_weapon_rifle_left_entity"
+	    name = "LKA_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "RAJ_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "RAJ_infantry_weapon_rifle_long_idle_entity"
+	    name = "LKA_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "RAJ_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = LKA_infantry_2_entity
+	name = LKA_infantry_3_entity
+    }
+	
+	entity = {
+	    clone = "commonwealth_gfx_infantry_entity"
+	    name = "NMB_infantry_entity"
+	    pdxmesh = "ENG_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "commonwealth_gfx_infantry_2_entity"
+	    name = "NMB_infantry_2_entity"
+	    pdxmesh = "ENG_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_left_entity"
+	    name = "NMB_infantry_weapon_mg_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_right_entity"
+	    name = "NMB_infantry_weapon_mg_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_long_idle_entity"
+	    name = "NMB_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_right_entity"
+	    name = "NMB_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_left_entity"
+	    name = "NMB_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_long_idle_entity"
+	    name = "NMB_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = NMB_infantry_2_entity
+	name = NMB_infantry_3_entity
+}
+
+    entity = {
+	    clone = "commonwealth_gfx_infantry_entity"
+	    name = "NFL_infantry_entity"
+	    pdxmesh = "ENG_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "commonwealth_gfx_infantry_2_entity"
+	    name = "NFL_infantry_2_entity"
+	    pdxmesh = "ENG_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_left_entity"
+	    name = "NFL_infantry_weapon_mg_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_right_entity"
+	    name = "NFL_infantry_weapon_mg_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_long_idle_entity"
+	    name = "NFL_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_right_entity"
+	    name = "NFL_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_left_entity"
+	    name = "NFL_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_long_idle_entity"
+	    name = "NFL_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = NFL_infantry_2_entity
+	name = NFL_infantry_3_entity
+}
+	
+	entity = {
+	    clone = "commonwealth_gfx_infantry_entity"
+	    name = "ZIM_infantry_entity"
+	    pdxmesh = "ENG_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "commonwealth_gfx_infantry_2_entity"
+	    name = "ZIM_infantry_2_entity"
+	    pdxmesh = "ENG_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_left_entity"
+	    name = "ZIM_infantry_weapon_mg_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_right_entity"
+	    name = "ZIM_infantry_weapon_mg_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_long_idle_entity"
+	    name = "ZIM_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_right_entity"
+	    name = "ZIM_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_left_entity"
+	    name = "ZIM_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_long_idle_entity"
+	    name = "ZIM_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = ZIM_infantry_2_entity
+	name = ZIM_infantry_3_entity
+}
+	
+	 entity = {
+	    clone = "commonwealth_gfx_infantry_entity"
+	    name = "BMD_infantry_entity"
+	    pdxmesh = "ENG_infantry_rifle_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "commonwealth_gfx_infantry_2_entity"
+	    name = "BMD_infantry_2_entity"
+	    pdxmesh = "ENG_infantry_mg_mesh"
+        scale = 0.8					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_left_entity"
+	    name = "BMD_infantry_weapon_mg_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_right_entity"
+	    name = "BMD_infantry_weapon_mg_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0					
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_mg_long_idle_entity"
+	    name = "BMD_infantry_weapon_mg_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_mg_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_right_entity"
+	    name = "BMD_infantry_weapon_rifle_right_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_left_entity"
+	    name = "BMD_infantry_weapon_rifle_left_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	    clone = "ENG_infantry_weapon_rifle_long_idle_entity"
+	    name = "BMD_infantry_weapon_rifle_long_idle_entity"
+	    pdxmesh = "ENG_infantry_weapon_rifle_mesh"
+        scale = 1.0
+    }	
+	
+	entity = {
+	clone = BMD_infantry_2_entity
+	name = BMD_infantry_3_entity
+}

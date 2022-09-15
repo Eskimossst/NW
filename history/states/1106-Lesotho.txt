@@ -1,0 +1,27 @@
+state={
+	id=1106
+	name="STATE_1106"
+	manpower = 650000
+	
+	state_category = pastoral
+
+
+	local_supplies=0.0
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			12648 1
+		}
+		add_core_of = LES
+		1941.11.1 = {
+			owner = SAF
+		}
+	}
+
+	provinces={
+		4556 14221 14224 14226 14229
+	}
+}

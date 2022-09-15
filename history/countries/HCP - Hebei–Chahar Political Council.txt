@@ -1,0 +1,74 @@
+﻿capital = 608
+
+oob = "HCP_1936"
+
+set_technology = {
+    infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+}
+
+set_popularities = {
+	fascism = 0
+	neutrality = 100
+	communism = 0
+}
+
+recruit_character = HCP_song_zheyuan
+recruit_character = HCP_zhang_zizhong
+recruit_character = HCP_ji_xingwen
+recruit_character = HCP_feng_zhian
+recruit_character = HCP_tang_yulin
+recruit_character = HCP_liu_ruming
+recruit_character = HCP_wang_sun
+recruit_character = HCP_yu_dong
+recruit_character = HCP_huang_tian
+recruit_character = HCP_dong_peng
+recruit_character = HCP_zhang_peng
+recruit_character = HCP_li_qiu
+recruit_character = HCP_kwong_ting
+
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+		date < 1941.12.4
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+		CHI_army_corruption_1
+		CHI_incompetent_officers
+	}
+}
+
+add_ideas = {
+	partial_economic_mobilisation
+	CHI_backward_industry2
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	remove_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+		CHI_army_corruption_1
+		CHI_incompetent_officers
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

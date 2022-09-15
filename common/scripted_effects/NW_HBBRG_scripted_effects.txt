@@ -1,0 +1,160 @@
+load_all_traits = {
+	if = {
+		limit = {
+			has_country_flag = kingHUN_flag
+			NOT = { has_country_leader_with_trait = kingHUN }
+		}
+		add_country_leader_trait = kingHUN
+	}
+	if = {
+		limit = {
+			has_country_flag = kingAUS_flag
+			NOT = { has_country_leader_with_trait = kingAUS }
+		}
+		add_country_leader_trait = kingAUS
+	}
+	if = {
+		limit = {
+			has_country_flag = kingCZE_flag
+			NOT = { has_country_leader_with_trait = kingCZE }
+		}
+		add_country_leader_trait = kingCZE
+	}
+	if = {
+		limit = {
+			has_country_flag = kingPOL_flag
+			NOT = { has_country_leader_with_trait = kingPOL }
+		}
+		add_country_leader_trait = kingPOL
+	}
+	if = {
+		limit = {
+			has_country_flag = kingUKR_flag
+			NOT = { has_country_leader_with_trait = kingUKR }
+		}
+		add_country_leader_trait = kingUKR
+	}
+	if = {
+		limit = {
+			has_country_flag = kingBLR_flag
+			NOT = { has_country_leader_with_trait = kingBLR }
+		}
+		add_country_leader_trait = kingBLR
+	}
+	if = {
+		limit = {
+			has_country_flag = kingYUG_flag
+			NOT = { has_country_leader_with_trait = kingYUG }
+		}
+		add_country_leader_trait = kingYUG
+	}
+	if = {
+		limit = {
+			has_country_flag = kingBOS_flag
+			NOT = { has_country_leader_with_trait = kingBOS }
+		}
+		add_country_leader_trait = kingBOS
+	}
+	if = {
+		limit = {
+			has_country_flag = kingSOR_flag
+			NOT = { has_country_leader_with_trait = kingSOR }
+		}
+		add_country_leader_trait = kingSOR
+	}
+	if = {
+		limit = {
+			has_country_flag = kingVOJ_flag
+			NOT = { has_country_leader_with_trait = kingVOJ }
+		}
+		add_country_leader_trait = kingVOJ
+	}
+	if = {
+		limit = {
+			has_country_flag = kingMNT_flag
+			NOT = { has_country_leader_with_trait = kingMNT }
+		}
+		add_country_leader_trait = kingMNT
+	}
+	if = {
+		limit = {
+			has_country_flag = kingBUL_flag
+			NOT = { has_country_leader_with_trait = kingBUL }
+		}
+		add_country_leader_trait = kingBUL
+	}
+	if = {
+		limit = {
+			has_country_flag = kingROM_flag
+			NOT = { has_country_leader_with_trait = kingROM }
+		}
+		add_country_leader_trait = kingROM
+	}
+	if = {
+		limit = {
+			has_country_flag = kingBEL_flag
+			NOT = { has_country_leader_with_trait = kingBEL }
+		}
+		add_country_leader_trait = kingBEL
+	}
+	if = {
+		limit = {
+			has_country_flag = kingSPA_flag
+			NOT = { has_country_leader_with_trait = kingSPA }
+		}
+		add_country_leader_trait = kingSPA
+	}
+	if = {
+		limit = {
+			has_country_flag = kingMEX_flag
+			NOT = { has_country_leader_with_trait = kingMEX }
+		}
+		add_country_leader_trait = kingMEX
+	}
+	if = {
+		limit = {
+			has_country_flag = kingSWI_flag
+			NOT = { has_country_leader_with_trait = kingSWI }
+		}
+		add_country_leader_trait = kingSWI
+	}
+	
+	log = "[GetDateText]: [Root.GetName]: load_all_traits"
+}
+
+set_cosmetic_HBBRG_use_subject = {
+	if = {
+		limit = { OR = { original_tag = ADR original_tag = ALB original_tag = ARA original_tag = AUS original_tag = BEL original_tag = BLR original_tag = BOS original_tag = BUL original_tag = CAT original_tag = CRI original_tag = CRO original_tag = CZE original_tag = DEN original_tag = DNZ original_tag = ENG original_tag = EST original_tag = FIN original_tag = FIU original_tag = GER original_tag = GRE original_tag = HOL original_tag = HRZ original_tag = HUN original_tag = IRE original_tag = ITA original_tag = KOS original_tag = LAT original_tag = LIE original_tag = LIT original_tag = LUX original_tag = MAC original_tag = MNC original_tag = MNT original_tag = NIR original_tag = NOR original_tag = POL original_tag = POR original_tag = PRS original_tag = ROM original_tag = SCO original_tag = SER original_tag = SLO original_tag = SLV original_tag = SMA original_tag = SWE original_tag = SWI original_tag = TRA original_tag = TUR original_tag = UKR original_tag = VAT original_tag = VLA original_tag = VNC original_tag = VOJ original_tag = WLS original_tag = YUG original_tag = ASU original_tag = BRI original_tag = ESS original_tag = ICE } }
+		random_country_with_original_tag = {
+			original_tag_to_check = PREV
+			limit = {
+				original_tag = PREV
+				is_dynamic_tag = no
+			}
+			save_event_target_as = true_tag
+			PREV = {
+				meta_effect = {
+					text = {
+						set_cosmetic_tag = [TAG]_HBBRG_use_subject
+					}
+					TAG = "[true_tag.GetTag]"
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = { OR = { original_tag = FRA original_tag = FRC original_tag = FRR } }
+		set_cosmetic_tag = FRA_HBBRG_use_subject
+	}
+	else_if = {
+		limit = {
+			is_literally_spain = yes
+			NOT = { original_tag = ARA original_tag = VLA original_tag = CAT }
+		}
+		set_cosmetic_tag = SPR_HBBRG_use_subject
+	}
+	else = {
+		set_cosmetic_tag = HBBRG_use_subject
+	}
+}
+

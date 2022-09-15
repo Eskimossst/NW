@@ -1,0 +1,28 @@
+state={
+	id=831
+	name="STATE_831"
+	
+	state_category = pastoral
+	local_supplies=0.0
+	history={
+		owner = ENG
+		add_core_of = ZAN
+		victory_points = {
+			14331 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		1941.11.1 = {
+			owner = TZN
+			add_core_of = TZN
+		}
+	}
+
+	provinces={
+		14331
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+}
+

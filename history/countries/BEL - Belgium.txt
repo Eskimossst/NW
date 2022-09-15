@@ -1,0 +1,228 @@
+﻿if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	add_ideas = BEL_tank_school_spirit
+	set_technology = {
+		own_tank_school_tech = 1
+		work_on_technical_task_tech = 1
+	}
+	add_to_array = { global.BEL_tank_school_spirit_array = THIS }
+}
+
+
+capital = 6
+
+oob = "BEL_1936"
+
+set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.3 #we see what you are doing there Adolf
+starting_train_buffer = 3.0
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+	
+	tech_sniper_squad = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+add_ideas = {
+	disarmed_nation
+	BEL_social_pacifism
+	BEL_flemish_walloon_conflict
+	BEL_incompetent_monarch
+}
+add_manpower = 100000
+
+
+recruit_character = BEL_hubert_pierlot
+recruit_character = BEL_joseph_jacquemotte
+recruit_character = BEL_leon_degrelle
+recruit_character = BEL_mcl_keyaerts
+recruit_character = BEL_georges_timmermans
+recruit_character = BEL_gilles_wyvekens
+recruit_character = BEL_fritz_conrad
+recruit_character = BEL_raoul_overstraeten
+recruit_character = BEL_georges_deffontaine
+recruit_character = BEL_victor_strydonck_burkel
+recruit_character = BEL_georges_vereecken
+recruit_character = BEL_jules_pire
+recruit_character = BEL_oscar_michiels
+recruit_character = BEL_charles_bastin
+recruit_character = BEL_yvan_gerard
+recruit_character = BEL_rene_lagrou
+recruit_character = BEL_fritz_lob
+recruit_character = BEL_jules_iserentant
+recruit_character = BEL_paul_henri_spaak
+recruit_character = BEL_gaston_eyskens
+recruit_character = BEL_paul_van_zeeland
+recruit_character = BEL_jacques_mesnil
+recruit_character = BEL_julien_lahaut
+recruit_character = BEL_staf_de_clercq
+recruit_character = BEL_leopold_iii
+recruit_character = BEL_maximilien_de_neve_de_roden
+recruit_character = BEL_libertelie_thomas
+recruit_character = BEL_jeanbaptiste_piron
+recruit_character = BEL_eugene_leopold_jean_vantrooyen
+recruit_character = BEL_emile_vandervelde
+recruit_character = BEL_henri_de_man
+recruit_character = BEL_emile_coulonvaux
+recruit_character = BEL_paul_emile_janson
+
+
+1939.1.1 = {
+	add_ideas = {
+		limited_conscription
+	}
+
+	add_political_power = 1198
+	add_command_power = 100
+	
+	oob = "BEL_1939"
+	set_technology = {
+		fighter1 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		synth_oil_experiments = 1
+		fuel_refining2 = 1
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = COG
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = COG
+	}
+}
+
+
+set_popularities = {
+	democratic = 76
+	fascism = 11
+	communism = 6
+	neutrality = 7
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+1939.1.1 = {
+
+	set_popularities = {
+		democratic = 87
+		fascism = 8
+		communism = 5
+	}
+	
+	set_politics = {	
+		ruling_party = democratic
+		last_election = "1939.4.2"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
+
+set_convoys = 80
+set_stability = 0.75
+
+
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	remove_ideas = {
+		BEL_uncertainty_in_government
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}
+
+1941.12.5 = {
+	remove_ideas = {
+		BEL_social_pacifism
+		BEL_flemish_walloon_conflict
+		BEL_incompetent_monarch
+	}
+	set_autonomy = {
+		target = COG
+		autonomous_state = autonomy_free
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=45
+	name="STATE_45" # Vojvodina
+	manpower = 440621
+	
+	state_category = rural
+
+	local_supplies=0.0
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			619 3
+		}
+		add_core_of = YUG
+		add_core_of = SER
+		add_core_of = VOJ
+		1941.11.1 = {
+			owner = VOJ
+			controller = VOJ
+			remove_core_of = YUG
+		}
+	}
+
+	provinces={
+		619 3617 3623 9608 9621
+	}
+}

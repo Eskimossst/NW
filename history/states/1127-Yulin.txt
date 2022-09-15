@@ -1,0 +1,39 @@
+state={
+	id=1127
+	name="STATE_1127"
+	provinces={
+		13450 13952 14369
+	}
+	state_category = town
+	
+	
+	local_supplies=0.0
+	history={
+		owner = YUL
+		add_core_of = YUL
+		add_core_of = PRC
+		add_core_of = CHI
+		add_core_of = SHX		
+		victory_points = {
+			14369 3 
+		}		
+		
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+		}
+		
+		1940.1.1 = {
+			owner = CHI
+			controller = CHI
+			remove_core_of = MEN
+		}
+		1941.11.1 = {
+			owner = PRC
+			controller = PRC
+		}
+	}
+	manpower=907826
+	buildings_max_level_factor=1.000
+}

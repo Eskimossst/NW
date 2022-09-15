@@ -1,0 +1,30 @@
+state={
+	id=778
+	name="STATE_778"
+	manpower = 585579
+	
+	state_category = pastoral
+	
+	local_supplies=0.0
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			614 1
+		}
+		add_core_of = YUG
+		add_core_of = SER
+		add_core_of = VOJ
+		1941.11.1 = {
+			owner = VOJ
+			controller = VOJ
+			remove_core_of = YUG
+		}
+	}
+	provinces={
+		614 3614 6643 11787 	
+	}
+}

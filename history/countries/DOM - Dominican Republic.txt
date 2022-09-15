@@ -1,0 +1,134 @@
+﻿capital = 319
+
+oob = "DOM_1936"
+set_stability = 0.5
+set_war_support = 0.4
+
+add_ideas = {
+	DOM_american_tamozna
+	limited_conscription
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+}
+set_country_flag = monroe_doctrine
+set_convoys = 20
+
+1939.1.1 = {
+	if = {
+		limit = { date < 1941.12.4 }
+		add_political_power = 1198
+
+		complete_national_focus = DOM_cult_Truhilio
+		complete_national_focus = DOM_rename_capital
+		complete_national_focus = DOM_truhilio_god
+		complete_national_focus = DOM_statue_truhilio
+		complete_national_focus = DOM_claim_haiti
+		complete_national_focus = DOM_petrushka_rezna
+		complete_national_focus = DOM_anti_haiti
+		complete_national_focus = DOM_doctrine_effort_usa
+		complete_national_focus = DOM_air_school
+	}
+	
+	oob = "DOM_1939"
+	set_technology = {
+		infantry_weapons1 = 1
+		
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		fuel_silos = 1
+		oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_popularities = {
+	fascism = 100
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1934.5.16"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = DOM_rafael_trujillo
+recruit_character = DOM_Jacinto_Peynado
+recruit_character = DOM_Manuel_Troncoso_de_la_Concha
+recruit_character = DOM_juan_emilio_bosch_gavino
+recruit_character = DOM_jacinto_bienvenido_peynado
+recruit_character = DOM_porfirio_rubirosa
+recruit_character = DOM_manuel_de_jesus_troncoso
+recruit_character = DOM_victor_vinas_roman
+recruit_character = DOM_domingo_de_los_santos_ortiz
+recruit_character = DOM_anibal_vallejo_sosa
+recruit_character = DOM_julio_ortega_frier
+recruit_character = DOM_humberto_rojas
+recruit_character = DOM_honoracio_yuna_robles
+recruit_character = DOM_jesus_da_costa_ruiz
+recruit_character = DOM_edgar_martinez
+recruit_character = DOM_diego_trabajo_ruiz
+recruit_character = DOM_frank_feliz_miranda
+recruit_character = DOM_manuel_pena_battle
+recruit_character = DOM_gerardo_espaillat
+recruit_character = DOM_jose_miguel_moncada
+
+
+1939.1.1 = {
+	set_popularities = {
+		fascism = 100
+	}
+	set_politics = {	
+		ruling_party = fascism
+		last_election = "1934.5.16"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	add_country_leader_role = {
+		character = DOM_Jacinto_Peynado
+		promote_leader = yes
+		country_leader={
+			ideology=nationalism_ideology
+			expire="1949.3.7"
+			id=801
+		}
+	}
+}
+
+1941.12.5 = {
+	remove_ideas = {
+		DOM_american_tamozna
+		DOM_cult_Truhilio
+		DOM_statue_truhilio_focus
+	}
+}
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

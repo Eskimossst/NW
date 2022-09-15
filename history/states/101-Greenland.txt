@@ -1,0 +1,30 @@
+state=
+{
+	id=101
+	name="STATE_101"
+	manpower = 18000
+	state_category = pastoral
+	
+	local_supplies=0.0
+	history=
+	{
+		owner = DEN
+		victory_points = { 10245 1 }		
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			10245 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GRO
+		1941.11.1 = {
+			owner = GRO
+			add_claim_by = NOR
+			add_claim_by = CAN
+		}
+	}
+	provinces = {
+		10245 12512 13216 13237 13252 13253 13256 13260 13262 13270 13275 13282 13217 13234 13240 13245 13267
+	}
+}

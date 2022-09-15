@@ -1,0 +1,169 @@
+﻿capital = 980
+
+oob = "BPL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
+}
+
+set_convoys = 20
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = commonwealth_research
+}
+set_cosmetic_tag = BPL_ENG
+set_country_flag = mandatory_country
+if = {
+	limit = { date < 1940.1.1 }
+	455 = {	force_disable_resistance = BPL }
+	1053 = { force_disable_resistance = BPL }
+	1054 = { force_disable_resistance = BPL }
+}
+
+1939.1.1 = {
+	if = {
+		limit = { date < 1940.1.1 }
+		add_political_power = 1198
+		
+		#generic focuses
+		complete_national_focus = BPL_economic_development_of_palestine
+		complete_national_focus = BPL_bet_on_alum
+		complete_national_focus = BPL_revival_of_palestinian_economy
+		complete_national_focus = BPL_build_port_in_telaviv
+		complete_national_focus = BPL_build_railways
+		complete_national_focus = BPL_land_cultivation_near_jordan_river
+		complete_national_focus = BPL_development_of_agriculture
+		complete_national_focus = BPL_ease_situation_of_the_peasantry
+		unlock_national_focus = BPL_peel_commission
+		unlock_national_focus = BPL_woodhead_commission
+		complete_national_focus = BPL_jewish_arab_compromise
+		complete_national_focus = BPL_settlement_of_economic_questions
+		complete_national_focus = BPL_restoration_position_of_arab_peasants
+		complete_national_focus = BPL_extension_of_police
+		complete_national_focus = BPL_introduction_of_strict_procedures
+	}
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	
+	create_country_leader = {
+		name = "Harold MacMichael"
+		desc = "POLITICS_HAROLD_MACMICHAEL_DESC"
+		picture = "gfx/leaders/BPL/Portrait_British_Palestine_Harold_MacMichael.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+		}
+	}
+}
+
+add_ideas = {
+	BPL_plight_of_arab_peasantry
+}
+set_variable = { BPL_jews_tensions_total = 10 } 
+set_variable = { BPL_arab_tensions_total = 10 } 
+
+set_popularities = {
+	neutrality = 45
+	fascism = 30
+	democratic = 15
+	anarchism = 3
+	communism = 7
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+recruit_character = BPL_arthur_grenfell_wauchope
+recruit_character = BPL_chaim_weizmann
+recruit_character = BPL_yitzhak_tabenkin
+recruit_character = BPL_amin_al_husseini
+recruit_character = BPL_radvan_alhilu_musa
+recruit_character = BPL_jabra_nicola
+recruit_character = BPL_martin_buber
+recruit_character = BPL_david_ben_gurion
+recruit_character = BPL_raghib_al_nashashibi
+recruit_character = BPL_berl_katznelson
+recruit_character = BPL_uri_zvi_greenberg
+recruit_character = BPL_eliezer_berkovich
+recruit_character = BPL_bulus_farah
+recruit_character = BPL_khalil_al_sakakini
+recruit_character = BPL_abd_al_rahim_al_hajj_muhammad
+recruit_character = BPL_alexander_eig
+recruit_character = BPL_yitzhak_ben_zvi
+recruit_character = BPL_fawzi_al_qawuqji
+recruit_character = BPL_pinhas_rutenberg
+recruit_character = BPL_charles_tegart
+recruit_character = BPL_walter_guinness
+recruit_character = BPL_harry_herbert
+recruit_character = BPL_orde_wingate
+recruit_character = BPL_john_dill
+recruit_character = BPL_archibald_wavell
+recruit_character = BPL_hassan_salamah
+recruit_character = BPL_abd_al_qadir_al_hussayni
+recruit_character = BPL_shmuel_mikunis
+recruit_character = BPL_abba_ahimeir
+recruit_character = RAJ_orde_wingate
+recruit_character = BPL_frederick_peake
+recruit_character = BPL_john_bagot_glubb
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	remove_ideas = {
+		BPL_plight_of_arab_peasantry
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

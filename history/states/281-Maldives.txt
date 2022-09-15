@@ -1,0 +1,33 @@
+
+state={
+	id=281
+	name="STATE_281"
+	manpower=79300
+	
+	state_category = pastoral
+
+	local_supplies=0.0
+	history={
+		owner = MLD
+		add_core_of = MLD
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			4967 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4967 1
+		}
+		1941.11.1 = {
+			owner = LKA
+			add_core_of = LKA
+			remove_core_of = MLD
+		}
+	}
+
+	provinces={
+		4967 14191 14192 14193 14194 14195 14196
+	}
+}

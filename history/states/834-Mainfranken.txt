@@ -1,0 +1,27 @@
+
+state={
+	id=834
+	name="STATE_834"
+	manpower = 3075797
+
+	state_category = pastoral
+
+	local_supplies=0.0
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RAJ
+		1941.11.1 = {
+			add_claim_by = LKA
+		}
+		victory_points = {
+			7402 5
+		}		
+	}
+
+	provinces={
+		1321 7402
+	}
+}

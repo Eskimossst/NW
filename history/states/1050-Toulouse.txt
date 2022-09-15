@@ -1,0 +1,28 @@
+
+state={
+	id=1050
+	name="STATE_1050" # Languedoc
+	manpower = 329044
+	
+	
+	state_category = city
+
+	local_supplies=0.0
+	history={
+		owner = FRA
+		victory_points = {
+			6766 10 
+		}		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1			
+		}
+		add_core_of = FRA
+		add_core_of = OCC
+	}
+
+	provinces={
+		752 943 3751 3915 3946 3948 6766 6915 6917 6931 9723
+	}
+}

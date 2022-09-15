@@ -1,0 +1,131 @@
+﻿capital = 757
+
+oob = "TIB_1936"
+
+set_stability = 0
+set_war_support = 0
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+}
+
+set_research_slots = 1
+
+add_ideas = {
+	TIB_tribute_to_nepal
+	TIB_power_without_power
+	TIB_agrarian_country
+	TIB_conservatism
+	TIB_backward_industry
+	TIB_bad_army
+	#laws
+	disarmed_nation
+	closed_economy
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "TIB_1939"
+	set_technology = {
+		#doctrines
+		air_superiority = 1
+
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		synth_oil_experiments = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_popularities = {
+	monarchy = 100
+}
+
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TIB_jamphel_yeshe_gyaltsen
+recruit_character = TIB_thubten_choekyi_nyima
+recruit_character = TIB_phuntsok_wangyal_goranga
+recruit_character = TIB_pandatsang_rapga
+recruit_character = TIB_nicholas_roerich
+recruit_character = TIB_changra
+recruit_character = TIB_kunga_wangchuk_langdun
+recruit_character = TIB_tashi_dondrub
+recruit_character = TIB_taring_jigme
+recruit_character = TIB_wangchen_geleg_surkhang
+recruit_character = TIB_surkhang_lhawang_topgyal
+recruit_character = TIB_taktra_rinpoche
+recruit_character = TIB_ngabo_ngawang_jigme
+recruit_character = TIB_wangchuk_deden_shakabpa
+recruit_character = TIB_liushar_thubten_tharpa
+recruit_character = TIB_surkhang_wangchen_tseten
+recruit_character = TIB_sonam_wangdu
+recruit_character = TIB_gendun_chophel
+recruit_character = TIB_yuthok_tashi_Dhondup
+
+1939.1.1 = {
+	set_popularities = {
+		monarchy = 100
+	}
+	set_politics = {
+		ruling_party = monarchy
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	remove_ideas = {
+		TIB_tribute_to_nepal
+		TIB_power_without_power
+		TIB_agrarian_country
+		TIB_conservatism
+		TIB_backward_industry
+		TIB_bad_army
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

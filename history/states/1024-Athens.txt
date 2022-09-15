@@ -1,0 +1,39 @@
+
+state={
+	id=1024
+	name="STATE_1024" # Thessaly
+	manpower= 718000
+	
+	state_category = city
+
+	local_supplies=0.0
+	history={
+		owner = GRE
+		victory_points = {
+			4109 20 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+			4109 = {
+				naval_base = 9
+			}
+			13819 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = GRE
+		1941.11.1 = {
+			owner = VNC
+			controller = VNC
+			add_core_of = VNC
+		}
+
+	}
+
+	provinces={
+		4109 13819
+	}
+}

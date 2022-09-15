@@ -1,0 +1,31 @@
+state={
+	id=931
+	name="STATE_931"
+	
+	state_category = rural
+
+	resources={
+		chromium=35 # was: 64.000
+		tungsten=8 # was: 16.000
+	}
+	
+	local_supplies=0.0
+	history={
+		owner = ENG
+		add_core_of = ZAM
+		buildings = {
+			infrastructure = 2
+
+		}
+		1941.11.1 = {
+			owner = ZIM
+			add_core_of = ZIM
+		}
+	}
+
+	provinces={
+		12504 12677
+	}
+	manpower=550000
+	buildings_max_level_factor=1.000
+}

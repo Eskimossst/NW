@@ -1,0 +1,91 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+# 
+#	THIS FILE IS FOR TRIGGERS SPECIFICALLY FOR THE SPR/SPA/SPB/SPC/SPD TAGS
+
+SPR_scw_in_progress = {
+	custom_trigger_tooltip = {
+		tooltip = spanish_civil_war		
+		OR = {
+			has_global_flag = spanish_civil_war
+			has_global_flag = anarcho_spanish_civil_war
+			has_global_flag = expand_spanish_civil_war
+			has_global_flag = liberal_spanish_civil_war
+			has_global_flag = haos_liberal_spanish_civil_war
+		}
+	}
+	NOT = { has_global_flag = scw_over }
+}
+
+is_literally_spain = {
+	OR = {
+		original_tag = SPR
+		original_tag = SPA
+		original_tag = CAS
+		original_tag = NAV
+		original_tag = SEU
+		original_tag = SPC
+		original_tag = ANL
+		original_tag = ARA
+		original_tag = ASU
+		original_tag = SNT
+		original_tag = CAT
+		original_tag = BAS
+		original_tag = GLC
+		original_tag = VLA
+	}
+}
+
+is_hispanic_country = {
+	OR = {
+		tag = ARG
+		tag = CHL
+		tag = PAR
+		tag = BOL
+		tag = PRU
+		tag = ECU
+		tag = COL
+		tag = VEN
+		tag = PAN
+		tag = COS
+		tag = NIC
+		tag = HON
+		tag = ELS
+		tag = GUA
+		tag = MEX
+		tag = KMX
+		tag = CUB
+		tag = HAI
+		tag = DOM
+		tag = RIO
+		tag = SON
+		tag = BUE
+		tag = PAT
+		tag = URG
+		tag = ANL
+		tag = SPA
+		tag = SPR
+		tag = SPC
+		tag = SEU
+		tag = NAV
+		tag = CAS
+		tag = ASU
+		tag = SNT
+		tag = GLC
+		tag = CAT
+		tag = VLA
+		tag = ARA
+		tag = ADR
+	}
+}

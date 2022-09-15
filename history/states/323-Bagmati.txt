@@ -1,0 +1,30 @@
+
+state={
+	id=323
+	name="STATE_323"
+	manpower = 3065585
+	
+	state_category = rural
+	resources={
+		chromium=2 # was: 2
+	}
+	local_supplies=0.0
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2 
+		}
+		victory_points = {
+			4987 3 
+		}
+		victory_points = {
+			14310 2 
+		}
+		add_core_of = NEP
+	}
+
+	provinces={
+		4987 5310 12892 14310 14311 14312 14313 14314 14317 14320
+	}
+}

@@ -1,0 +1,71 @@
+﻿capital = 751
+
+oob = "XIK_1936"
+
+set_stability = 0.3
+set_war_support = 0.3
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+		CHI_army_corruption_1
+		CHI_incompetent_officers
+	}
+}
+
+add_ideas = {
+	limited_exports
+	extensive_conscription
+	partial_economic_mobilisation
+	CHI_backward_industry1
+}
+
+set_convoys = 20
+
+set_popularities = {
+	neutrality = 100
+}	
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = XIK_liu_wenhui
+recruit_character = XIK_liu_yuanzhang
+recruit_character = XIK_xu_jianshuang
+recruit_character = XIK_deng_xuting
+recruit_character = XIK_liu_yuanxuan
+recruit_character = XIK_liu_yuanzong
+recruit_character = XIK_hu_wu
+recruit_character = XIK_mao_hu
+recruit_character = XIK_hsia_zhao
+recruit_character = XIK_deng_ye
+recruit_character = XIK_deng_ma
+recruit_character = XIK_tan_ye
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

@@ -1,0 +1,18 @@
+version="0.5.1"
+replace_path="common/national_focus"
+replace_path="common/difficulty_settings"
+replace_path="common/countries"
+replace_path="history/states"
+replace_path="map"
+replace_path="map/strategicregions"
+replace_path="map/supplyareas"
+tags={
+	"Alternative History"
+	"Map"
+	"Historical"
+	"Events"
+}
+picture="thumbnail.png"
+name="New Ways alpha DEV BUILD"
+supported_version="1.11.*"
+path="mod/Kursach-Fizika"

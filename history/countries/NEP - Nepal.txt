@@ -1,0 +1,128 @@
+﻿capital = 323
+
+oob = "NEP_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+set_war_support = 0.2
+set_stability = 0.2
+set_convoys = 20
+give_guarantee = TIB
+add_ideas = {
+	NEP_agrarian_country
+	NEP_closed_country
+	NEP_tibet_tribute
+	NEP_daudaha_system
+	NEP_birta_system
+	NEP_tribhuvan_nepal
+}
+set_research_slots = 1
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "NEP_1939"
+	set_technology = {
+		gw_artillery = 1
+		tech_support = 1		
+		tech_engineers = 1
+		infantry_weapons1 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+
+		peoples_army_asy = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_popularities = {
+	neutrality = 70
+	monarchy = 25
+	democratic = 5
+}
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = NEP_juddha_rana
+recruit_character = NEP_tribhuvan_bir_bikram_shah
+recruit_character = NEP_tanka_prasad_acharya
+recruit_character = NEP_pushpa_lal_shrestha
+recruit_character = NEP_kaiser_shumsher_j_b_rana
+recruit_character = NEP_padma_shumsher_jang_bahadur_rana
+recruit_character = NEP_mansing_gurung
+recruit_character = NEP_dhammalok_mahasthavir
+recruit_character = NEP_gangalal_shrestha
+recruit_character = NEP_jagat_sundar_malla
+recruit_character = NEP_shukraraj_shastri
+recruit_character = NEP_yogbir_singh_kasa
+
+1939.1.1 = {
+	set_popularities = {
+		neutrality = 100
+	}
+	
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
+1941.12.5 = {
+	oob = "OOB_1941"
+	remove_ideas = {
+		NEP_agrarian_country
+		NEP_closed_country
+		NEP_tibet_tribute
+		NEP_daudaha_system
+		NEP_birta_system
+		NEP_tribhuvan_nepal
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

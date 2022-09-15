@@ -1,0 +1,34 @@
+state={
+	id=911
+	name="STATE_911"
+
+	local_supplies=0.0
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			13461 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = ASK
+		victory_points = {
+			13461 1 
+		}
+		1941.11.1 = {
+			owner = CAN
+			add_core_of = CAN
+		}
+
+	}
+
+	provinces={
+		1135 13090 13452 13454 13456 13459 13461 13463 13464
+	}
+	manpower=7500
+	buildings_max_level_factor=1
+	state_category="rural"
+}

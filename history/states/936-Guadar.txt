@@ -1,0 +1,24 @@
+state={
+	id=936
+	name="STATE_936"
+	manpower = 1109
+	state_category = enclave
+	
+	local_supplies=0.0
+	history={
+		owner = OMA
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			13590 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13590 2 
+		}		
+	}
+	provinces={
+		13590
+	}
+}

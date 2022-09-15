@@ -1,0 +1,439 @@
+# befriend
+# alliance
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# alliance
+# contain
+# area_priority
+
+germany_per_dont_ally_historical = {
+	allowed = {
+		original_tag = PER
+		is_historical_focus_on = yes
+	}
+	enable = {
+		country_exists = GER
+	}
+	abort = {
+		is_in_faction_with = GER #got here somehow, might as well stay
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = -200
+	}	
+}
+PER_pact_vs_TUR_pact = {
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		has_completed_focus = PER_create_the_sadabat_pact
+		country_exists = TUR
+		TUR = { has_completed_focus = TUR_create_the_sadabat_pact }
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = TUR }
+			is_in_faction_with = TUR
+		}
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "TUR" 
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TUR" 
+		value = 200
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "TUR" 
+		value = 100
+	}
+}
+
+PER_antagonize_KHU = {
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		country_exists = KHU
+	}
+	abort = {
+		OR = {
+			has_opinion_modifier = PER_recognized_independence
+			NOT = { country_exists = KHU }
+			is_in_faction_with = KHU
+			KHU = { is_subject_of = ROOT }
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = "KHU" 
+		value = -200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "KHU" 
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "KHU" 
+		value = 200
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "KHU" 
+		value = 100
+	}
+}
+
+PER_antagonize_QAS = {
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		country_exists = QAS
+	}
+	abort = {
+		OR = {
+			has_opinion_modifier = PER_recognized_independence
+			NOT = { country_exists = QAS }
+			is_in_faction_with = QAS
+			QAS = { is_subject_of = ROOT }
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = "QAS" 
+		value = -200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "QAS" 
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "QAS" 
+		value = 200
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "QAS" 
+		value = 100
+	}
+}
+
+PER_show_world_power_of_iranian_thought_aggression_status = {
+	reversed = yes
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		NOT = { is_in_faction_with = PER }
+		OR = {
+			is_neighbor_of = PER
+			any_neighbor_country = {
+				OR = {
+					is_subject_of = PER
+					is_in_faction_with = PER
+				}
+			}
+		}
+		PER = {
+			has_idea = PER_science_based_iranian_nationalism
+			num_divisions > 0
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = antagonize
+		id = "PER"
+		value = 300
+	}
+	ai_strategy = {
+		type = conquer
+		id = "PER"
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "PER"
+		value = 300
+	}
+}
+
+
+PER_want_invest_in_infrastructure_of_mashhad = {
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		any_owned_state = {
+			has_state_flag = PER_invest_in_infrastructure_of_mashhad_flag
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 416
+		value = 1
+	}	
+}
+
+PER_run_build_intel_network_sov = {
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		has_completed_focus = PER_strike_in_advance
+	}
+	
+	abort = {
+		has_country_flag = PER_organize_an_uprising_in_tajikistan_complete_flag
+		has_country_flag = PER_organize_an_uprising_in_azerbaijan_complete_flag
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_rescue_operative
+		value = 2000
+		operation_target = SOV
+	}
+	
+	ai_strategy = {
+		type = operation_equipment_priority
+		value = 150
+	}
+	
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 2000
+		mission_target = SOV
+	}
+}
+
+
+QAS_new_shah_of_iran_strategy = {
+	reversed = yes
+	allowed = {
+		original_tag = QAS
+	}
+	enable = {
+		controls_state = 266
+		QAS = {
+			has_completed_focus = QAS_new_shah_of_iran
+			num_divisions > 0
+			NOT = { controls_state = 266 }
+		}
+	}
+	abort = {
+		QAS = { controls_state = 266 }
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "QAS"
+		value = 300
+	}
+	ai_strategy = {
+		type = conquer
+		id = "QAS"
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "QAS"
+		value = 300
+	}
+}
+
+PER_islamic_no_ally = {
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		has_completed_focus = PER_islamic_revolution
+		has_government = fascism
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend		id = TUR	value = -200 }
+	ai_strategy = { type = alliance		id = TUR	value = -600 }
+	ai_strategy = { type = befriend		id = TRK	value = -200 }
+	ai_strategy = { type = alliance		id = TRK	value = -600 }
+	ai_strategy = { type = befriend		id = AFG	value = -200 }
+	ai_strategy = { type = alliance		id = AFG	value = -600 }
+	ai_strategy = { type = befriend		id = IRQ	value = -200 }
+	ai_strategy = { type = alliance		id = IRQ	value = -600 }
+	ai_strategy = { type = befriend		id = SAU	value = -200 }
+	ai_strategy = { type = alliance		id = SAU	value = -600 }
+	ai_strategy = { type = befriend		id = SYR	value = -200 }
+	ai_strategy = { type = alliance		id = SYR	value = -600 }
+	ai_strategy = { type = befriend		id = EGY	value = -200 }
+	ai_strategy = { type = alliance		id = EGY	value = -600 }
+	###
+	ai_strategy = { type = befriend		id = JAP	value = -200 }
+	ai_strategy = { type = alliance		id = JAP	value = -600 }
+	ai_strategy = { type = befriend		id = ITA	value = -200 }
+	ai_strategy = { type = alliance		id = ITA	value = -600 }
+	ai_strategy = { type = befriend		id = GER	value = -200 }
+	ai_strategy = { type = alliance		id = GER	value = -600 }
+	ai_strategy = { type = befriend		id = FRA	value = -200 }
+	ai_strategy = { type = alliance		id = FRA	value = -600 }
+	ai_strategy = { type = befriend		id = FRF	value = -200 }
+	ai_strategy = { type = alliance		id = FRF	value = -600 }
+	ai_strategy = { type = befriend		id = CHI	value = -200 }
+	ai_strategy = { type = alliance		id = CHI	value = -600 }
+	ai_strategy = { type = befriend		id = MAN	value = -200 }
+	ai_strategy = { type = alliance		id = MAN	value = -600 }
+	###
+	ai_strategy = { type = befriend		id = HUN	value = -200 }
+	ai_strategy = { type = alliance		id = HUN	value = -600 }
+	ai_strategy = { type = befriend		id = AUS	value = -200 }
+	ai_strategy = { type = alliance		id = AUS	value = -600 }
+	ai_strategy = { type = befriend		id = CZE	value = -200 }
+	ai_strategy = { type = alliance		id = CZE	value = -600 }
+}
+
+PER_anglo_soviet_intervention_strategy = {
+	allowed = {
+		NOT = { tag = PER }
+	}
+	enable = {
+		PER = {
+			is_ai = yes
+			has_idea = PER_anglo_soviet_intervention
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = "PER"
+		value = -1000
+	}
+	ai_strategy = { type = diplo_action_desire id = PER target = join_faction value = -1000 }
+	ai_strategy = { type = diplo_action_acceptance id = PER target = offer_join_faction value = -1000 }
+}
+
+PER_GER_nazbol_friend = {
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		OR = {
+			has_country_leader_ideology = national_communism
+			has_country_leader_ideology = national_bolshevism
+		}
+		GBF = {
+			exists = yes
+			OR = {
+				has_country_leader_ideology = national_communism
+				has_country_leader_ideology = national_bolshevism
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "GBF"
+		value = 70
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GBF"
+		value = 70
+	}
+	ai_strategy = {
+		type = support
+		id = "GBF"
+		value = 70
+	}
+}
+
+PER_TUR_nazcom_friend = {
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		OR = {
+			has_country_leader_ideology = national_communism
+			has_country_leader_ideology = national_bolshevism
+		}
+		TUR = {
+			exists = yes
+			OR = {
+				has_country_leader_ideology = kemalism_socialism
+				has_country_leader_ideology = national_communism
+				has_country_leader_ideology = national_bolshevism
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "TUR"
+		value = 70
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "TUR"
+		value = 70
+	}
+	ai_strategy = {
+		type = support
+		id = "TUR"
+		value = 70
+	}
+}
+
+
+
+SOV_antagonize_national_communism_PER = {
+	allowed = {
+		OR = {
+			original_tag = PER
+			original_tag = SOV
+		}
+	}
+	reversed = yes
+	enable = {
+		OR = {
+			has_country_leader_ideology = kemalism_socialism
+			has_country_leader_ideology = national_communism
+			has_country_leader_ideology = national_bolshevism
+		}
+		SOV = { has_government = communism }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = { type = send_volunteers_desire id = "SOV" value = -200 }
+	ai_strategy = { type = befriend id = "SOV" value = -200 }
+	ai_strategy = { type = support id = "SOV" value = -200 }
+	ai_strategy = { type = alliance id = "SOV" value = -200 }
+	ai_strategy = { type = diplo_action_desire id = "SOV" target = join_faction value = -1000 }
+	ai_strategy = { type = diplo_action_acceptance id = "SOV" target = offer_join_faction value = -1000 }
+}

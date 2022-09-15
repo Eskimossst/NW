@@ -1,0 +1,26 @@
+
+state={
+	id=776
+	name="STATE_776"
+	manpower = 606532
+	
+	state_category = rural
+
+	local_supplies=0.0
+	history={
+		owner = SOV
+		victory_points = {
+			11523 2
+		}		
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SOV
+		add_core_of = PVG
+		
+	}
+
+	provinces={
+		499 578 6479 6539 6601 9432 9475 9577 11395 11460 11523 11421
+	}
+}

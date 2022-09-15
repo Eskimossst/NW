@@ -1,0 +1,30 @@
+
+state={
+	id=1063
+	name="STATE_1063"
+	manpower = 70000
+	
+	state_category = small_island
+
+	local_supplies=0.0
+	history={
+		owner = ENG
+		victory_points = {
+			13881 1 
+		}	
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ENG
+		1941.11.1 = {
+			owner = FRA
+			add_core_of = FRA
+			remove_core_of = ENG
+			add_claim_by = ENG
+		}
+	}
+
+	provinces={
+		13881
+	}
+}

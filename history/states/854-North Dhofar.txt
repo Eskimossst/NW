@@ -1,0 +1,26 @@
+
+state={
+	id=854
+	name="STATE_854"
+	manpower = 1257 
+	state_category = wasteland
+	impassable = yes	
+
+	local_supplies=0.0
+	history={
+		owner = SAU
+		add_claim_by = DOF
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+		1941.11.1 = {
+			owner = UAE
+			add_core_of = UAE
+		}
+	}
+
+	provinces={
+		13642 13645
+	}
+}

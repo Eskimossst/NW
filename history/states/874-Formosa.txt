@@ -1,0 +1,26 @@
+
+state={
+	id=874
+	name="STATE_874"
+	manpower = 20000
+	
+	state_category = rural
+
+	local_supplies=0.0
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ARG
+		1941.11.1 = {
+			owner = PAR
+			add_core_of = PAR
+		}
+	}
+
+	provinces={
+		10944 12922 12943 14152 14156
+	}
+}

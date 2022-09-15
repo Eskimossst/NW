@@ -1,0 +1,35 @@
+
+state={
+	id=846
+	name="STATE_846" # South Tyrol
+	manpower = 110000
+	
+	state_category = town
+	
+	resources={
+		aluminium=3 # was: 22
+	}
+
+	local_supplies=0.0
+	history={
+		owner = ITA
+		victory_points = {
+			9598 1 
+		}		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ITA
+		1941.11.1 = {
+			owner = VNC
+			controller = VNC
+			add_core_of = VNC
+			add_core_of = AUS
+			remove_core_of = ITA
+		}
+	}
+
+	provinces={
+		6631 9598 
+	}
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=906 #Kotor
+	name="STATE_906"
+	manpower = 50000
+	
+	state_category = enclave
+	
+
+	local_supplies=0.0
+	history={
+		owner = YUG
+		victory_points = {
+			9809 1
+		}
+		add_core_of = MNT
+		add_core_of = CRO
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = YUG
+		1940.1.1 = {
+			owner = MNT
+			controller = MNT
+			remove_core_of = YUG
+		}
+		1941.11.1 = {
+			add_core_of = SER
+		}
+	}
+
+	provinces={
+		13387
+	}
+}

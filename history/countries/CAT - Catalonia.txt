@@ -1,0 +1,116 @@
+﻿capital = 165
+
+oob = "SPR_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	basic_train = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+
+recruit_character = CAT_lluis_companys
+recruit_character = CAT_josep_irla_i_bosch
+recruit_character = CAT_juan_comorera
+recruit_character = CAT_victor_alba
+recruit_character = CAT_garcia_birlan
+recruit_character = CAT_jose_rovira
+recruit_character = CAT_carmel_rosa_baserba
+recruit_character = CAT_josep_tarradellas
+recruit_character = CAT_josep_irla
+recruit_character = CAT_joan_fabregas
+recruit_character = CAT_antonio_garcia_birlan
+recruit_character = CAT_miguel_valdes
+recruit_character = CAT_jose_calvet
+
+
+
+set_popularities = {
+	democratic = 10
+	monarchy = 40
+	neutrality = 17
+	trozkism = 3
+	anarchism = 30
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.1.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_convoys = 150
+set_stability = 0.5
+
+
+
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+	
+	set_popularities = {
+		democratic = 10
+		monarchy = 30
+		neutrality = 17
+		anarchism = 43
+	}
+	set_politics = {
+		ruling_party = anarchism
+		elections_allowed = no
+	}
+}

@@ -1,0 +1,71 @@
+﻿capital = 822
+
+oob = "SMA_1936"
+
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = 0.1
+
+add_ideas = {
+	neutrality_idea
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
+	
+	mini_cavalry = 1
+	mini_infantry = 1
+}
+
+1939.1.1 = {
+	complete_national_focus = SMA_dominance_of_gozi
+	complete_national_focus = SMA_development_of_agriculture
+	complete_national_focus = SMA_expansion_of_vineyards
+	complete_national_focus = SMA_Muscat_San_Marino
+	complete_national_focus = SMA_reconstruction_of_the_Titano
+	complete_national_focus = SMA_improve_the_railway
+	complete_national_focus = SMA_Supreme_sovereign_Council
+	complete_national_focus = SMA_dev_opinion_with_ita
+	complete_national_focus = SMA_friend_with_ita
+}
+
+set_convoys = 20
+
+set_popularities = {
+	democratic = 20
+	fascism = 70
+	communism = 10
+} 
+set_politics = {	
+	ruling_party = fascism
+	last_election = "1935.10.1"
+	election_frequency = 6
+	elections_allowed = yes
+}
+
+recruit_character = SMA_captains_regent
+recruit_character = SMA_giuliano_gozi
+
+
+
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

@@ -1,0 +1,36 @@
+state=
+{
+	id=102
+	name="STATE_102"
+	manpower = 694300
+	
+	state_category = rural
+	
+	local_supplies=0.0
+	history ={
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			596 1 
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+		1940.1.1 = {
+			owner = CRO
+			controller = CRO
+			add_core_of = CRO
+			remove_core_of = YUG
+		}
+		1941.11.1 = {
+			owner = VNC
+			controller = VNC
+			add_core_of = VNC
+			remove_core_of = CRO
+		}
+	}
+	provinces={
+		596 665 3631 3654 9596 	
+	}
+}

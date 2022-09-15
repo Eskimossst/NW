@@ -1,0 +1,521 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+
+	GRE_balkan_trade_union_member_dyn = {
+		icon = "GFX_idea_generic_foreign_capital"
+		enable = { original_tag = GRE }
+		remove_trigger = { always = no }
+
+		# list of modifiers
+		political_power_gain = 0.1
+		consumer_goods_factor = var_member_balk
+	}
+	GRE_idea_high_inflation_dyn = {
+		icon = "GFX_idea_chi_hyper_inflation"
+		enable = { original_tag = GRE }
+		remove_trigger = { always = no }
+
+		# list of modifiers
+		industrial_capacity_factory = var_industrial_capacity_factory
+		consumer_goods_factor = var_consumer_goods_factor
+	}
+	GRE_greek_armed_forces_idea_dyn = {
+		icon = "GFX_idea_greek_armed_forces"
+		enable = { original_tag = GRE }
+		remove_trigger = { always = no }
+
+		# list of modifiers
+		army_artillery_attack_factor = var_armed_forces_artillery_attack
+		army_armor_speed_factor = var_armed_forces_armor_speed
+		max_dig_in = var_armed_forces_max_dig_in
+	}
+	
+	cheap_labor_dyn = {
+		icon = "GFX_idea_prod_drive"
+		enable = { always = yes }
+		remove_trigger = { always = no }
+
+		# list of modifiers
+		industrial_capacity_factory = cheap_labor_var
+		production_speed_buildings_factor = cheap_labor_var
+	}
+	cheap_labor_gem_dyn = {
+		icon = "GFX_idea_prod_drive"
+		enable = { is_subject = yes }
+		remove_trigger = { always = no }
+
+		# list of modifiers
+		industrial_capacity_factory = cheap_labor_gem_var
+		production_speed_buildings_factor = cheap_labor_gem_var
+	}
+	
+	#Цейлон
+	LKA_idea_dis_ekonomik_dyn = {
+		icon = "GFX_idea_econom_dno_2"
+		enable = { original_tag = LKA }
+		remove_trigger = { always = no }
+		consumer_goods_factor = var_consumer_goods_factor
+	}
+	LKA_idea_dzaibatsu_power_dyn = {
+		icon = "GFX_idea_jap_zaibatsu"
+		enable = { original_tag = LKA }
+		remove_trigger = { always = no }
+		political_power_gain = var_political_power_gain
+	}
+	
+	#PER
+	PER_influence_of_clergy_dynamic_modifier = {
+		icon = "GFX_idea_allahu_akbar" 
+		enable = {
+			original_tag = PER
+		}
+		remove_trigger = {
+			OR = {
+				has_government = communism
+				has_government = trozkism
+				has_government = anarchism
+				has_government = technocracy
+				has_country_flag = PER_last_blow_to_confessors_flag
+			}
+		}
+
+		# list of modifiers
+		army_org_factor = army_org_factor_influence_clergy_Value
+		army_morale_factor = army_morale_factor_influence_clergy_Value
+		political_power_factor = political_power_factor_influence_clergy_Value
+		drift_defence_factor = drift_defence_factor_influence_clergy_Value
+		###
+		democratic_drift = democratic_drift_influence_clergy_Value
+		communism_drift = communism_drift_influence_clergy_Value
+		fascism_drift = fascism_drift_influence_clergy_Value
+		neutrality_drift = neutrality_drift_influence_clergy_Value
+		technocracy_drift = technocracy_drift_influence_clergy_Value
+		monarchy_drift = monarchy_drift_influence_clergy_Value
+		trozkism_drift = trozkism_drift_influence_clergy_Value
+		anarchism_drift = anarchism_drift_influence_clergy_Value
+	}
+	
+	
+	troz_threat_dyn = {
+		icon = "GFX_idea_home_of_the_trozkism"
+		enable = { has_government = trozkism }
+		remove_trigger = { NOT = { has_government = trozkism } }
+		
+		# list of modifiers
+		political_power_gain = global.troz_threat_main_2_Value
+		conscription = global.troz_threat_main_Value
+		army_attack_factor = global.troz_threat_main_Value
+		army_morale_factor = global.troz_threat_main_Value
+		trozkism_acceptance = global.troz_threat_var
+		ai_call_ally_desire_factor = global.troz_threat_var
+		ai_focus_aggressive_factor = global.troz_threat_main_2_Value
+		ai_focus_war_production_factor = global.troz_threat_main_2_Value
+	}
+	
+	volunteer_only_dyn = {
+		enable = {
+			has_idea = volunteer_only
+		}
+		remove_trigger = { NOT = { has_idea = volunteer_only } }
+		
+		# list of modifiers
+		conscription = volunteer_only_var
+	}
+	
+	operative_slot_idea_dyn = {
+		enable = {
+			has_intelligence_agency = yes
+		}
+		remove_trigger = { has_intelligence_agency = no }
+		
+		# list of modifiers
+		operative_slot = operative_slot_var
+	}
+	
+	BPL_reaction_to_arab_anti_semitism_dyn = {
+		icon = "GFX_idea_FRA_army_of_aggression_focus"
+		enable = { always = yes }
+		
+		# list of modifiers
+		army_core_attack_factor = BPL_reaction_to_arab_anti_semitism_var
+		army_core_defence_factor = BPL_reaction_to_arab_anti_semitism_var
+	}
+	
+	anarchism_tendency_sense_of_danger_dyn = {
+		enable = { has_government = anarchism }
+		remove_trigger = { NOT = { has_government = anarchism } }
+		
+		# list of modifiers
+		stability_factor = anarchism_tendency_sense_of_danger_ideas_var_minus
+		drift_defence_factor = anarchism_tendency_sense_of_danger_ideas_var_minus
+		resistance_growth_on_our_occupied_states = anarchism_tendency_sense_of_danger_ideas_var
+		army_org_factor = anarchism_tendency_sense_of_danger_ideas_org_var
+		production_speed_bunker_factor = anarchism_tendency_sense_of_danger_ideas_var
+		production_speed_coastal_bunker_factor = anarchism_tendency_sense_of_danger_ideas_var
+		anarchist_unity_bonus = anarchism_unity_daily_dyn_var
+	}
+	
+	anarchism_tendency_interest_industry_dyn = {
+		enable = { has_government = anarchism }
+		remove_trigger = { NOT = { has_government = anarchism } }
+		
+		# list of modifiers
+		production_speed_buildings_factor = anarchism_tendency_interest_industry_ideas_var
+		production_factory_max_efficiency_factor = anarchism_tendency_interest_industry_ideas_var
+		production_factory_efficiency_gain_factor = anarchism_tendency_interest_industry_ideas_efficiency_var
+		industrial_capacity_factory = anarchism_tendency_interest_industry_ideas_var
+		industrial_capacity_dockyard = anarchism_tendency_interest_industry_ideas_var
+		consumer_goods_factor = anarchism_tendency_interest_industry_ideas_var_minus
+	}
+	
+	anarchism_tendency_need_trade_dyn = {
+		enable = { has_government = anarchism }
+		remove_trigger = { NOT = { has_government = anarchism } }
+		
+		# list of modifiers
+		local_resources_factor = anarchism_tendency_need_trade_ideas_var
+		production_lack_of_resource_penalty_factor = anarchism_tendency_sense_of_danger_ideas_penalty_var
+		research_speed_factor = anarchism_tendency_sense_of_danger_ideas_research_var
+	}
+	
+	freedom_of_experimentation_dyn = {
+		icon = "GFX_idea_freedom_of_experimentation"
+		enable = { has_government = anarchism }
+		remove_trigger = { NOT = { has_government = anarchism } }
+		
+		# list of modifiers
+		research_speed_factor = freedom_of_experimentation_dyn_var_research
+		##
+		production_speed_arms_factory_factor = freedom_of_experimentation_dyn_var_arms
+		production_speed_dockyard_factor = freedom_of_experimentation_dyn_var_arms
+		production_speed_bunker_factor = freedom_of_experimentation_dyn_var_arms
+		production_speed_coastal_bunker_factor = freedom_of_experimentation_dyn_var_arms
+		##
+		production_speed_industrial_complex_factor = freedom_of_experimentation_dyn_var_complex
+		production_speed_infrastructure_factor = freedom_of_experimentation_dyn_var_complex
+	}
+	
+	private_state_dyn = {
+		icon = GFX_autonomy_free_icon
+		enable = { controller = { has_government = anarchism } }
+		
+		# list of modifiers
+		recruitable_population_factor = recruitable_population_factor_state_var 
+		local_building_slots_factor = local_building_slots_factor_state_var
+		state_resources_factor = state_resources_factor_state_var
+		state_production_speed_buildings_factor = state_production_speed_buildings_factor_state_var
+		##
+		state_production_speed_bunker_factor = state_production_speed_bunker_factor_state_var
+		state_production_speed_coastal_bunker_factor = state_production_speed_bunker_factor_state_var
+		##
+		state_production_speed_arms_factory_factor = state_production_speed_factory_factor_state_var
+		state_production_speed_dockyard_factor = state_production_speed_factory_factor_state_var
+		state_production_speed_industrial_complex_factor = state_production_speed_factory_factor_state_var
+	}
+	
+	infra_in_state_dyn = {
+		icon = GFX_size_state_icon
+		
+		# list of modifiers
+		state_production_speed_infrastructure_factor = state_infra_var
+		state_production_speed_rail_way_factor = state_infra_var
+		state_production_speed_supply_node_factor = state_infra_half_var
+	}
+	
+	state_elephants_modifier_dyn = {
+		icon = GFX_state_elephants_modifier
+		
+		# list of modifiers
+		custom_modifier_tooltip = state_elephants_modifier_dyn_tt
+	}
+	
+	red_monasteries_in_region_dyn = {
+		icon = GFX_red_monasteries_icon
+		enable = { controller = { has_completed_focus = TIB_red_monasteries } }
+		
+		# list of modifiers
+		stability_weekly = 0.001
+		industrial_capacity_factory = 0.005
+	}
+	
+	red_monasteries_total_dyn = {
+		enable = { has_completed_focus = TIB_red_monasteries }
+		
+		# list of modifiers
+		stability_weekly = red_monasteries_stability_weekly
+		industrial_capacity_factory = red_monasteries_industrial_capacity_factory
+	}
+	cooperative_collectivization_dyn = {
+		icon = GFX_cooperative_collectivization_icon
+		
+		# list of modifiers
+		local_supplies = 0.1
+		state_production_speed_infrastructure_factor = 0.1
+		state_production_speed_hospital_factor = 0.1
+		state_production_speed_industrial_complex_factor = cooperative_collectivization_var
+	}
+	accelerated_general_collectivization_dyn = {
+		icon = GFX_cooperative_collectivization_icon
+		
+		# list of modifiers
+		local_supplies = -0.2
+		recruitable_population_factor = -0.33
+		state_production_speed_infrastructure_factor = 0.35
+		state_production_speed_hospital_factor = 0.35
+		state_production_speed_buildings_factor = -0.25
+	}
+	OMA_pakistani_mercenaries_dyn = {
+		icon = GFX_idea_arab_mercenaries
+		
+		# list of modifiers
+		conscription_factor = OMA_pakistani_mercenaries_dyn_conscription_factor
+		weekly_manpower = OMA_pakistani_mercenaries_dyn_weekly_manpower
+	}
+	TUR_increasing_influence_on_greece_dyn = {
+		icon = "GFX_idea_generic_foreign_capital"
+		remove_trigger = { has_capitulated = yes }
+
+		# list of modifiers
+		political_power_gain = var_tur_influence_on_greece_pp
+		industrial_factory_donations = var_tur_influence_on_greece_industrial
+		military_factory_donations = var_tur_influence_on_greece_military
+	}
+	
+	TUR_government_regulation_dyn = {
+		icon = "GFX_idea_tur_etatism"
+
+		# list of modifiers
+		industrial_capacity_factory = 0.05
+		political_power_factor = 0.02
+		production_speed_buildings_factor = var_tur_gr_buildings
+		production_factory_max_efficiency_factor = var_tur_gr_max_efficiency
+		production_factory_efficiency_gain_factor = var_tur_gr_efficiency_gain
+	}
+	
+	TUR_create_balance_of_power_system_dyn = {
+		icon = "GFX_idea_generic_disjointed_gov"
+
+		# list of modifiers
+		command_power_gain_mult = var_tur_bp_command_power
+		war_support_factor = var_tur_bp_war_support
+		stability_factor = var_tur_bp_stability
+		political_power_factor = var_tur_bp_pp
+		production_speed_buildings_factor = var_tur_bp_buildings
+	}
+	
+	
+	GER_nazi_resistance_dyn = {
+		icon = "GFX_idea_nazi_resistance"
+		enable = {
+			original_tag = GER
+		}
+
+		# list of modifiers
+		stability_factor = var_ger_nazi_resistance_stability
+		conscription_factor = var_ger_nazi_resistance_conscription_factor
+		political_power_factor = var_ger_nazi_resistance_pp
+		production_speed_buildings_factor = var_ger_nazi_resistance_buildings
+	}
+	GER_cornered_dyn = {
+		icon = "GFX_idea_cornered"
+		enable = {
+			original_tag = GER
+			has_civil_war = yes
+		}
+
+		# list of modifiers
+		num_controlled_states_info = num_controlled_states
+		army_org = var_cornered
+		max_dig_in = var_cornered_2
+		army_morale_factor = var_cornered_100
+	}
+	GER_battle_glory_dyn = {
+		icon = "GFX_idea_battle_glory"
+		enable = {
+			original_tag = GER
+			has_civil_war = yes
+		}
+
+		# list of modifiers
+		num_controlled_states_info = num_controlled_states
+		army_infantry_attack_factor = var_battle_glory
+		breakthrough_factor = var_battle_glory
+		army_morale_factor = var_battle_glory
+	}
+	GER_formation_of_ideology_dyn = {
+		icon = "GFX_idea_formation_strasserism_idea"
+		enable = {
+			original_tag = GER
+		}
+
+		# list of modifiers
+		aggressiveness_of_strasserism_info = GER_aggressiveness_of_strasserism
+		production_speed_industrial_complex_factor = GER_aggressiveness_of_strasserism_minus_var
+		production_speed_arms_factory_factor = GER_aggressiveness_of_strasserism_var
+		war_support_factor = GER_aggressiveness_of_strasserism_var
+		production_factory_max_efficiency_factor = GER_aggressiveness_of_strasserism_var
+		consumer_goods_factor = GER_aggressiveness_of_strasserism_minus_var
+	}
+	GER_new_germany_dyn = {
+		icon = "GFX_idea_GER_make_revoltreich"
+		enable = {
+			original_tag = GER
+		}
+
+		# list of modifiers
+		production_speed_buildings_factor = var_new_germany
+		stability_factor = var_new_germany_minus
+		war_support_factor = var_new_germany_minus
+		political_power_factor = var_new_germany_pp
+		research_speed_factor = var_new_germany_pp_minus
+	}
+	GER_fraternization_state_dyn = {
+		enable = { always = yes }
+		icon = GFX_modifiers_fraternization_icon
+		attacker_modifier = yes
+		
+		air_cas_present_factor = -0.75
+		ground_attack_factor = -0.75
+		army_attack_factor = -0.75
+	}
+	PER_regional_governance_disorder_dyn = {
+		enable = { always = yes }
+		icon = GFX_decision_category_generic_crisis
+		
+		local_factories = -0.5
+	}
+	PER_conflict_with_large_landowner_dyn = {
+		enable = { always = yes }
+		icon = GFX_decision_category_gre_investment_decisions
+		
+		local_factories = -0.5
+	}
+	PER_unity_of_islamic_union_dyn = {
+		icon = "GFX_idea_islam_rise"
+		enable = {
+			OR = {
+				original_tag = PER
+				is_in_faction_with = PER
+			}
+		}
+
+		# list of modifiers
+		conscription = global.var_unity_of_islamic_union_conscription
+		war_support_factor = global.var_unity_of_islamic_union_war_support
+	}
+	PER_operative_slot_from_army_idea_dyn = {
+		enable = {
+			original_tag = PER
+		}
+		
+		# list of modifiers
+		operative_slot = PER_operative_slot_var
+	}
+	
+	
+	SAU_disparity_between_nejd_and_hijaz_dyn = {
+		enable = { always = yes }
+		icon = "GFX_modifiers_generic_military_plans"
+		
+		state_production_speed_buildings_factor = 0.15
+		local_manpower = -0.15
+	}
+	SAU_disparity_between_nejd_and_hijaz_2_dyn = {
+		enable = { always = yes }
+		icon = "GFX_modifiers_generic_military_plans"
+		
+		state_production_speed_buildings_factor = -0.2
+		local_manpower = 0.1
+	}
+	
+	SAU_disparity_between_nejd_and_hijaz_3_dyn = {
+		enable = { always = yes }
+		icon = "GFX_modifiers_generic_military_plans"
+		
+		state_production_speed_buildings_factor = 0.08
+		local_manpower = -0.08
+	}
+	SAU_disparity_between_nejd_and_hijaz_4_dyn = {
+		enable = { always = yes }
+		icon = "GFX_modifiers_generic_military_plans"
+		
+		state_production_speed_buildings_factor = -0.1
+		local_manpower = 0.05
+	}
+	
+	CYP_expanded_farms_dyn = {
+		icon = GFX_cooperative_collectivization_icon
+		monthly_population = 0.2
+	}
+	
+	SAU_loyalty_of_tribes_modifier = {
+		icon = "GFX_idea_underdeveloped_feudal_tribal_state" 
+		enable = {
+			original_tag = SAU
+		}
+		remove_trigger = {
+			OR = {
+				has_country_flag = drop_focus_flag
+				NOT = {
+					OR = {
+						has_government = monarchy
+						has_government = neutrality
+					}
+				}
+			}
+		}
+		
+
+		# list of modifiers
+		num_irregular_division_of_jihad = num_irregular_division_of_jihad
+		stability_factor = stability_factor_tribes
+		conscription_factor = conscription_factor_tribes
+		resistance_growth_on_our_occupied_states = resistance_growth_on_our_occupied_states_tribes
+	}
+	
+	SAU_loyalty_of_ulema_modifier = {
+		icon = "GFX_idea_prohibit_garar_4" 
+		enable = {
+			original_tag = SAU
+		}
+		remove_trigger = {
+			OR = {
+				has_country_flag = drop_focus_flag
+				NOT = {
+					OR = {
+						has_government = monarchy
+						has_government = neutrality
+					}
+				}
+			}
+		}
+		
+		# list of modifiers
+		justify_war_goal_time = justify_war_goal_time_ulema
+		political_power_factor = political_power_factor_ulema
+		drift_defence_factor = drift_defence_factor_ulema
+	}

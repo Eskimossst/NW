@@ -1,0 +1,113 @@
+﻿capital = 1104
+
+set_oob = "SKM_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	elephant_art_support = 1
+}
+set_war_support = 0.1
+set_stability = 0.6
+set_convoys = 20
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	complete_national_focus = SKM_kaz_mucht
+	complete_national_focus = SKM_taksari
+	complete_national_focus = SKM_dzumsa
+	complete_national_focus = SKM_calcutta_univesity
+	complete_national_focus = SKM_tibet
+	complete_national_focus = SKM_strength_india
+	complete_national_focus = SKM_village_hospitals
+	complete_national_focus = SKM_rocket_post
+	complete_national_focus = SKM_cardamon
+	complete_national_focus = SKM_rice
+	complete_national_focus = SKM_leather
+	complete_national_focus = SKM_chogual_army
+	complete_national_focus = SKM_modernize_eqp
+	complete_national_focus = SKM_uniform
+	
+	oob = "SKM_1936"
+	set_technology = {
+		gw_artillery = 1
+		tech_support = 1		
+		tech_engineers = 1
+		infantry_weapons1 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+add_ideas = {
+	SKM_hard_farmers
+	SKM_conservative_nobles
+}
+
+set_popularities = {
+	monarchy = 100
+}
+
+set_politics = {	
+	ruling_party = monarchy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = SKM_Jerman_Lepcha
+recruit_character = SKM_Brihaspati_Parsai
+recruit_character = SKM_Tashi_Namgyal
+recruit_character = SKM_Ganju_Lama
+recruit_character = SKM_Bermiok_Athing
+recruit_character = SKM_Trilochan_Pokhrel
+recruit_character = SKM_Rai_Sahib_Tschi_Dadul
+recruit_character = SKM_Pipon_Namgyal
+recruit_character = SKM_Rashmi_Prasad_Alley
+recruit_character = SKM_Jaharman_Rai
+recruit_character = SKM_Paljor_Namgyal
+
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	remove_ideas = {
+		SKM_hard_farmers
+		SKM_conservative_nobles
+		SKM_taksari_idea
+		SKM_dzumsa_idea
+		SKM_calcutta_idea
+		SKM_rocket_post_idea
+		SKM_cardamon_idea
+		SKM_rice_idea
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

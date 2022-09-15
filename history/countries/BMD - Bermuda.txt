@@ -1,0 +1,123 @@
+﻿capital = 696
+
+oob = "BMD_1936"
+set_stability = 0.8
+set_war_support = 0.3
+
+add_ideas = BMD_idea_17 # Нехватка воды
+add_ideas = BMD_idea_18 # Зависимость от импорта
+add_ideas = BMD_idea_23 # "Больная" агропромышленность
+add_ideas = BMD_idea_31 # "Черные бермудцы"
+add_ideas = AST_great_depression_1
+add_ideas = BMD_idea_28 # Офицеры
+add_ideas = BMD_idea_29 # Автотранспорт
+add_ideas = limited_exports 
+
+
+set_convoys = 20
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+	}
+}
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1932.6.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 78
+	democratic = 22
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+recruit_character = BMD_sir_denis_bernard
+recruit_character = BMD_sir_thomas_cubitt
+recruit_character = BMD_russell_dismont
+recruit_character = BMD_sir_charles_kennedypurvis
+recruit_character = BMD_sir_sidney_meyrick
+recruit_character = BMD_sir_alban_curteis
+recruit_character = BMD_lawrence_ogilvie
+recruit_character = BMD_thomas_melville_dill
+recruit_character = BMD_gilbert_cooper
+recruit_character = BMD_bishop_arthur_browne
+recruit_character = BMD_charles_edward_simons
+recruit_character = BMD_sir_richard_o_connor
+recruit_character = BMD_arthur_spurling
+recruit_character = BMD_cecil_montgomery_moore
+recruit_character = BMD_john_jagoe
+recruit_character = BMD_sir_reginald_hildyard
+
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	drop_cosmetic_tag = yes
+	remove_ideas = {
+		BMD_idea_17
+		BMD_idea_18
+		BMD_idea_23
+		BMD_idea_31
+		AST_great_depression_1
+		BMD_idea_28
+		BMD_idea_29
+	}
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

@@ -1,0 +1,87 @@
+FRA_historical_plan = {
+	name = "France historical plan"
+	desc = "Historical behavior for France"
+	
+	allowed = {
+		original_tag = FRA
+	}
+	
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = FRA_ai_behavior
+					option = DEFAULT
+				}	
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = DEMOCRATIC_HISTORICAL
+			}
+			has_country_flag = FRA_AI_DEMOCRATIC_HISTORICAL
+		}
+	}
+	abort = {
+		OR = {
+			GER = { has_completed_focus = GER_oppose_hitler }
+			AND = {
+				ENG = { has_completed_focus = ENG_a_change_in_course }
+				NOT = { GER = { has_completed_focus = GER_oppose_hitler } }
+			}
+			AND = {
+				is_historical_focus_on = no
+				has_game_rule = {
+					rule = FRA_ai_behavior
+					option = DEFAULT
+				}	
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		FRA_yield_radical_socialists
+		FRA_parliamentary_elections
+		FRA_victory_popular_front
+		
+		FRA_create_national_department
+		FRA_reform_paris_police
+		
+		FRA_program_daladier
+		FRA_defensive_focus
+		FRA_budget_allocation_infantry_equipment
+		FRA_introduction_of_new_equipment
+		
+		FRA_raising_compulsory_school_age
+		FRA_direction_determination_courses
+		FRA_appeasement_of_germany
+		
+		FRA_dissolution_fascist_leagues
+		FRA_french_antimilitarism
+		FRA_weakening_influence_communists
+		FRA_strengthen_democracy
+		FRA_ban_communist_party
+		FRA_take_side_uk
+		FRA_prepare_people_for_war
+		FRA_support_czechoslovakia
+		FRA_support_poland
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+
+state={
+	id=63
+	name="STATE_63"
+	manpower = 1124417
+	resources={
+		steel=23 # was: 36
+		aluminium=8 # was: 12
+	}
+	
+	state_category = rural
+
+	local_supplies=0.0
+	history={
+		owner = GER
+		victory_points = {
+			6282 2
+		}
+		victory_points = { 
+			537 1 
+		}
+		victory_points = { 
+			6236 1 
+		}
+		victory_points = { 
+			9361 1 
+		}		
+		buildings = {
+			infrastructure = 3
+			6282 = {
+				naval_base = 4
+			}			
+			9361 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GER
+		1941.11.1 = {
+			owner = PRS
+			controller = PRS
+			add_core_of = PRS
+			remove_core_of = GER
+		}
+	}
+
+	provinces={
+		537 6282 6236 6309 6334 6390 9277 9334 9361 9387
+	}
+}

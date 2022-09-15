@@ -1,0 +1,651 @@
+save_party_popularity = {
+	hidden_effect = {
+		clr_country_flag = be_has_government_communism
+		clr_country_flag = be_has_government_democratic
+		clr_country_flag = be_has_government_fascism
+		clr_country_flag = be_has_government_neutrality
+		clr_country_flag = be_has_government_technocracy
+		clr_country_flag = be_has_government_trozkism
+		clr_country_flag = be_has_government_monarchy
+		clr_country_flag = be_has_government_anarchism
+		
+		set_variable = { comm_var = party_popularity_100@communism }
+		set_variable = { demo_var = party_popularity_100@democratic }
+		set_variable = { fash_var = party_popularity_100@fascism }
+		set_variable = { neut_var = party_popularity_100@neutrality }
+		set_variable = { tech_var = party_popularity_100@technocracy }
+		set_variable = { troz_var = party_popularity_100@trozkism }
+		set_variable = { king_var = party_popularity_100@monarchy }
+		set_variable = { anar_var = party_popularity_100@anarchism }
+		log = "[GetDateText]: [Root.GetName]: comm_var: [?comm_var|3]"
+		log = "[GetDateText]: [Root.GetName]: demo_var: [?demo_var|3]"
+		log = "[GetDateText]: [Root.GetName]: fash_var: [?fash_var|3]"
+		log = "[GetDateText]: [Root.GetName]: neut_var: [?neut_var|3]"
+		log = "[GetDateText]: [Root.GetName]: tech_var: [?tech_var|3]"
+		log = "[GetDateText]: [Root.GetName]: troz_var: [?troz_var|3]"
+		log = "[GetDateText]: [Root.GetName]: king_var: [?king_var|3]"
+		log = "[GetDateText]: [Root.GetName]: anar_var: [?anar_var|3]"
+		
+		if = {
+			limit = { has_government = communism }
+			set_country_flag = be_has_government_communism
+		}
+		if = {
+			limit = { has_government = democratic }
+			set_country_flag = be_has_government_democratic
+		}
+		if = {
+			limit = { has_government = fascism }
+			set_country_flag = be_has_government_fascism
+		}
+		if = {
+			limit = { has_government = neutrality }
+			set_country_flag = be_has_government_neutrality
+		}
+		if = {
+			limit = { has_government = technocracy }
+			set_country_flag = be_has_government_technocracy
+		}
+		if = {
+			limit = { has_government = trozkism }
+			set_country_flag = be_has_government_trozkism
+		}
+		if = {
+			limit = { has_government = monarchy }
+			set_country_flag = be_has_government_monarchy
+		}
+		if = {
+			limit = { has_government = anarchism }
+			set_country_flag = be_has_government_anarchism
+		}
+	}
+}
+
+load_party_popularity = {
+	hidden_effect = {
+		set_popularities = {
+			communism = comm_var
+			democratic = demo_var
+			fascism = fash_var
+			neutrality = neut_var
+			technocracy = tech_var
+			trozkism = troz_var
+			monarchy = king_var
+			anarchism = anar_var
+		}
+		clear_variable = comm_var
+		clear_variable = demo_var
+		clear_variable = fash_var
+		clear_variable = neut_var
+		clear_variable = tech_var
+		clear_variable = troz_var
+		clear_variable = king_var
+		clear_variable = anar_var
+		
+		if = {
+			limit = { has_country_flag = be_has_government_communism }
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		if = {
+			limit = { has_country_flag = be_has_government_democratic }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		if = {
+			limit = { has_country_flag = be_has_government_fascism }
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+		if = {
+			limit = { has_country_flag = be_has_government_neutrality }
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+		if = {
+			limit = { has_country_flag = be_has_government_technocracy }
+			set_politics = {
+				ruling_party = technocracy
+				elections_allowed = no
+			}
+		}
+		if = {
+			limit = { has_country_flag = be_has_government_trozkism }
+			set_politics = {
+				ruling_party = trozkism
+				elections_allowed = yes
+			}
+		}
+		if = {
+			limit = { has_country_flag = be_has_government_monarchy }
+			set_politics = {
+				ruling_party = monarchy
+				elections_allowed = no
+			}
+		}
+		if = {
+			limit = { has_country_flag = be_has_government_anarchism }
+			set_politics = {
+				ruling_party = anarchism
+				elections_allowed = no
+			}
+		}
+		
+		clr_country_flag = be_has_government_communism
+		clr_country_flag = be_has_government_democratic
+		clr_country_flag = be_has_government_fascism
+		clr_country_flag = be_has_government_neutrality
+		clr_country_flag = be_has_government_technocracy
+		clr_country_flag = be_has_government_trozkism
+		clr_country_flag = be_has_government_monarchy
+		clr_country_flag = be_has_government_anarchism
+	}
+}
+
+FRA_transfer_indochina_effect = {
+	if = {
+		limit = {
+			FIC = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = FIC
+	}
+	else_if = {
+		limit = {
+			VIN = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = VIN
+	}
+	else_if = {
+		limit = {
+			671 = { CONTROLLER = { original_tag = FRA } }
+			286 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 671
+		transfer_state = 286
+	}
+	if = {
+		limit = {
+			CAM = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = CAM
+	}
+	else_if = {
+		limit = {
+			741 = { CONTROLLER = { original_tag = FRA } }
+			1179 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 741
+		transfer_state = 1179
+	}
+	if = {
+		limit = {
+			LAO = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = LAO
+	}
+	else_if = {
+		limit = {
+			670 = { CONTROLLER = { original_tag = FRA } }
+			1180 = { CONTROLLER = { original_tag = FRA } }
+			1181 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 670
+		transfer_state = 1180
+		transfer_state = 1181
+	}
+}
+
+FRA_transfer_syria_effect = {
+	if = {
+		limit = {
+			LEB = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = LEB
+	}
+	else_if = {
+		limit = {
+			553 = { CONTROLLER = { original_tag = FRA } }
+			1055 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 553
+		transfer_state = 1055
+	}
+	if = {
+		limit = {
+			JDS = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = JDS
+	}
+	else_if = {
+		limit = { 1101 = { CONTROLLER = { original_tag = FRA } } }
+		transfer_state = 1101
+	}
+	if = {
+		limit = {
+			ALW = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = ALW
+	}
+	else_if = {
+		limit = { 1100 = { CONTROLLER = { original_tag = FRA } } }
+		transfer_state = 1100
+	}
+	if = {
+		limit = {
+			SYR = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = SYR
+	}
+	else_if = {
+		limit = {
+			554 = { CONTROLLER = { original_tag = FRA } }
+			680 = { CONTROLLER = { original_tag = FRA } }
+			677 = { CONTROLLER = { original_tag = FRA } }
+			961 = { CONTROLLER = { original_tag = FRA } }
+			998 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 554
+		transfer_state = 680
+		transfer_state = 677
+		transfer_state = 961
+		transfer_state = 998
+	}
+	if = {
+		limit = { 945 = { CONTROLLER = { original_tag = FRA } } }
+		transfer_state = 945
+	}
+}
+
+FRA_transfer_north_africa_effect = {
+	if = {
+		limit = {
+			TUN = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = TUN
+	}
+	else_if = {
+		limit = { 
+			458 = { CONTROLLER = { original_tag = FRA } } 
+			665 = { CONTROLLER = { original_tag = FRA } } 
+		}
+		transfer_state = 458
+		transfer_state = 665
+	}
+	if = {
+		limit = {
+			MOR = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = MOR
+	}
+	else_if = {
+		limit = { 
+			461 = { CONTROLLER = { original_tag = FRA } } 
+			462 = { CONTROLLER = { original_tag = FRA } } 
+			806 = { CONTROLLER = { original_tag = FRA } } 
+		}
+		transfer_state = 461
+		transfer_state = 462
+		transfer_state = 806
+	}
+	if = {
+		limit = { 290 = { CONTROLLER = { original_tag = FRA } } }
+		transfer_state = 290
+	}
+	if = {
+		limit = { 1015 = { CONTROLLER = { original_tag = FRA } } }
+		transfer_state = 1015
+	}
+	if = {
+		limit = {
+			ALG = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}	
+		}
+		puppet = ALG
+	}
+	else_if = {
+		limit = {
+			513 = { CONTROLLER = { original_tag = FRA } }
+			459 = { CONTROLLER = { original_tag = FRA } }
+			460 = { CONTROLLER = { original_tag = FRA } }
+			1067 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 513
+		transfer_state = 459
+		transfer_state = 460
+		transfer_state = 1067
+	}
+}
+
+FRA_transfer_central_africa_effect = {
+	if = {
+		limit = {
+			RCG = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = RCG
+	}
+	else_if = {
+		limit = { 
+			1005 = { CONTROLLER = { original_tag = FRA } } 
+		}
+		transfer_state = 1005
+	}
+	if = {
+		limit = {
+			GAB = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = GAB
+	}
+	else_if = {
+		limit = { 
+			539 = { CONTROLLER = { original_tag = FRA } } 
+		}
+		transfer_state = 539
+	}
+	if = {
+		limit = {
+			CAR = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = CAR
+	}
+	else_if = {
+		limit = {
+			660 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 660
+	}
+	if = {
+		limit = {
+			CMR = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = CMR
+	}
+	else_if = {
+		limit = {
+			1006 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 1006
+	}
+	if = {
+		limit = {
+			CHA = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = CHA
+	}
+	else_if = {
+		limit = {
+			1007 = { CONTROLLER = { original_tag = FRA } }
+			1019 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 1007
+		transfer_state = 1019
+	}
+}
+FRA_transfer_western_africa_effect = {
+	if = {
+		limit = {
+			NGR = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = NGR
+	}
+	else_if = {
+		limit = {
+			1013 = { CONTROLLER = { original_tag = FRA } }
+			515 = { CONTROLLER = { original_tag = FRA } }
+		}
+		transfer_state = 1013
+		transfer_state = 515
+	}
+	if = {
+		limit = {
+			SEN = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = SEN
+	}
+	else_if = {
+		limit = { 
+			272 = { CONTROLLER = { original_tag = FRA } } 
+		}
+		transfer_state = 272
+	}
+	if = {
+		limit = {
+			TOG = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = TOG
+	}
+	else_if = {
+		limit = {
+			556 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 556
+	}
+	if = {
+		limit = {
+			VOL = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = VOL
+	}
+	else_if = {
+		limit = {
+			1012 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 1012
+	}
+	if = {
+		limit = {
+			IVO = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = IVO
+	}
+	else_if = {
+		limit = {
+			1011 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 1011
+	}
+	if = {
+		limit = {
+			MLI = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = MLI
+	}
+	else_if = {
+		limit = {
+			1010 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 1010
+	}
+	if = {
+		limit = {
+			GNA = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = GNA
+	}
+	else_if = {
+		limit = {
+			1009 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 1009
+	}
+	if = {
+		limit = {
+			SEN = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = SEN
+	}
+	else_if = {
+		limit = {
+			1008 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 1008
+	}
+	if = {
+		limit = {
+			MRT = {
+				exists = yes
+				is_subject = yes
+				OVERLORD = {
+					original_tag = FRA
+				}
+			}
+		}
+		puppet = MRT
+	}
+	else_if = {
+		limit = {
+			557 = { CONTROLLER = { original_tag = FRA } }	
+		}
+		transfer_state = 557
+	}
+}

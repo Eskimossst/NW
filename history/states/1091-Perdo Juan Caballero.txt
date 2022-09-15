@@ -1,0 +1,26 @@
+
+state={
+	id=1091
+	name="STATE_1091"
+	manpower = 80000
+	
+	state_category = rural
+	
+	local_supplies=0.0
+	history={
+		owner = PAR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = PAR
+		victory_points = {
+			12901 1 
+		}
+
+	}
+
+	provinces={
+		11023 12901 14160 14163
+	}
+	
+}

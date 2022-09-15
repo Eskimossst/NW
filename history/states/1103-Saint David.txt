@@ -1,0 +1,22 @@
+state={
+	id=1103
+	name="STATE_1103"
+	manpower = 2000
+	
+	state_category = enclave
+	local_supplies=0.0
+	history={
+		owner = BMD
+		add_core_of = BMD
+		buildings = {
+			infrastructure = 2
+			14328 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		14328
+	}
+}

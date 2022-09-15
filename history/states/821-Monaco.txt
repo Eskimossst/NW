@@ -1,0 +1,33 @@
+state={
+	id=821
+	name="STATE_821"
+	manpower=24000
+	
+	state_category = city
+	
+	local_supplies=0.0
+	history={
+		owner = MNC
+		add_core_of = MNC
+		buildings={
+			infrastructure = 3
+		}
+		victory_points = {
+			13209 1 
+		}
+		1940.1.1 = {
+			owner = FRA
+			remove_core_of = MNC
+			add_core_of = FRA
+		}
+		1941.11.1 = {
+			owner = MNC
+			add_core_of = MNC
+			remove_core_of = FRA
+		}
+	}
+	
+	provinces={
+		13209
+	}
+}

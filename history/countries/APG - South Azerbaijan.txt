@@ -1,0 +1,52 @@
+﻿capital = 419
+
+oob = "PER_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+}
+
+set_convoys = 20
+
+set_popularities = {
+	monarchy = 5
+	fascism = 5
+	democratic = 30
+	communism = 60
+	neutrality = 0
+}
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = APG_jafar_pishewari
+recruit_character = APG_jafar_kavian
+recruit_character = APG_ghulam_yahya_daneshian
+recruit_character = APG_mohammad_biriya
+recruit_character = APG_rabi_ollah_kabiri
+recruit_character = APG_haji_mirza_ali_sabustari
+recruit_character = APG_fereydun_ebrahimi
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

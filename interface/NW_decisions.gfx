@@ -1,0 +1,426 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_confederation_peru_bolivia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_confederation_peru_bolivia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_south_usa_confederation"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_south_usa_confederation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_form_united_south_america_category"
+		texturefile = "gfx/interface/decisions/decision_form_united_south_america_category.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_himalayas"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_himalayas.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_antillean_confederation"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_antillean_confederation.dds"
+	}
+	
+	
+	#ExWorld
+	spriteType = {
+		name = "GFX_decision_cat_generic_litbel"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_litbel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_great_lit"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_great_lit.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_slavia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_slavia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_earth"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_earth.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_balcan"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_balcan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_africa"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_africa.dds"
+	}
+	
+	
+	#NW
+	spriteType = {
+		name = "GFX_decision_cat_generic_mexicana"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_mexicana.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_iberia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_iberia.dds"
+	}
+	
+	#SOV
+	spriteType = {
+		name = "GFX_decision_category_sov_palace"
+		texturefile = "gfx/interface/decisions/decision_category_sov_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_palace_of_the_soviets"
+		texturefile = "gfx/interface/decisions/palace_of_the_soviets.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_SOV_palace_construction"
+		texturefile = "gfx/interface/decisions/SOV_palace_construction.dds"
+	}
+	
+	#TUR
+	spriteType = {
+		name = "GFX_decision_category_pasarics"
+		texturefile = "gfx/interface/decisions/decision_category_pasarics.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_TUR_pasarics"
+		texturefile = "gfx/interface/decisions/TUR_pasarics.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_turan"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_turan.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_soviet_middle_east"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_soviet_middle_east.dds"
+	}
+	
+
+	#DUCE
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_ita_africans"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_ita_africans.dds"
+	}
+
+	### Sai
+	spriteType = {
+		name = "GFX_decision_cat_resistance_movements"
+		texturefile = "gfx/interface/decisions/decision_cat_resistance_movements.dds"
+	}
+	
+	### Tech
+	spriteType = {
+		name = "GFX_decision_category_log_service_categories"
+		texturefile = "gfx/interface/decisions/decision_log_service_categories.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_decision_off"
+		texturefile = "gfx/interface/decisions/decision_decision_off.dds"
+	}
+	
+	
+	##
+	spriteType = {
+		name = "GFX_decision_cat_generic_catalonia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_catalonia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_portugal"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_portugal.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_free_france"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_free_france.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_empire_of_west_and_east"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_empire_of_west_and_east.dds"
+	}
+	
+	
+	
+	#PER
+	spriteType = {
+		name = "GFX_decision_cat_generic_arabistan_integration"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_arabistan_integration.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_greater_iran"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_greater_iran.dds"
+	}
+	
+	
+	
+	###	GENERIC ###
+	###	CATEGORY
+	spriteType = {
+		name = "GFX_decision_category_generic_trozkism"
+		texturefile = "gfx/interface/decisions/decision_category_generic_trozkism.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_generic_colonial_policy"
+		texturefile = "gfx/interface/decisions/decision_category_generic_colonial_policy.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_generic_anarchism"
+		texturefile = "gfx/interface/decisions/decision_category_generic_anarchism.dds"
+	}
+	spriteType = {		#vanila FIX
+		name = "GFX_decision_category_faction_tur_unaligned"
+		texturefile = "gfx/interface/decisions/decision_faction_tur_unaligned.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_land_cruiser"
+		texturefile = "gfx/interface/decisions/decision_category_land_cruiser.dds"
+	}
+	
+	
+	### DECISION
+	spriteType = {		#vanila FIX
+		name = "GFX_decision_generic_assasination"
+		texturefile = "gfx/interface/decisions/decision_generic_assasination.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_farm"
+		texturefile = "gfx/interface/decisions/decision_generic_farm.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_speech"
+		texturefile = "gfx/interface/decisions/decision_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_atomic_research"
+		texturefile = "gfx/interface/decisions/decision_generic_atomic_research.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_rocket_research"
+		texturefile = "gfx/interface/decisions/decision_generic_rocket_research.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_resources"
+		texturefile = "gfx/interface/decisions/decision_generic_resources.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_industrial"
+		texturefile = "gfx/interface/decisions/decision_generic_industrial.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_war_industrial"
+		texturefile = "gfx/interface/decisions/decision_generic_war_industrial.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_syndicalism"
+		texturefile = "gfx/interface/decisions/decision_generic_syndicalism.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_concern_red_inf"
+		texturefile = "gfx/interface/decisions/decision_generic_concern_red_inf.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_concern_red_tank"
+		texturefile = "gfx/interface/decisions/decision_generic_concern_red_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_concern_red_tank"
+		texturefile = "gfx/interface/decisions/decision_generic_concern_red_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_health"
+		texturefile = "gfx/interface/decisions/decision_generic_health.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_fire"
+		texturefile = "gfx/interface/decisions/decision_generic_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_fire_red"
+		texturefile = "gfx/interface/decisions/decision_generic_fire_red.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_artillery"
+		texturefile = "gfx/interface/decisions/decision_generic_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_focus"
+		texturefile = "gfx/interface/decisions/decision_generic_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_support_equipment"
+		texturefile = "gfx/interface/decisions/decision_generic_support_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_motorized"
+		texturefile = "gfx/interface/decisions/decision_generic_motorized.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_mechanized"
+		texturefile = "gfx/interface/decisions/decision_generic_mechanized.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_armored_car"
+		texturefile = "gfx/interface/decisions/decision_generic_armored_car.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_light_tank"
+		texturefile = "gfx/interface/decisions/decision_generic_light_tank.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_decision_generic_naval_guns"
+		texturefile = "gfx/interface/decisions/decision_generic_naval_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_railway_guns"
+		texturefile = "gfx/interface/decisions/decision_generic_railway_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_multi_tower_layout_scheme"
+		texturefile = "gfx/interface/decisions/decision_generic_multi_tower_layout_scheme.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_single_barrel_layout_scheme"
+		texturefile = "gfx/interface/decisions/decision_generic_single_barrel_layout_scheme.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_armor"
+		texturefile = "gfx/interface/decisions/decision_generic_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_design_chassis"
+		texturefile = "gfx/interface/decisions/decision_generic_design_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_design_transmission"
+		texturefile = "gfx/interface/decisions/decision_generic_design_transmission.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_design_engine"
+		texturefile = "gfx/interface/decisions/decision_generic_design_engine.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_design_tracks"
+		texturefile = "gfx/interface/decisions/decision_generic_design_tracks.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_land_cruiser_tests"
+		texturefile = "gfx/interface/decisions/decision_generic_land_cruiser_tests.dds"
+	}
+	
+	
+	
+	
+	
+	
+	### EGY ###
+	spriteType = {
+		name = "GFX_ancient_Egypt_map"
+		texturefile = "gfx/interface/decisions/ancient_Egypt_map.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_greater_egypt"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_greater_egypt.dds"
+	}
+	
+	
+	
+	### NFL ###
+	spriteType = {
+		name = "GFX_decision_cat_generic_NFL_Territory_exploration_program"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_NFL_Territory_exploration_program.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_NFL_policy_of_сommission_of_government"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_NFL_policy_of_сommission_of_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_NFL_National_Convention"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_NFL_National_Convention.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_NFL_policy_of_responsible_government"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_NFL_policy_of_сommission_of_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_form_canadian_confederation_category"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_form_canadian_confederation_category.dds"
+	}
+	
+	
+	### NEP ###
+	spriteType = {
+		name = "GFX_decision_wood_develop"
+		texturefile = "gfx/interface/decisions/decision_wood_develop.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_landslide"
+		texturefile = "gfx/interface/decisions/decision_landslide.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_wood_develop"
+		texturefile = "gfx/interface/decisions/decision_category_wood_develop.dds"
+	}
+	
+	
+	### KRD ###
+	spriteType = {
+		name = "GFX_decision_cat_krd_dersim_problem"
+		texturefile = "gfx/interface/decisions/decision_cat_krd_dersim_problem.dds"
+	}
+	
+	
+	### ALB ###
+	spriteType = {
+		name = "GFX_decision_cat_generic_greatalb"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_greatalb.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_coat_of_arms_of_the_albanian_kingdom"
+		texturefile = "gfx/interface/decisions/decision_cat_coat_of_arms_of_the_albanian_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_power_of_the_king_zogu"
+		texturefile = "gfx/interface/decisions/decision_category_power_of_the_king_zogu.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_red_cross"
+		texturefile = "gfx/interface/decisions/decision_generic_red_cross.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_bal"
+		texturefile = "gfx/interface/decisions/decision_generic_bal.dds"
+	}
+	
+	### XMS ###
+	spriteType = {
+		name = "GFX_decision_category_salafit_fight"
+		texturefile = "gfx/interface/decisions/decision_category_salafit_fight.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_hearth_salafir"
+		texturefile = "gfx/interface/decisions/decision_hearth_salafir.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kill_salafit"
+		texturefile = "gfx/interface/decisions/decision_kill_salafit.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_muslim_propaganda"
+		texturefile = "gfx/interface/decisions/decision_muslim_propaganda.dds"
+	}
+	
+	### OMA ###	
+	spriteType = {
+		name = "GFX_decision_cat_generic_oman"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_oman.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_harami_rebelion"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_harami_rebelion.dds"
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=862
+	name="STATE_862"
+	manpower = 159000
+	state_category = rural
+	
+	resources={
+		steel=6 # was: 10
+	}
+
+
+	local_supplies=0.0
+	history={
+		owner = SWE
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SWE
+		1941.11.1 = {
+			owner = NOR
+			controller = NOR
+			add_core_of = NOR
+		}
+	}
+	
+	
+	provinces={
+		171 6310 
+	}
+}

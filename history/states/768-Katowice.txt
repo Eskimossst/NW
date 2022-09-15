@@ -1,0 +1,36 @@
+state={
+	id=768
+	name="STATE_768"
+	manpower = 828634
+	
+	state_category = city
+	
+	resources={
+		steel=19 # was: 60
+		aluminium=7 # was: 20
+	}
+
+	local_supplies=0.0
+	history={
+		owner = POL
+		victory_points = {
+			6464 5
+		}
+		victory_points = {
+			14673 1
+		}		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = POL
+		1941.11.1 = {
+			owner = SAX
+			add_core_of = SAX
+		}
+	}
+
+	provinces={
+		506 6464 14673
+	}
+}

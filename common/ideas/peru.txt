@@ -1,0 +1,110 @@
+ideas = {	
+	
+	industrial_concern = {
+		
+		Volcan = {
+		
+			picture = Volcan
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			modifier = {
+			local_resources_factor = 0.10
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			
+			traits = { industrial_concern }
+		}
+		
+		Compania_Minera_Atacocha = {
+		
+			picture = Compania_Minera_Atacocha
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			cost = 250
+			
+			modifier = {
+			local_resources_factor = 0.10
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				electronics = 0.075
+			}
+			
+			traits = { industrial_concern }
+		}
+		
+		Grana_y_Montero = {
+		
+			picture = Grana_y_Montero
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			modifier = {
+			local_resources_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			}
+			
+			research_bonus = {
+				industry = 0.075
+				electronics = 0.075
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		Edegel = {
+			
+			picture = Edegel
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		Ferreycorp = {
+			
+			picture = Ferreycorp
+
+			
+			allowed = {
+				original_tag = PRU
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				industry = 0.075
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+}

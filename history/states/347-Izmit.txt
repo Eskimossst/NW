@@ -1,0 +1,31 @@
+
+state={
+	id=347
+	name="STATE_347"
+	manpower = 807660
+	resources={
+		chromium=19 # was: 26
+	}
+	
+	state_category = rural
+
+	local_supplies=0.0
+	history={
+		owner = TUR
+		victory_points = {
+			904 1 
+		}
+		buildings = {
+			infrastructure = 2
+			904 = {
+				naval_base = 2
+			}
+			dockyard = 1
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		904 3905 3919 11866 11883 
+	}
+}

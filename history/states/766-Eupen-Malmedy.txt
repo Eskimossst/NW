@@ -1,0 +1,30 @@
+
+state={
+	id=766
+	name="STATE_766"
+	manpower = 20000
+	
+	state_category = rural
+
+	local_supplies=0.0
+	history={
+		owner = BEL
+		victory_points = {
+			3488 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = BEL
+		add_core_of = WLN
+		1940.1.1 = {
+			owner = WLN
+			controller = WLN
+		}
+	}
+
+	provinces={
+		3488
+	}
+}

@@ -1,0 +1,984 @@
+﻿# Characters shared by the chinese countries
+# for each country, generate one instance of the characters
+every_possible_country = {
+	if = {
+		limit = {
+			tag = GBF
+		}
+
+		### ARMY
+		
+		generate_character = {
+			token_base = GER_erich_raeder
+			name=GER_erich_raeder
+			portraits={
+				army={
+					large="gfx/leaders/GER/Portrait_Germany_Erich_Raeder.dds"
+					small="gfx/interface/ideas/idea_GER_erich_raeder.dds"
+				}
+				army={
+					small="GFX_idea_raeder"
+				}
+			}
+			advisor={
+				slot = navy_chief
+				idea_token = raeder
+				allowed = {
+					original_tag = GER
+				}
+				available = {
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 0.100
+				}
+			}
+		}
+		
+		generate_character = {
+			token_base = GER_ritter_von_greim
+			name=GER_ritter_von_greim
+			portraits={
+				army={
+					small="GFX_idea_ritter_von_greim"
+				}
+			}
+			advisor={
+				slot = air_chief
+				idea_token = ritter_von_greim
+				allowed = {
+					original_tag = GER
+				}
+				available = {
+				}
+				traits = {
+					air_chief_all_weather_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 0.500
+				}
+			}
+		}
+		
+		generate_character = {
+			token_base = generic_army_fire_1
+			advisor = {
+				slot = high_command
+				traits = { army_fire_1 }
+				ledger = army
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			portraits = { 
+				army = { small = "GFX_Portrait_Europe_Generic_land_2_small" }
+			}
+		}
+		
+		generate_character = {
+			token_base = generic_army_fire_1
+			advisor = {
+				slot = high_command
+				traits = { army_fire_1 }
+				ledger = army
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			portraits = { 
+				army = { small = "GFX_Portrait_Europe_Generic_land_2_small" }
+			}
+		}
+		
+		
+		generate_character = {
+			token_base = generic_military_theorist # token will be TAG_token_base
+			advisor = {
+				slot = theorist
+				traits = { military_theorist }
+				ledger = army
+				cost = 50
+			}
+			portraits = { 
+				army = { small = "GFX_idea_generic_army_europe_2" }
+			}
+		}
+		generate_character = {
+			token_base = generic_naval_theorist # token will be TAG_token_base
+			advisor = {
+				slot = theorist
+				traits = { naval_theorist }
+				ledger = navy
+				cost = 50
+			}
+			portraits = { 
+				army = { small = "GFX_idea_generic_navy_europe_3" }
+			}
+		}
+		
+		generate_character = {
+			token_base = generic_air_warfare_theorist # token will be TAG_token_base
+			advisor = {
+				slot = theorist
+				traits = { air_warfare_theorist }
+				ledger = air
+				cost = 50
+			}
+			portraits = { 
+				army = { small = "GFX_idea_generic_air_europe_3" }
+			}
+		}
+		
+		
+		generate_character = {
+			token_base = GER_von_braun
+			name=GER_von_braun
+			portraits={
+				army={
+					small="GFX_idea_von_braun"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = von_braun
+				ledger = air
+				allowed = {
+					original_tag = GER
+				}
+				research_bonus = {
+					rocketry = 0.150
+				}
+				traits = {
+					rocket_scientist
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_heisenberg
+			name=GER_heisenberg
+			portraits={
+				army={
+					small="GFX_idea_heisenberg"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = heisenberg
+				ledger = army
+				allowed = {
+					original_tag = GER
+				}
+				research_bonus = {
+					nuclear = 0.150
+				}
+				traits = {
+					nuclear_scientist
+				}
+			}
+		}
+		
+		
+		### POLITICAL ADVISORS ###
+
+		generate_character = {
+			token_base = GER_fritz_todt
+			name=GER_fritz_todt
+			portraits={
+				army={
+					small="GFX_idea_todt"
+				}
+				
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = todt
+				allowed = {
+					original_tag = GER
+				}
+				available = {
+					has_completed_focus = GER_west_wall 
+				}
+				traits = {
+					fortification_engineer 
+				}
+				ai_will_do = {
+					factor = 0.500
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_walther_funk
+			name=GER_walther_funk
+			portraits={
+				army={
+					small="GFX_idea_walther_funk"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = walther_funk
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					war_industrialist 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_konstantin_von_neurath
+			name=GER_konstantin_von_neurath
+			portraits={
+				army={
+					small="GFX_idea_konstantin_von_neurath"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = konstantin_von_neurath
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					smooth_talking_charmer 
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_wilhelm_canaris
+			name=GER_wilhelm_canaris
+			portraits={
+				army={
+					small="GFX_idea_ger_wilhelm_canaris"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = ger_wilhelm_canaris
+				available = {
+					has_intelligence_agency = yes 
+				}
+				allowed = {
+					original_tag = GER
+					has_dlc = "La Resistance"
+				}
+				traits = {
+					head_of_intelligence 
+				}
+			}
+		}
+		
+		generate_character = {
+			token_base = generic_captain_of_industry
+			advisor = {
+				slot = political_advisor
+				traits = { captain_of_industry }
+			}
+			portraits = {
+				army = { small = "GFX_idea_generic_political_advisor_europe_4" }
+			}
+		}
+	}
+}
+
+
+every_possible_country = {
+	if = {
+		limit = {
+			tag = GFR
+		}
+
+		generate_character = {
+			token_base = GER_gerd_von_rundstedt
+			name=GER_gerd_von_rundstedt
+			portraits={
+				army={
+					small="gfx/interface/ideas/idea_GER_gerd_von_rundstedt.dds"
+					large="gfx/leaders/GER/Portrait_Germany_Gerd_von_Rundstedt.dds"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = gerd_von_rundstedt
+				ledger = army
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					army_regrouping_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.500
+				}
+			}
+		}
+		generate_character = {
+			token_base = GER_erwin_rommel
+			name=GER_erwin_rommel
+			portraits={
+				army={
+					large="gfx/leaders/GER/Portrait_Germany_Erwin_Rommel.dds"
+					small="GFX_idea_erwin_rommel"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = erwin_rommel
+				ledger = army
+				allowed = {
+					original_tag = GER
+				}
+				available = {
+				}
+				traits = {
+					army_armored_3
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 8.000
+				}
+			}
+		}
+		generate_character = {
+			token_base = GER_heinz_guderian
+			name=GER_heinz_guderian
+			portraits={
+				army={
+					large="gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
+					small="GFX_idea_heinz_guderian"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = heinz_guderian
+				ledger = army
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					blitzkrieg_theorist
+				}
+			}
+		}
+		generate_character = {
+			token_base = GER_kurt_student
+			name=GER_kurt_student
+			portraits={
+				army={
+					large="gfx/leaders/GER/Portrait_Germany_Kurt_Student.dds"
+					small="GFX_idea_kurt_student"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = kurt_student
+				ledger = air
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					air_airborne_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+		generate_character = {
+			token_base = GER_albert_kesselring
+			name=GER_albert_kesselring
+			portraits={
+				army={
+					large="gfx/leaders/GER/Portrait_Germany_Albert_Kesselring.dds"
+					small="gfx/interface/ideas/idea_GER_albert_kesselring.dds"
+				}
+			}
+			advisor={
+				slot = air_chief
+				idea_token = albert_kesselring
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+		generate_character = {
+			token_base = GER_karl_donitz
+			name=GER_karl_donitz
+			portraits={
+				army={
+					large="gfx/leaders/GER/Portrait_Germany_Karl_Donitz.dds"
+					small="gfx/interface/ideas/idea_GER_karl_donitz.dds"
+				}
+				army={
+					small="GFX_idea_donitz"
+				}
+			}
+			advisor={
+				slot = navy_chief
+				idea_token = donitz
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					navy_chief_commerce_raiding_3
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 0.100
+				}
+			}
+		}
+		generate_character = {
+			token_base = GER_alfred_saalwachter
+			name=GER_alfred_saalwachter
+			portraits={
+				army={
+					large="gfx/leaders/GER/Portrait_Germany_Alfred_Saalwachter.dds"
+					small="gfx/interface/ideas/idea_GER_alfred_saalwachter.dds"
+				}
+				army={
+					small="GFX_idea_alfred_saalwachter"
+				}
+			}
+			advisor={
+				cost = 150
+				slot = theorist
+				idea_token = alfred_saalwachter
+				ledger = navy
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					submarine_specialist
+				}
+			}
+		}
+		generate_character = {
+			token_base = GER_gunther_lutjens
+			name=GER_gunther_lutjens
+			portraits={
+				army={
+					large="gfx/leaders/GER/Portrait_Germany_Gunter_Lutjens.dds"
+					small="gfx/interface/ideas/idea_GER_gunter_lutjens.dds"
+				}
+				army={
+					small="GFX_idea_gunther_lutjens"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = gunther_lutjens
+				ledger = navy
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					navy_fleet_logistics_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+		
+		### THEORISTS ###
+		
+		generate_character = {
+			token_base = GER_von_braun
+			name=GER_von_braun
+			portraits={
+				army={
+					small="GFX_idea_von_braun"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = von_braun
+				ledger = air
+				allowed = {
+					original_tag = GER
+				}
+				research_bonus = {
+					rocketry = 0.150
+				}
+				traits = {
+					rocket_scientist
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_heisenberg
+			name=GER_heisenberg
+			portraits={
+				army={
+					small="GFX_idea_heisenberg"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = heisenberg
+				ledger = army
+				allowed = {
+					original_tag = GER
+				}
+				research_bonus = {
+					nuclear = 0.150
+				}
+				traits = {
+					nuclear_scientist
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_wolfram_von_richthofen
+			name=GER_wolfram_von_richthofen
+			portraits={
+				army={
+					small="GFX_idea_wolfram_von_richthofen"
+				}
+			}
+			advisor={
+				cost = 150
+				slot = theorist
+				idea_token = wolfram_von_richthofen
+				ledger = air
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					close_air_support_proponent
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_walther_wever
+			name=GER_walther_wever
+			portraits={
+				army={
+					small="GFX_idea_walther_wever"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = walther_wever
+				ledger = air
+				allowed = {
+					original_tag = GER
+				}
+				traits = { air_warfare_theorist }
+			}
+		}
+
+		generate_character = {
+			token_base = GER_ernst_udet
+			name=GER_ernst_udet
+			portraits={
+				army={
+					small="GFX_idea_ernst_udet"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = ernst_udet
+				ledger = air
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					dive_bomber
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_otto_ciliax
+			name=GER_otto_ciliax
+			portraits={
+				army={
+					small="GFX_idea_otto_ciliax"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = otto_ciliax
+				ledger = navy
+				allowed = {
+					original_tag = GER
+				}
+				traits = { naval_theorist }
+			}
+		}
+
+		### ARMY CHIEFS ###
+
+		generate_character = {
+			token_base = GER_franz_halder
+			name=GER_franz_halder
+			portraits={
+				army={
+					small="GFX_idea_franz_halder"
+				}
+			}
+			advisor={
+				slot = army_chief
+				idea_token = franz_halder
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_walther_von_brauchitsch
+			name=GER_walther_von_brauchitsch
+			portraits={
+				army={
+					small="GFX_idea_walther_von_brauchitsch"
+				}
+			}
+			advisor={	
+				slot = army_chief
+				idea_token = GER_walther_von_brauchitsch
+				allowed = {
+					original_tag = GER
+				}
+				available = {
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+		
+		
+		### NAVY CHIEFS ###
+
+
+
+		### AIR CHIEFS ###
+
+
+		### MILITARY HIGH COMMAND ###
+
+		generate_character = {
+			token_base = GER_ferdinand_schorner
+			name=GER_ferdinand_schorner
+			portraits={
+				army={
+					small="GFX_idea_ferdinand_schorner"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = ferdinand_schorner
+				ledger = army
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 2.000
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_werner_von_fritsch
+			name=GER_werner_von_fritsch
+			portraits={
+				army={
+					small="GFX_idea_werner_von_fritsch"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = werner_von_fritsch
+				ledger = army
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.500
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_hugo_sperrle
+			name=GER_hugo_sperrle
+			portraits={
+				army={
+					small="GFX_idea_hugo_sperrle"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = hugo_sperrle
+				ledger = air
+				allowed = {
+					original_tag = GER
+				}
+				available = {
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_erhard_milch
+			name=GER_erhard_milch
+			portraits={
+				army={
+					small="GFX_idea_erhard_milch"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = erhard_milch
+				ledger = air
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_erich_bey
+			name=GER_erich_bey
+			portraits={
+				army={
+					small="GFX_idea_erich_bey"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = erich_bey
+				ledger = navy
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+		
+		generate_character = {
+			token_base = GER_viktor_schutze
+			name=GER_viktor_schutze
+			portraits={
+				army={
+					small="GFX_idea_viktor_schutze"
+				}
+			}
+			advisor={
+				slot = high_command
+				idea_token = viktor_schutze
+				ledger = navy
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost =  50
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+		
+
+		### POLITICAL ADVISORS ###
+
+		generate_character = {
+			token_base = GER_fritz_todt
+			name=GER_fritz_todt
+			portraits={
+				army={
+					small="GFX_idea_todt"
+				}
+				
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = todt
+				allowed = {
+					original_tag = GER
+				}
+				available = {
+					has_completed_focus = GER_west_wall 
+				}
+				traits = {
+					fortification_engineer 
+				}
+				ai_will_do = {
+					factor = 0.500
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_walther_funk
+			name=GER_walther_funk
+			portraits={
+				army={
+					small="GFX_idea_walther_funk"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = walther_funk
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					war_industrialist 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_konstantin_von_neurath
+			name=GER_konstantin_von_neurath
+			portraits={
+				army={
+					small="GFX_idea_konstantin_von_neurath"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = konstantin_von_neurath
+				allowed = {
+					original_tag = GER
+				}
+				traits = {
+					smooth_talking_charmer 
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_hans_oster
+			name=GER_hans_oster
+			portraits={
+				army={
+					small="GFX_idea_GER_hans_oster"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = GER_hans_oster
+				allowed = {
+					original_tag = GER
+				}
+				visible = {
+					has_completed_focus = GER_oppose_hitler 
+				}
+				available = {
+					has_completed_focus = GER_oppose_hitler 
+				}
+				traits = {
+					anti_fascist_agent 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+
+		generate_character = {
+			token_base = GER_wilhelm_canaris
+			name=GER_wilhelm_canaris
+			portraits={
+				army={
+					small="GFX_idea_ger_wilhelm_canaris"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = ger_wilhelm_canaris
+				available = {
+					has_intelligence_agency = yes 
+				}
+				allowed = {
+					original_tag = GER
+					has_dlc = "La Resistance"
+				}
+				traits = {
+					head_of_intelligence 
+				}
+			}
+		}
+	}
+}

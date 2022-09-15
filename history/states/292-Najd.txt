@@ -1,0 +1,34 @@
+
+state={
+	id=292
+	name="STATE_292"
+	manpower = 1040000
+	
+	state_category = pastoral
+
+	resources={
+		steel=1
+	}
+
+	local_supplies=0.0
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13734 1
+		}			
+		victory_points = {
+			13697 5
+		}		
+		victory_points = {
+			12727 1
+		}		
+		add_core_of = SAU
+	}
+
+	provinces={
+		2090 5093 7934 7995 8004 8060 10748 10923 12727 12813 12870 13248 13660 13657 13658 13662 13667 13668 13671 13672 13673 13679 13680 13686 13690 13694 13691 13697 13701 13705 13710 13718 13726 14366
+	}
+}

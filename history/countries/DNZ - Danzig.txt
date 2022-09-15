@@ -1,0 +1,52 @@
+﻿capital = 770
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+	mini_cavalry = 1
+	mini_infantry = 1
+}
+
+set_convoys = 20
+
+set_popularities = {
+	democratic = 15
+	fascism = 60
+	communism = 20
+	neutrality = 5
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1934.6.3"
+	election_frequency = 42
+	elections_allowed = no
+}
+
+
+recruit_character = DNZ_arthur_karl_greiser
+recruit_character = DNZ_julius_gehl
+recruit_character = DNZ_anton_plenikowski
+recruit_character = DNZ_ernst_ziehm
+recruit_character = DNZ_franz_jakubowski
+recruit_character = DNZ_albert_forster
+
+
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

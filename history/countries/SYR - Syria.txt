@@ -1,0 +1,108 @@
+﻿capital = 554
+
+set_stability = 0.3
+set_war_support = 0.1
+
+oob = "SYR_1936"
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
+	camelry = 1
+}
+
+set_convoys = 20
+
+set_cosmetic_tag = SYR_FRA
+set_country_flag = mandatory_country
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	set_autonomy = {
+		target = HAT
+		autonomous_state = autonomy_dominion
+	}
+}
+
+1941.12.5 = {
+	set_autonomy = {
+		target = HAT
+		autonomous_state = autonomy_free
+	}
+}
+
+set_popularities = {
+	democratic = 75
+	fascism = 5
+	communism = 5
+	trozkism = 5
+	monarchy = 10
+}
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1932.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+recruit_character = SYR_sami_hilmy_al_hinnawi
+recruit_character = SYR_hashim_al_atassi
+recruit_character = SYR_antun_saadeh
+recruit_character = SYR_ali_rida_pasha_rikabi
+recruit_character = SYR_khalid_bakdash
+recruit_character = SYR_salah_aldin_al_bitar
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	drop_cosmetic_tag = yes
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

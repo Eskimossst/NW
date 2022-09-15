@@ -1,0 +1,62 @@
+
+state={
+	id=165
+	name="STATE_165"
+	manpower = 3036537
+	
+	state_category = large_city
+
+	local_supplies=0.0
+	history={
+		owner = SPR
+		add_core_of = CAT
+		victory_points = {
+			9764 30
+		}
+		victory_points = {
+			6966 1
+		}
+		victory_points = {
+			6927 1
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 4
+			dockyard = 2
+			industrial_complex = 3
+			air_base = 2
+			9764 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = SPR
+		1939.1.1 = {
+			add_core_of = SPA
+			remove_core_of = CAT
+			remove_core_of = SPR
+			owner = SPA
+		}
+		1941.11.1 = {
+			owner = CAT
+			add_claim_by = SPC
+			add_claim_by = SPA
+			add_claim_by = CAS
+			add_claim_by = NAV
+			add_claim_by = ARA
+			add_claim_by = ANL
+			add_claim_by = SPR
+			add_core_of = SPC
+			add_core_of = SPR
+			add_core_of = SPA
+			add_core_of = CAS
+			add_core_of = NAV
+			add_core_of = ARA
+			add_core_of = ANL
+			add_core_of = CAT
+		}
+	}
+
+	provinces={
+		854 872 897 3898 3899 6812 6836 6865 6927 6966 9764 9797
+	}
+}

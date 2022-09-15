@@ -1,0 +1,74 @@
+characters={
+	CYP_richmond_palmer={
+		name=CYP_richmond_palmer
+		portraits={
+			civilian={
+				large="gfx/leaders/CYP/Portrait_Richmond_Palmer.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MAKARIOS_II_DESC"
+			ideology=palmerocracy
+			traits={  }
+			expire="1965.1.1.1"
+		}
+	}
+	CYP_makarios_ii={
+		name=CYP_makarios_ii
+		portraits={
+			civilian={
+				large="gfx/leaders/CYP/portrait_makarios_ii.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MAKARIOS_II_DESC"
+			ideology=theocratic_monarchy
+			traits={  }
+			expire="1965.1.1.1"
+		}
+	}
+	CYP_ploutis_servas={
+		name=CYP_ploutis_servas
+		portraits={
+			civilian={
+				large="gfx/leaders/CYP/Portrait_Ploutis_Servas.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PLOUTIS_SERVAS_DESC"
+			ideology=marxism
+			traits={skillful_manager}
+			expire="1965.1.1.1"
+		}
+	}
+	CYP_fazil_kucuk={
+		name=CYP_fazil_kucuk
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_FAZIL_KUCUK_DESC"
+			ideology=national_conservatism
+			traits={turkish_nationalist}
+			expire="1965.1.1.1"
+		}
+		country_leader={
+			desc="POLITICS_GEORGIOS_GRIVAS_DESC"
+			ideology=nationalism_ideology
+			traits={turkish_nationalist}
+			expire="1965.1.1.1"
+		}
+	}
+	
+	CYP_william_denis_battershill={		#станет лидером позже
+		name=CYP_william_denis_battershill
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+			}
+		}
+	}
+	
+}

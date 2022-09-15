@@ -1,0 +1,965 @@
+# befriend
+# alliance
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+TUR_restore_caliphate_strategy = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		focus_progress = { focus = TUR_triumph_of_forces_of_order progress > 0 }
+		country_exists = SAU
+		SAU = { is_subject = no }
+	}
+	
+	abort = {
+		OR = {
+			NOT = { country_exists = SAU }
+			SAU = { is_subject = yes }
+			has_completed_focus = TUR_restore_caliphate
+			controls_state = 679
+		}
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "SAU"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SAU"
+		value = 200
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "SAU"
+		value = 100
+	}
+}
+
+TUR_restore_caliphate_679_strategy = {
+	reversed = yes
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		TUR = {
+			focus_progress = { focus = TUR_triumph_of_forces_of_order progress > 0 }
+			NOT = { controls_state = 679 }
+		}
+		owns_state = 679
+	}
+	
+	abort = {
+		TUR = {
+			OR = {
+				has_completed_focus = TUR_restore_caliphate
+				controls_state = 679
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "TUR"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TUR"
+		value = 200
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "TUR"
+		value = 100
+	}
+}
+
+if_you_between_TUR_and_SAU_you_die = {
+	reversed = yes
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		TUR = {
+			focus_progress = { focus = TUR_triumph_of_forces_of_order progress > 0 }
+			NOT = {
+				is_neighbor_of = SAU
+			}
+			any_neighbor_country = {
+				is_neighbor_of = SAU
+				NOT = { has_war_with = TUR }
+			}
+		}
+		country_exists = SAU
+		SAU = { is_subject = no }
+		is_neighbor_of = SAU
+		is_neighbor_of = TUR
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = antagonize
+		id = "TUR"
+		value = 400
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TUR"
+		value = 400
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "TUR"
+		value = 200
+	}
+}
+
+
+TRK_restore_caliphate_679_strategy = {
+	reversed = yes
+	allowed = {
+		original_tag = TRK
+	}
+	enable = {
+		TRK = {
+			focus_progress = { focus = TUR_triumph_of_forces_of_order progress > 0 }
+			NOT = { controls_state = 679 }
+		}
+		owns_state = 679
+	}
+	
+	abort = {
+		TRK = {
+			OR = {
+				has_completed_focus = TUR_restore_caliphate
+				controls_state = 679
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "TRK"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TRK"
+		value = 200
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "TRK"
+		value = 100
+	}
+}
+
+if_you_between_TRK_and_SAU_you_die = {
+	reversed = yes
+	allowed = {
+		original_tag = TRK
+	}
+	enable = {
+		TRK = {
+			focus_progress = { focus = TUR_triumph_of_forces_of_order progress > 0 }
+			NOT = {
+				is_neighbor_of = SAU
+			}
+			any_neighbor_country = {
+				is_neighbor_of = SAU
+				NOT = { has_war_with = TRK }
+			}
+		}
+		country_exists = SAU
+		SAU = { is_subject = no }
+		is_neighbor_of = SAU
+		is_neighbor_of = TRK
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = antagonize
+		id = "TRK"
+		value = 400
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TRK"
+		value = 400
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "TRK"
+		value = 200
+	}
+}
+
+TUR_need_credit_from_britain = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		focus_progress = { focus = TUR_pay_off_your_debts progress > 0 }
+		NOT = { has_completed_focus = TUR_take_credit_from_britain }
+		is_subject = no
+		country_exists = ENG
+		NOT = { has_war_with = ENG }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "ENG"
+		value = 50
+	}
+}
+
+TUR_need_credit_from_ussr = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		focus_progress = { focus = TUR_pay_off_your_debts progress > 0 }
+		NOT = { has_completed_focus = TUR_take_credit_from_ussr }
+		is_subject = no
+		country_exists = SOV
+		NOT = { has_war_with = SOV }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "SOV"
+		value = 50
+	}
+}
+
+TUR_need_credit_from_germany = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		focus_progress = { focus = TUR_pay_off_your_debts progress > 0 }
+		NOT = { has_completed_focus = TUR_take_credit_from_germany }
+		is_subject = no
+		country_exists = GER
+		NOT = { has_war_with = GER }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "GER"
+		value = 50
+	}
+}
+
+TUR_antagonize_KRD = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		country_exists = KRD
+	}
+	abort = {
+		NOT = { country_exists = KRD }
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "KRD" 
+		value = 500
+	}
+	ai_strategy = {
+		type = conquer
+		id = "KRD" 
+		value = 500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "KRD" 
+		value = -5000
+	}
+}
+
+TUR_prepared_for_civil_war = {
+	allowed = {
+		original_tag = TUR
+		is_historical_focus_on = no
+	}
+	enable = {
+		num_divisions < 100
+	}
+	abort = {
+		num_divisions > 99
+	}
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}
+
+TUR_ger_dont_ally_historical = {
+	allowed = {
+		original_tag = TUR
+		is_historical_focus_on = yes
+	}
+	enable = {
+		country_exists = GER
+	}
+	abort = {
+		is_in_faction_with = GER #got here somehow, might as well stay
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = -9999
+	}	
+}
+TUR_jap_dont_ally_historical = {
+	allowed = {
+		original_tag = TUR
+		is_historical_focus_on = yes
+	}
+	enable = {
+		tag = TUR
+		country_exists = JAP
+	}
+	abort = {
+		is_in_faction_with = JAP #got here somehow, might as well stay
+	}
+	ai_strategy = {
+		type = alliance
+		id = "JAP"			
+		value = -9999
+	}	
+}
+
+TUR_help_SPR_win_civil_war = {
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		OR = {
+			has_completed_focus = TUR_commust_revolt
+			has_completed_focus = TUR_etchem_circassian_coup
+			has_completed_focus = TUR_policy_liberalization
+		}
+		SPR = {
+			has_war_with = SPA
+			OR = {
+				has_government = democratic
+				has_government = communism
+				has_government = trozkism
+			}
+		}
+		NOT = { has_global_flag = scw_over }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SPR"
+		value = 75
+	}
+}
+
+TUR_help_SPA_win_civil_war = {
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		OR = {
+			has_completed_focus = TUR_dictatorship_cakmak
+			has_completed_focus = TUR_proclaim_panturkism
+			has_completed_focus = TUR_force_of_order
+		}
+		SPA = {
+			has_war_with = SPR
+			OR = {
+				has_government = fascism
+				has_government = monarchy
+				has_government = neutrality
+			}
+		}
+		NOT = { has_global_flag = scw_over }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SPA"
+		value = 75
+	}
+}
+
+
+SOV_help_TUR_win_in_civil_war = {
+	reversed = yes
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		original_tag = TUR
+		exists = yes
+		has_country_leader = { name = "Şefik Hüsnü" ruling_only = yes }
+		has_civil_war = yes
+		SOV = { has_government = communism }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SOV"
+		value = 75
+	}
+	ai_strategy = {
+		type = support
+		id = "SOV"
+		value = 75
+	}
+}
+
+TUR_ignore_SOV_in_civil_war = {
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		has_country_leader = { name = "Şefik Hüsnü" ruling_only = yes }
+		has_civil_war = yes
+		SOV = { has_government = communism }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = ignore
+		id = "SOV"
+		value = 999
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SOV"
+		value = -999
+	}
+}
+
+TUR_all_ignore_other_country_in_civil_war = {
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		has_civil_war = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			OR = {
+				original_tag = TUR
+				original_tag = KRD
+			}
+			has_war_with = ROOT
+		}
+		value = 500
+	}
+}
+
+
+GER_help_fash_neutr_TUR_win_civil_war = {
+	reversed = yes
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		original_tag = TUR
+		exists = yes
+		OR = {
+			has_government = fascism
+			has_government = neutrality
+		}
+		has_civil_war = yes
+		GER = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GER"
+		value = 75
+	}
+	ai_strategy = {
+		type = support
+		id = "GER"
+		value = 75
+	}
+}
+
+GER_help_comm_TUR_win_civil_war = {
+	reversed = yes
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		original_tag = TUR
+		exists = yes
+		has_government = communism
+		has_completed_focus = TUR_turkey_communist_party
+		has_civil_war = yes
+		GER = {
+			has_government = communism
+			has_completed_focus = GER_where_thalmann
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GER"
+		value = 75
+	}
+	ai_strategy = {
+		type = support
+		id = "GER"
+		value = 75
+	}
+}
+
+GER_help_naz_comm_TUR_win_civil_war = {
+	reversed = yes
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		original_tag = TUR
+		exists = yes
+		has_government = communism
+		has_completed_focus = TUR_socialist_kemalism_2
+		has_civil_war = yes
+		GER = {
+			has_completed_focus = GER_alternative_government_of_nsdap
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GER"
+		value = 75
+	}
+	ai_strategy = {
+		type = support
+		id = "GER"
+		value = 75
+	}
+}
+
+PER_help_naz_comm_TUR_win_civil_war = {
+	reversed = yes
+	allowed = {
+		original_tag = PER
+	}
+	enable = {
+		original_tag = TUR
+		exists = yes
+		has_government = communism
+		has_completed_focus = TUR_socialist_kemalism_2
+		has_civil_war = yes
+		PER = {
+			OR = {
+				has_country_leader_ideology = national_communism
+				has_country_leader_ideology = national_bolshevism
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PER"
+		value = 75
+	}
+	ai_strategy = {
+		type = support
+		id = "PER"
+		value = 75
+	}
+}
+
+HUN_HBBRG_help_TUR_help_in_civil_war = {
+	allowed = {
+		original_tag = TUR
+	}
+	reversed = yes
+	enable = {
+		has_civil_war = yes
+		has_government = monarchy
+		HUN = {
+			has_government = monarchy
+			has_focus_tree = hbbrg_focus
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HUN"
+		value = 75
+	}
+}
+
+AUS_HBBRG_help_TUR_help_in_civil_war = {
+	allowed = {
+		original_tag = TUR
+	}
+	reversed = yes
+	enable = {
+		has_civil_war = yes
+		has_government = monarchy
+		AUS = {
+			has_government = monarchy
+			has_focus_tree = hbbrg_focus
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "AUS"
+		value = 75
+	}
+}
+
+CZE_HBBRG_help_TUR_help_in_civil_war = {
+	allowed = {
+		original_tag = TUR
+	}
+	reversed = yes
+	enable = {
+		has_civil_war = yes
+		has_government = monarchy
+		CZE = {
+			has_government = monarchy
+			has_focus_tree = hbbrg_focus
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CZE"
+		value = 75
+	}
+}
+
+SOV_antagonize_national_communism_TUR = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = SOV
+		}
+	}
+	reversed = yes
+	enable = {
+		OR = {
+			has_country_leader_ideology = kemalism_socialism
+			has_country_leader_ideology = national_communism
+			has_country_leader_ideology = national_bolshevism
+		}
+		SOV = { has_government = communism }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = { type = send_volunteers_desire id = "SOV" value = -999 }
+	ai_strategy = { type = befriend id = "SOV" value = -999 }
+	ai_strategy = { type = support id = "SOV" value = -999 }
+	ai_strategy = { type = alliance id = "SOV" value = -999 }
+	ai_strategy = { type = diplo_action_desire id = "SOV" target = join_faction value = -1000 }
+	ai_strategy = { type = diplo_action_acceptance id = "SOV" target = offer_join_faction value = -1000 }
+}
+
+
+
+
+
+
+#########################
+###  UNIT_PRODUCTION  ###
+#########################
+
+TUR_extra_bombing_ratios = {
+	allowed = {
+		tag = TUR
+	}
+	enable = {
+		OR = {
+			AND = {
+				any_owned_state = {
+					NOT = { is_core_of = ROOT }
+					is_core_of = KRD
+				}
+				has_country_flag = NWkurd1_a_flag
+			}
+			has_country_flag = NWkurd3_flag
+		}
+		NOT = {
+			has_country_flag = kurd_revolt_flag
+			has_country_flag = kurd_revolt_over_flag
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 50
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 25
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = tactical_bomber
+		value = 3
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 50
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 25
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = strategic_bomber
+		value = 3
+	}
+}
+
+TUR_heavy_armor_production_focus = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		has_completed_focus = TUR_socialist_kemalism_2
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = heavy_tank_chassis
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry_role
+		value = -5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = anti_tank
+		value = 5
+	}
+}
+
+TUR_horsemen_production_focus = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		OR = {
+			has_completed_focus = TUR_revolutionary_horsemen
+			has_completed_focus = TUR_horsemen_of_empire
+		}
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -15 
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry_role
+		value = 15 
+	}
+}
+
+TUR_mountaineers_production_focus = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		OR = {
+			has_completed_focus = TUR_children_of_mountains
+			has_completed_focus = TUR_create_boy_scout_organizations_2
+		}
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mountaineers
+		value = 25
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 15
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -15
+	}
+}
+
+TUR_mechanize_production_focus = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		has_completed_focus = TUR_mechanize_cavalry
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry_role
+		value = -50
+	}
+}
+
+TUR_mechanize_production_focus = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		has_completed_focus = TUR_maximize_fire_support
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry_role
+		value = -50
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = 3
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = armored_car_equipment
+		value = 3
+	}
+}
+
+TUR_artillery_production_focus = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = TRK
+		}
+	}
+	enable = {
+		has_completed_focus = TUR_maximize_fire_support
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = artillery
+		value = 15
+	}
+}

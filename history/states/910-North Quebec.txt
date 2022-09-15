@@ -1,0 +1,25 @@
+state={
+	id=910
+	name="STATE_910"
+	
+	state_category = wasteland
+	impassable = yes	
+
+	local_supplies=0.0
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAN
+		add_core_of = QUB
+
+	}
+
+	provinces={
+		490 3208 3911 4666 6740 10176 11682 12147 12600 13162 13166 13181 13184 13186 13196 
+	}
+	manpower=318860
+	buildings_max_level_factor=1.000
+}

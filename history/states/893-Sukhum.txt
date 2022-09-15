@@ -1,0 +1,34 @@
+state={
+	id=893
+	name="STATE_893"
+
+	local_supplies=0.0
+	history={
+		owner = SOV
+		victory_points = {
+			11617 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = GEO
+		add_core_of = ABH
+		1940.1.1 = {
+			owner = GEO
+			remove_core_of = SOV
+		}
+		1941.11.1 = {
+			owner = ABH
+		}
+
+	}
+
+	provinces={
+		11599 11617 11647 
+	}
+	manpower=318000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

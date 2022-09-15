@@ -1,0 +1,22 @@
+
+state={
+	id=940
+	name="STATE_940"
+	manpower = 173267
+	
+	state_category = rural
+	
+	local_supplies=0.0
+	history={
+		owner = LIT
+		victory_points = { 3272 1 }
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = LIT
+	}
+
+	provinces={
+		3272 6407
+	}
+}

@@ -1,0 +1,55 @@
+# befriend
+# alliance
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# alliance
+# contain
+# area_priority
+
+NW_ITA_friend_ALB_mussolinis_son_in_law = {
+	reversed = yes
+	allowed = {
+		original_tag = ALB
+	}
+	enable = {
+		has_country_leader_with_trait = mussolinis_son_in_law
+		ITA = { has_country_leader = { ruling_only = yes character = ITA_benito_mussolini } }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "ITA"
+		value = 100
+	}
+}
+
+NW_ALB_friend_ITA_mussolinis_son_in_law = {
+	allowed = {
+		original_tag = ALB
+	}
+	enable = {
+		has_country_leader_with_trait = mussolinis_son_in_law
+		ITA = { has_country_leader = { ruling_only = yes character = ITA_benito_mussolini } }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "ITA"
+		value = 100
+	}
+}
+
+
+
+
+

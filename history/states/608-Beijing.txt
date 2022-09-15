@@ -1,0 +1,52 @@
+
+state={
+	id=608
+	name="STATE_608"
+	manpower = 9648400
+	
+	state_category = large_city
+
+	local_supplies=0.0
+	history={
+		owner = HCP
+		add_core_of = HCP
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 3
+			10068 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = {
+			9843 30
+		}
+		victory_points = {
+			10068 15 
+		}
+
+		1938.10.25 = {
+			controller = JAP
+			remove_core_of = HCP
+		}
+		
+		1940.1.1 = {
+			controller = CHI
+			owner = CHI
+		}
+		1941.11.1 = {
+			controller = PRC
+			owner = PRC
+		}
+	}
+
+	provinces={
+		1134 4137 4140 6828 9843 9969 10068 11761 12026 
+	}
+}

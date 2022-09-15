@@ -1,0 +1,143 @@
+﻿capital = 1070
+
+oob = "LIB_1936"
+
+set_stability = 0.3
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	elephant_art_support = 1
+}
+
+add_ideas = {
+	LIB_debts_to_firestone
+	LIB_forced_labour
+	LIB_lured_government
+	LIB_resistance_of_kru_tribes
+	LIB_slaveholding_formation
+	LIB_hunger_risk
+	disarmed_nation
+	free_trade
+}
+set_convoys = 20
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "LIB_1939"
+	set_technology = {
+		#doctrines
+		air_superiority = 1
+		
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+1941.12.5 = {
+	remove_ideas = {
+		LIB_debts_to_firestone
+		LIB_forced_labour
+		LIB_lured_government
+		LIB_resistance_of_kru_tribes
+		LIB_slaveholding_formation
+		LIB_hunger_risk
+	}
+}
+
+set_popularities = {
+	democratic = 100
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1931.1.1"
+	election_frequency = 96
+	elections_allowed = yes
+}
+
+
+recruit_character = LIB_edwin_barclay
+recruit_character = LIB_council_of_chieftains
+recruit_character = LIB_varney_massaquoi
+recruit_character = LIB_alford_russ
+recruit_character = LIB_jenkins_yancey
+recruit_character = LIB_elwood_davis
+recruit_character = LIB_Louis_Artur_Graims
+recruit_character = LIB_William_Tabmen
+recruit_character = LIB_Clarence_Lorenzo_Simpson
+recruit_character = LIB_DIDHWO_TWE
+recruit_character = LIB_Fatima_Massaquoi
+recruit_character = LIB_GABRIEL_MOORE_JOHNSON
+recruit_character = LIB_Lester_Walton
+recruit_character = LIB_Marcus_Garvey
+recruit_character = LIB_TEOPHILUS_MOMOLU_GARDINER
+recruit_character = LIB_Walter_Walker
+recruit_character = LIB_Juah_Nimley
+recruit_character = LIB_Thomas_Falkner
+recruit_character = LIB_ERNEST_CYRIL
+recruit_character = LIB_won_loy_chan
+recruit_character = LIB_george_remond
+recruit_character = LIB_reginald_brandon
+recruit_character = LIB_james_brooks
+recruit_character = LIB_john__r_fox
+recruit_character = LIB_edgar_cailloux
+recruit_character = LIB_benton_stukes
+recruit_character = LIB_samuel_nell
+recruit_character = LIB_andre_fields
+recruit_character = LIB_aaron_pinn
+recruit_character = LIB_stewart_holland
+recruit_character = LIB_joseph_smith
+
+
+
+1939.1.1 = {
+	set_popularities = {
+		democratic = 100
+	}
+	
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1939.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
+
+1940.1.1 = {
+	oob = "OOB_zero"
+	add_ideas = {
+		volunteer_only
+		civilian_economy
+		ai_aggression_ultra_idea
+	}
+	set_political_power = 0
+	set_stability = 0.5
+	set_war_support = 0.5
+	set_research_slots = 4
+}

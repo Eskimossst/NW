@@ -1,0 +1,24 @@
+ideas = {
+    industrial_concern = {
+        MEN_bank_of_mengkukuo = {
+			
+			cost = 150
+			
+			picture = MEX_banco_de_mexico
+			
+			allowed = {
+				original_tag = MEN
+			}
+			
+			research_bonus = {
+				industry = 0.15	
+			}
+			
+			modifier = {
+				economy_cost_factor = -0.25
+			}
+
+			traits = { industrial_concern }
+		}
+	}	
+}

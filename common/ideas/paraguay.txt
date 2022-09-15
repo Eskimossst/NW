@@ -1,0 +1,32 @@
+ideas = {
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		PAR_jose_bozzano = {
+		
+			picture = jose_bozzano
+			
+			allowed = {
+				original_tag = PAR
+			}
+			
+			modifier = {
+			industrial_capacity_dockyard = 0.1
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { naval_manufacturer }
+			
+		}
+			
+	}
+}

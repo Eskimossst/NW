@@ -1,0 +1,33 @@
+
+state={
+	id=979
+	name="STATE_979" #Palestine
+	manpower = 253450	
+	
+	state_category = town
+
+	local_supplies=0.0
+	history={
+		owner = BPL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			1065 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			1065 5 
+		}
+		1941.11.1 = {
+			owner = ISR
+			controller = ISR
+			add_core_of = ISR
+			add_core_of = PAL
+		}
+	}
+
+	provinces={
+		1065 1201 13320
+	}
+}

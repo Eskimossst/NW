@@ -1,0 +1,50 @@
+
+state={
+	id=1039
+	name="STATE_1039"
+	manpower = 213781	
+	
+	state_category = city
+
+	local_supplies=0.0
+	history={
+		owner = FRA		
+		victory_points = {
+			11465 5
+		}
+		victory_points = {
+			9495 3
+		}
+		victory_points = {
+			6758 1
+		}
+		victory_points = {
+			9510 1
+		}
+		victory_points = {
+			9525 1
+		}		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 2
+			6758 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = FRA
+		add_core_of = BRI
+		1939.1.1 = {
+			buildings = {
+				dockyard = 2
+			}
+		}
+		1941.11.1 = {
+			owner = BRI
+		}
+	}
+
+	provinces={
+		527 6758 9510 9525 9495 11465 11508 11616 14636
+	}
+}
