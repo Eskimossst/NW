@@ -1,0 +1,155 @@
+﻿###########################
+# Sikan Events
+###########################
+
+add_namespace = xik
+
+country_event = {
+	id = xik.1
+	title = xik.1.t
+	desc = xik.1.d
+	picture = GFX_report_event_soviet_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = { 
+		name = xik.1.a
+		ai_chance = {
+			base = 10
+		}
+		country_event = { id = xik.2 }
+	}
+}
+
+country_event = {
+	id = xik.2
+	title = xik.2.t
+	desc = xik.2.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = xik.2.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = xik.3
+	title = xik.3.t
+	desc = xik.3.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = xik.3.a
+		ai_chance = {
+			base = 50
+		}
+		
+		hidden_effect = {
+		    XIK = { country_event = { id = xik.4 } }
+			set_country_flag = XIK_communist_accept_flag
+		}
+	}
+	
+	option = { 
+		name = xik.3.b
+		ai_chance = {
+			base = 50
+		}
+		
+		hidden_effect = {
+		    XIK = { country_event = { id = xik.5 ] }
+		}
+	}
+}
+
+country_event = {
+	id = xik.4
+	title = xik.4.t
+	desc = xik.4.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = xik.4.a
+		ai_chance = {
+			base = 10
+		}
+		
+		add_popularity = {
+            ideology = communism
+            popularity = 0.05
+        }
+	}
+}
+
+country_event = {
+	id = xik.5
+	title = xik.5.t
+	desc = xik.5.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = xik.5.a
+		ai_chance = {
+			base = 10
+		}
+		
+		add_popularity = {
+            ideology = communism
+            popularity = -0.05
+        }
+	}
+}
+
+country_event = {
+	id = xik.6
+	title = xik.6.t
+	desc = xik.6.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = xik.6.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = xik.7
+	title = xik.7.t
+	desc = xik.7.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = xik.7.a
+		ai_chance = {
+			base = 10
+		}
+		601 = { set_state_owner_to = XIK }
+		434 = { set_state_owner_to = XIK }
+	}
+	
+	option = { 
+		name = xik.7.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}

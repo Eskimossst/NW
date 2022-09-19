@@ -1,0 +1,838 @@
+focus_tree = {
+	id = XIK
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XIK
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1700 }
+	
+	focus = {
+		id = XIK_the_militarist_in_exile #Милитарист в изгнании
+		icon = GFX_z_goal_generic_struggle
+		cost = 10
+		x = 13
+		y = 0
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_the_militarist_in_exile"
+			
+		}
+	}
+	
+	focus = {
+		id = XIK_taobao_taos #Даос Таобао
+		icon = GFX_z_goal_generic_laws
+		prerequisite = { focus = XIK_the_militarist_in_exile }
+		relative_position_id = XIK_the_militarist_in_exile
+		cost = 10
+		x = -7
+		y = 1
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_taobao_taos"
+			add_trait = {
+                character = XIK_liu_wenhui
+                ideology = despotism
+                trait = XIK_taobao_taos_trait
+            }
+		}
+	}
+	
+	focus = {
+		id = XIK_create_a_weiming_society #Создать Общество Вэймин
+		icon = GFX_z_goal_generic_political_correctness
+		prerequisite = { focus = XIK_taobao_taos }
+		relative_position_id = XIK_taobao_taos
+		cost = 10
+		x = -2
+		y = 1
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_create_a_weiming_society"
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = XIK_to_found_weimin_weekly #Основать Weimin Weekly
+		icon = GFX_z_goal_free_papers
+		prerequisite = { focus = XIK_create_a_weiming_society }
+		relative_position_id = XIK_create_a_weiming_society
+		cost = 10
+		x = 0
+		y = 1
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_to_found_weimin_weekly"
+			custom_effect_tooltip = open_weimin_weekly_tt
+		}
+	}
+	
+	focus = {
+		id = XIK_donate_money_to_the_anti_japanese_war #Пожертвовать деньги на антияпонскую войну
+		icon = GFX_z_goal_fight_for_money
+		prerequisite = { focus = XIK_taobao_taos }
+		relative_position_id = XIK_taobao_taos
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_political_power > 300
+			has_war_with = JAP
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    has_political_power < 300
+			
+			NOT = {
+			    has_war_with = JAP
+			}
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_donate_money_to_the_anti_japanese_war"
+			add_political_power = -300
+			add_stability = 0.05
+			add_war_support = 0.15
+		}
+	}
+	
+	focus = {
+		id = XIK_establish_ties_with_the_communists #Установить связи с коммунистами
+		icon = GFX_z_goal_communist_discourse
+		prerequisite = { focus = XIK_to_found_weimin_weekly }
+		relative_position_id = XIK_to_found_weimin_weekly
+		cost = 10
+		x = -2
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+           
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_establish_ties_with_the_communists"
+			PRC = { country_event = xik.3 days = 5 }
+		}
+	}
+	
+	focus = {
+		id = XIK_secret_radio_station_for_communication_with_communists #Секретная радиостанция для связи с коммунистами
+		icon = GFX_z_goal_worker_press_commi
+		prerequisite = { focus = XIK_establish_ties_with_the_communists }
+		relative_position_id = XIK_establish_ties_with_the_communists
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = XIK_communist_accept_flag
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_secret_radio_station_for_communication_with_communists"
+			add_opinion_modifier = {
+                target = PRC
+                modifier = PRC_XIK_opinions
+            }
+		}
+	}
+	
+	focus = {
+		id = XIK_organize_a_pro_communist_uprising #Организовать прокоммунистическое восстание
+		icon = GFX_z_goal_communist_revolt
+		prerequisite = { focus = XIK_secret_radio_station_for_communication_with_communists }
+		relative_position_id = XIK_secret_radio_station_for_communication_with_communists
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		    is_neighbor_of = PRC
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_organize_a_pro_communist_uprising"
+			PRC = {
+			    annex_country = {
+                    target = XIK
+                    transfer_troops = yes
+                }
+		    }
+			change_tag_from = PRC
+			if = {
+                limit = {
+                    country_exists = SIH
+                }
+                SIH = { country_event = xik.6 days = 1 }
+            }
+			else_if = {
+                limit = {
+                    country_exists = XSM
+                }
+                XSM = { country_event = xik.6 days = 1 } 
+			}
+			else_if = {
+                limit = {
+                    country_exists = SIK
+                }
+                SIK = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = NEA
+                }
+                NEA = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = NGX
+                }
+                NGX = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = MEN
+                }
+                MEN = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = YUL
+                }
+                YUL = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = SHX
+                }
+                SHX = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = HCP
+                }
+                HCP = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = EHB
+                }
+                EHB = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = SHA
+                }
+                SHA = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = GXC
+                }
+                GXC = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = TNG
+                }
+                TNG = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = KAS
+                }
+                KAS = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = DZH
+                }
+                DZH = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = KUM
+                }
+                KUM = { country_event = xik.6 days = 1 }
+			}
+			else_if = {
+                limit = {
+                    country_exists = YUN
+                }
+                YUN = { country_event = xik.6 days = 1 }
+			}
+	    }
+    }
+	
+	focus = {
+		id = XIK_finance_cdl #Финансировать КДЛ
+		icon = GFX_z_goal_democratic_propaganda
+		prerequisite = { focus = XIK_to_found_weimin_weekly }
+		relative_position_id = XIK_to_found_weimin_weekly
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            date > 1942.06.01
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_finance_cdl"
+			if = {
+                limit = {
+                    YUN = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+            }
+            else_if = {
+                limit = {
+                    SIH = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+            else_if = {
+			    limit = {
+                    XSM = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    SIK = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    NEA = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    NGX = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    MEN = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    YUL = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    SHX = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    HCP = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    EHB = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    SHA = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    GXC = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    TNG = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    KAS = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    DZH = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+			else_if = {
+			    limit = {
+                    KUM = {
+                        has_goverment = democratic
+                    }
+                }
+                add_opinion_modidfier = XIK_democratic_relations
+			}
+		}
+	}
+	
+	focus = {
+		id = XIK_join_the_cdl #Вступить в КДЛ
+		icon = GFX_z_goal_give_democracy
+		prerequisite = { focus = XIK_finance_cdl }
+		relative_position_id = XIK_finance_cdl
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		  
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_join_the_cdl"
+			set_party_name = {
+                ideology = democratic
+				name = XIK_democratic_league
+                long_name = XIK_democratic_league
+            }
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+		}
+	}
+	
+	focus = {
+		id = XIK_join_the_cdl_government #Присоединиться к правительству КДЛ
+		icon = GFX_z_goal_democratic_side
+		prerequisite = { focus = XIK_join_the_cdl }
+		relative_position_id = XIK_join_the_cdl
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		    YUN = { 
+			    has_government = democratic
+			}
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_join_the_cdl_government"
+			YUN = {
+			    puppet = XIK
+			}
+		}
+	}
+	
+	focus = {
+		id = XIK_officially_condemn_wang_jingwei #Официально осудить Ван Цзинвэя
+		icon = GFX_z_goal_black_hand
+		prerequisite = { focus = XIK_donate_money_to_the_anti_japanese_war }
+		relative_position_id = XIK_donate_money_to_the_anti_japanese_war
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		    custom_trigger_tooltip = {
+                tooltip = XIK_wang_jingwei_tt
+			}
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_officially_condemn_wang_jingwei"
+			add_war_support = 0.25
+			add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+			add_opinion_modifier = {
+			    target = CHI
+				modifier = XIK_CHI_opinion
+			}
+		}
+	}
+	
+	focus = {
+		id = XIK_balancing_between_kuomintang_factions #Балансирование между фракциями Гоминьдана
+		icon = GFX_z_goal_neutrality_question
+		prerequisite = { focus = XIK_taobao_taos }
+		relative_position_id = XIK_taobao_taos
+		cost = 10
+		x = 2
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+          
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_balancing_between_kuomintang_factions"
+			swap_ruler_traits = { remove = XIK_taobao_taos_trait add = XIK_taobao_taos_traits }
+		}
+	}
+	
+	focus = {
+		id = XIK_maintain_contacts_with_southwestern_militarists #Поддерживать связи с юго-западными милитаристами
+		icon = GFX_z_goal_generic_military_lobby
+		prerequisite = { focus = XIK_balancing_between_kuomintang_factions }
+		relative_position_id = XIK_balancing_between_kuomintang_factions
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+          
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_maintain_contacts_with_southwestern_militarists"
+			add_opinion_modifier = {
+			    target = GND
+				modifier = XIK_military_opinion
+			}
+			add_opinion_modifier = {
+			    target = GXC
+				modifier = XIK_military_opinion
+			}
+			add_opinion_modifier = {
+			    target = YUN
+				modifier = XIK_military_opinion
+			}
+			add_opinion_modifier = {
+			    target = SIH
+				modifier = XIK_military_opinion
+			}
+		}
+	}
+	
+	focus = {
+		id = XIK_show_loyalty_to_the_kuomintang #Показывать лояльность Гоминьдану
+		icon = GFX_focus_generic_china1
+		prerequisite = { focus = XIK_officially_condemn_wang_jingwei focus = XIK_maintain_contacts_with_southwestern_militarists }
+		relative_position_id = XIK_officially_condemn_wang_jingwei
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+          
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_show_loyalty_to_the_kuomintang"
+			add_opinion_modifier = {
+			    target = CHI
+				modifier = XIK_CHI_relation
+			}
+		}
+	}
+	
+	focus = {
+		id = XIK_flaunt_the_status_of_a_militarist #Бравировать статусом милитариста
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = XIK_show_loyalty_to_the_kuomintang }
+		relative_position_id = XIK_show_loyalty_to_the_kuomintang
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+          
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_flaunt_the_status_of_a_militarist"
+			add_autonomy_score = {
+                value = 300
+                localization = XIK_flaunt_the_status_of_a_militaristion
+            }
+		}
+	}
+	
+	focus = {
+		id = XIK_reorganize_the_provincial_government #Реорганизовать правительство провинции
+		icon = GFX_z_goal_nationalization_lands
+		prerequisite = { focus = XIK_maintain_contacts_with_southwestern_militarists focus = XIK_officially_condemn_wang_jingwei }
+		relative_position_id = XIK_maintain_contacts_with_southwestern_militarists
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		    OR = {
+                XIK = {
+			        is_subject_of = CHI
+			    }
+				XIK = {
+			        is_subject_of = GXC
+			    }
+				XIK = {
+			        is_subject_of = CCG
+			    }
+			}
+		}
+		
+    	bypass = {
+            
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_reorganize_the_provincial_government"
+			set_party_name = {
+                ideology = neutrality
+                long_name = XIK_neutrality_chine
+                name = XIK_neutrality_chine
+            }
+			add_popularity = {
+                ideology = neutrality
+                popularity = 0.07
+            }
+			add_autonomy_score = {
+                value = -250
+                localization = XIK_reorganize_the_provincial_governments
+            }
+		}
+	}
+	
+	focus = {
+		id = XIK_send_an_army_to_tibet #Отправить армию в Тибет
+		icon = GFX_z_goal_revenge_tibet
+		prerequisite = { focus = XIK_reorganize_the_provincial_government }
+		relative_position_id = XIK_reorganize_the_provincial_government
+		cost = 10
+		x = 0
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+          
+		}
+		
+    	bypass = {
+			TIB = {
+				is_subject_of = XIK
+		    }
+		}
+		
+		cancel = { 
+		    
+		}
+		
+		completion_reward = {
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus XIK_send_an_army_to_tibet"
+			declare_war_on = {
+                target = TIB
+                type = annex_everything
+            }
+			if = {
+			    limit = {
+				    surrender_progress > 0.33
+				}
+				TIB = { country_event = xik.7 }
+			}
+		}
+	}
+}  

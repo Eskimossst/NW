@@ -6343,5 +6343,24 @@ spriteTypes = {
 		name = "GFX_idea_sov_blyukher"
 		texturefile = "gfx/interface/ideas/idea_sov_blyukher.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_agroculture_sector"
+		texturefile = "gfx/interface/ideas/agroculture_sector.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_news_contora"
+		texturefile = "gfx/interface/ideas/news_contora.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chine_clique"
+		texturefile = "gfx/interface/ideas/chine_clique.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jungle_road"
+		texturefile = "gfx/interface/ideas/jungle_road.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_peasant_terrible"
+		texturefile = "gfx/interface/ideas/peasant_terrible.dds"
+	}
 }

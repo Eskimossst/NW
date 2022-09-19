@@ -1985,3 +1985,18 @@
  CHU_democratic_party_long:0 "Чувашско-тюркский государственный совет"
  CHU_neutrality_party:0 "ЧПС"
  CHU_neutrality_party_long:0 "Чувашский православный союз"
+ 
+ ####Сикан
+ XIK_democratic_party:0 "Гоминьдан"
+ XIK_communism_party:0 "КПК"
+ XIK_communism_party_long:0 "Коммунистическая партия Китая"
+ XIK_fascism_party:0 "Местные сепаратисты"
+ XIK_neutrality_party:0 "Клика Лю Вэньхуэя"
+ XIK_technocracy_party:0 "Технократы"
+ XIK_trozkism_party:0 "Китайский Национальный Революционный Союз"
+ XIK_monarchy_party:0 "Лхасские лоялисты"
+ XIK_anarchism_party:0 "Анархическая фракция Гоминьдана"
+ XIK_democratic_league:0 "КДЛ"
+ XIK_democratic_league_desc:0 "Китайская Демократическая Лига"
+ XIK_neutrality_chine:0 "Гоминьдан"
+ XIK_neutrality_chine_desc:0 "Гоминьдан"

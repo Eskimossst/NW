@@ -608,5 +608,14 @@ opinion_modifiers = {
 	YEM_ita_yem_treat = { value = 30 }
 	YEM_geopolitic_confrontation = { value = -40 }
 	YEM_supporting_imigration_jews = { value = -20 }
-	YEM_overcome_anypathy = { value =50 }
+	YEM_overcome_anypathy = { value = 50 }
+	
+	#XIK
+	PRC_XIK_opinions = { value = 50 }
+	XIK_democratic_relations = { value = 50 }
+	XIK_CHI_opinion = { value = 25 }
+	XIK_military_opinion = { value = 50 }
+	XIK_CHI_relation = { value = 50 }
+	XIK_flaunt_the_status_of_a_militaristion = { value = 300 }
+	XIK_reorganize_the_provincial_governments = { value = -250 }
 }

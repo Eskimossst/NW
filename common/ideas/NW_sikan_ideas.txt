@@ -1,0 +1,88 @@
+ideas = {
+
+	country = {
+	    #Китайская Клика
+        XIK_chinese_clique = {
+		    picture = chine_clique
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                 
+            }
+		}
+	
+		#Тяжелейшее положение крестьян
+		XIK_the_most_difficult_situation_of_the_peasants = {
+		    picture = peasant_terrible
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			    conscription_factor = -0.33
+			    #recruitable_population = -0.33
+				stability_factor = -0.5
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		
+		#Доминирование тибетских землевладельцев
+		XIK_the_dominance_of_tibetan_landowners = {
+		    picture = tibet_pay
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			    political_power_factor = 0.15
+                production_speed_buildings_factor = -0.25
+				drift_defence_factor = 0.5
+			}
+		}
+		
+		#Система У-ла
+		XIK_u_la_system = {
+		    picture = jungle_road
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                army_speed_factor = -0.5
+				supply_consumption_factor = 0.3
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		#Снизившийся приток ханьских колонистов
+		XIK_decreased_influx_of_han_colonists = {
+		        picture = contract_slavery
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			    monthly_population = 0.05
+			}
+		}
+	}
+}

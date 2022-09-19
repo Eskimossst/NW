@@ -29,12 +29,23 @@ add_ideas = {
 	extensive_conscription
 	partial_economic_mobilisation
 	CHI_backward_industry1
+	XIK_chinese_clique
+	XIK_the_most_difficult_situation_of_the_peasants
+	XIK_u_la_system
+	XIK_decreased_influx_of_han_colonists
 }
 
 set_convoys = 20
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 35
+	democratic = 20
+	fascism = 5
+	communism = 12
+	technocracy = 0
+	trozkism = 0
+	monarchy = 28
+	anarchism = 0
 }	
 
 set_politics = {
@@ -45,11 +56,15 @@ set_politics = {
 }
 
 recruit_character = XIK_liu_wenhui
-recruit_character = XIK_liu_yuanzhang
-recruit_character = XIK_xu_jianshuang
-recruit_character = XIK_deng_xuting
-recruit_character = XIK_liu_yuanxuan
-recruit_character = XIK_liu_yuanzong
+recruit_character = XIK_deng_pancun
+recruit_character = XIK_zhang_zhen_guo
+recruit_character = XIK_ren_naiqiang
+recruit_character = XIK_liu_wencai
+recruit_character = XIK_chen_zhongsheng
+recruit_character = XIK_xu_xiaohui
+recruit_character = XIK_wu_guangyao
+recruit_character = XIK_du_dediao
+recruit_character = XIK_zhou_wenzao
 recruit_character = XIK_hu_wu
 recruit_character = XIK_mao_hu
 recruit_character = XIK_hsia_zhao

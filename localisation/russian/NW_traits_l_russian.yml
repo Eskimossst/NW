@@ -559,3 +559,18 @@
     BPL_antisemite:0 "Юдофоб"
     
     generate_wargoal_tension_against_fake_text:0 "Необходимый уровень напряженности для оправдания войны"
+    
+    ### Sikan ###
+    XIK_exiled_militarist:0 "Изгнанный милитарист"
+    XIK_exiled_militarist_desc:0 "Кто-то напишет тут локализацию и это буду не я."
+    XIK_ambitions_beyond_sichuan:0 "Амбиции, выходящие за рамки Сычуани"
+    XIK_ambitions_beyond_sichuan_desc:0 "Кто-то напишет тут локализацию и это буду не я."
+    XIK_responsible_for_u_l:0 "Ответственный за у-л"
+    XIK_reformer:0 "Реформатор"
+    XIK_the_largest_businessman_of_the_province:0 "Крупнейший бизнесмен провинции"
+    XIK_researcher:0 "Исследователь"
+    XIK_vice_president_of_the_ush_institute:0 "Вице-президент института УCХ"
+    XIK_taobao_taos_trait:0 "Даос Таобао"
+    XIK_taobao_taos_traits:0 "Даос Таобао"
+    golden_abundance:0 "Аграрная компания"
+    weimin_weekly:0 "Правительственное СМИ"
